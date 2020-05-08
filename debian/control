@@ -8,7 +8,7 @@ Build-Depends: appstream-util,
                libgirepository1.0-dev,
                libglib2.0-dev,
                libgtk-3-dev,
-               libhandy-0.0-dev,
+               libsecret-1-dev,
                python-gi-dev,
                python3-all,
                python3-bs4,
@@ -25,7 +25,7 @@ Vcs-Git: https://salsa.debian.org/python-team/applications/gnome-authenticator.g
 
 Package: gnome-authenticator
 Architecture: all
-Depends: gir1.2-handy-0.0,
+Depends: gir1.2-secret-1,
          python3-bs4,
          python3-gi,
          python3-pil,
