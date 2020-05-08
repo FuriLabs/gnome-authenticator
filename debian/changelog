@@ -1,0 +1,5 @@
+gnome-authenticator (3.99.2-1) unstable; urgency=medium
+
+  * Initial release (Closes: #958555)
+
+ -- Henry-Nicolas Tourneur <debian@nilux.be>  Fri, 08 May 2020 17:14:56 +0000

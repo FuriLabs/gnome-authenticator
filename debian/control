@@ -1,0 +1,45 @@
+Source: gnome-authenticator
+Section: gnome
+Priority: optional
+Maintainer: Henry-Nicolas Tourneur <debian@nilux.be>
+Build-Depends: appstream-util,
+               debhelper-compat (= 13),
+               dh-python,
+               libgirepository1.0-dev,
+               libglib2.0-dev,
+               libgtk-3-dev,
+               libhandy-0.0-dev,
+               python-gi-dev,
+               python3-all,
+               python3-bs4,
+               python3-pil,
+               python3-pyfavicon,
+               python3-pyotp,
+               python3-pyzbar,
+               python3-setuptools,
+               python3-yoyo-migrations
+Standards-Version: 4.5.0
+Homepage: https://gitlab.gnome.org/World/Authenticator
+Vcs-Browser: https://salsa.debian.org/python-team/applications/gnome-authenticator
+Vcs-Git: https://salsa.debian.org/python-team/applications/gnome-authenticator.git
+
+Package: gnome-authenticator
+Architecture: all
+Depends: gir1.2-handy-0.0,
+         python3-bs4,
+         python3-gi,
+         python3-pil,
+         python3-pyfavicon,
+         python3-pyotp,
+         python3-pyzbar,
+         python3-yoyo-migrations,
+         ${misc:Depends},
+         ${python3:Depends}
+Description: A TOTP authentication app for the GNOME Desktop
+ Authenticator is a GTK3 application for the GNOME desktop, featuring:
+ - QR code scanner
+ - Beautiful UI
+ - Huge database of more than 560 supported services
+ - Keep your PIN tokens secure by locking the application with a password
+ - Automatically fetch an image for services using their favicon
+ - The possibility to add new services
