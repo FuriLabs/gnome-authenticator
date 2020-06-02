@@ -1,7 +1,8 @@
 Source: gnome-authenticator
 Section: gnome
 Priority: optional
-Maintainer: Henry-Nicolas Tourneur <debian@nilux.be>
+Maintainer: Python Applications Packaging Team <python-apps-team@lists.alioth.debian.org>
+Uploaders: Henry-Nicolas Tourneur <debian@nilux.be>
 Build-Depends: appstream-util,
                debhelper-compat (= 13),
                dh-python,
@@ -9,6 +10,9 @@ Build-Depends: appstream-util,
                libglib2.0-dev,
                libgtk-3-dev,
                libsecret-1-dev,
+               libzbar-dev,
+               help2man,
+               meson,
                python-gi-dev,
                python3-all,
                python3-bs4,
@@ -17,8 +21,9 @@ Build-Depends: appstream-util,
                python3-pyotp,
                python3-pyzbar,
                python3-setuptools,
-               python3-yoyo-migrations
+               python3-yoyo
 Standards-Version: 4.5.0
+Rules-Requires-Root: no
 Homepage: https://gitlab.gnome.org/World/Authenticator
 Vcs-Browser: https://salsa.debian.org/python-team/applications/gnome-authenticator
 Vcs-Git: https://salsa.debian.org/python-team/applications/gnome-authenticator.git
@@ -32,14 +37,14 @@ Depends: gir1.2-secret-1,
          python3-pyfavicon,
          python3-pyotp,
          python3-pyzbar,
-         python3-yoyo-migrations,
+         python3-yoyo,
          ${misc:Depends},
          ${python3:Depends}
-Description: A TOTP authentication app for the GNOME Desktop
+Description: TOTP authentication app for the GNOME Desktop
  Authenticator is a GTK3 application for the GNOME desktop, featuring:
- - QR code scanner
- - Beautiful UI
- - Huge database of more than 560 supported services
- - Keep your PIN tokens secure by locking the application with a password
- - Automatically fetch an image for services using their favicon
- - The possibility to add new services
+  - QR code scanner
+  - Beautiful UI
+  - Huge database of more than 560 supported services
+  - Keep your PIN tokens secure by locking the application with a password
+  - Automatically fetch an image for services using their favicon
+  - The possibility to add new services

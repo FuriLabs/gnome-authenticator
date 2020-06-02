@@ -1,5 +1,5 @@
-gnome-authenticator (3.32.2-1) unstable; urgency=medium
+gnome-authenticator (3.32.2+dfsg1-1) experimental; urgency=medium
 
   * Initial release (Closes: #958555)
 
- -- Henry-Nicolas Tourneur <debian@nilux.be>  Fri, 08 May 2020 17:14:56 +0000
+ -- Henry-Nicolas Tourneur <debian@nilux.be>  Tue, 02 Jun 2020 20:55:39 +0000

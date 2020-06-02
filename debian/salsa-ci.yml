@@ -6,3 +6,16 @@ include:
 variables:
   SALSA_CI_DISABLE_BLHC: 1
   SALSA_CI_DISABLE_BUILD_PACKAGE_ANY: 1
+
+before_script:
+  - apt update && apt install -qy wget gnupg ca-certificates
+# add published pykeepass apt repo, salsa.debian.org certificate is not trusted in piuparts cicd pipeline
+  - wget -O - https://salsa.debian.org/python-team/modules/pyfavicon/-/jobs/781980/artifacts/raw/aptly/public-key.asc | apt-key add -
+  - echo deb [trusted=yes] https://salsa.debian.org/python-team/modules/pyfavicon/-/jobs/781980/artifacts/raw/aptly unstable main | tee /etc/apt/sources.list.d/job-781980.list
+  - wget -O - https://salsa.debian.org/python-team/modules/pyzbar/-/jobs/782075/artifacts/raw/aptly/public-key.asc | apt-key add -
+  - echo deb [trusted=yes] https://salsa.debian.org/python-team/modules/pyzbar/-/jobs/782075/artifacts/raw/aptly unstable main | tee /etc/apt/sources.list.d/job-782075.list
+  - wget -O - https://salsa.debian.org/python-team/modules/yoyo/-/jobs/799866/artifacts/raw/aptly/public-key.asc | apt-key add -
+  - echo deb [trusted=yes] https://salsa.debian.org/python-team/modules/yoyo/-/jobs/799866/artifacts/raw/aptly unstable main | tee /etc/apt/sources.list.d/job-799866.list
+# update repositories
+  - apt update
+
