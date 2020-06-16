@@ -1,2 +1,2 @@
-000_fix_gresource.patch
+000_handle_svg_removal.patch
 001_qrscanner-svg.patch
