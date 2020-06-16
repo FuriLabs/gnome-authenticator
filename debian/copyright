@@ -30,7 +30,7 @@ Comment: The qrscanner-svg patch installs this svg file as a replacement for the
  unclear licensing term as well as unknown copyright holder.
  .
  This svg file is sourced from https://github.com/Remix-Design/RemixIcon
- On the usptream site, this file is called icons/Device/qr-code-line.svg
+ On the usptream site, this file is called qr-scan-2-line.svg
 License: Apache-2.0
 
 Files: debian/*
