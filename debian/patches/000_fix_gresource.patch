@@ -1,0 +1,12 @@
+# This patch is removing a gresource since the svg file is stripped for licensing reason.
+# This resource is not used elsewhere in the application.
+--- a/data/com.github.bilelmoussaoui.Authenticator.gresource.xml
++++ b/data/com.github.bilelmoussaoui.Authenticator.gresource.xml
+@@ -5,7 +5,6 @@
+     <file>data.json</file>
+     <file alias="qrscanner-symbolic.svg">icons/hicolor/symbolic/actions/qrscanner-symbolic.svg</file>
+     <!-- Accounts logo fallback -->
+-    <file alias="authenticator-symbolic.svg">icons/hicolor/symbolic/apps/com.github.bilelmoussaoui.Authenticator-symbolic.svg</file>
+     <file alias="authenticator.svg">icons/hicolor/scalable/apps/com.github.bilelmoussaoui.Authenticator.svg</file>
+ 
+     <!-- UI Files -->
