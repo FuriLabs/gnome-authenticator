@@ -7,7 +7,7 @@ Depends: gir1.2-secret-1,
          python3-pyfavicon,
          python3-pyotp,
          python3-pyzbar,
-         python3-yoyo-migrations,
+         python3-yoyo,
          xauth,
          xvfb,
          @
