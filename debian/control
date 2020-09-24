@@ -1,7 +1,7 @@
 Source: gnome-authenticator
 Section: gnome
 Priority: optional
-Maintainer: Python Applications Packaging Team <python-apps-team@lists.alioth.debian.org>
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
 Uploaders: Henry-Nicolas Tourneur <debian@nilux.be>
 Build-Depends: appstream-util,
                debhelper-compat (= 13),
