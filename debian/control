@@ -25,8 +25,8 @@ Build-Depends: appstream-util,
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
 Homepage: https://gitlab.gnome.org/World/Authenticator
-Vcs-Browser: https://salsa.debian.org/python-team/applications/gnome-authenticator
-Vcs-Git: https://salsa.debian.org/python-team/applications/gnome-authenticator.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/gnome-authenticator
+Vcs-Git: https://salsa.debian.org/python-team/packages/gnome-authenticator.git
 
 Package: gnome-authenticator
 Architecture: all
