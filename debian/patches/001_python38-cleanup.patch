@@ -1,4 +1,5 @@
 Origin: https://gitlab.gnome.org/World/Authenticator/-/merge_requests/158
+Forwarded: see origin
 Description: Authenticator crashes on startup with Python 3.8 because of 
  those init_template calls which this patch is removing.
 ---

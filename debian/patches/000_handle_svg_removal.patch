@@ -1,4 +1,5 @@
 Author: Henry-Nicolas Tourneur <debian@nilux.be>
+Forwarded: not-needed
 Description: This patch is removing a gresource since the svg file is stripped
  for licensing reason.  This resource is not used elsewhere in the application.
 ---
