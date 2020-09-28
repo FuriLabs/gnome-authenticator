@@ -1,4 +1,4 @@
-Test-Command: xvfb-run /usr/bin/gnome-authenticator --help
+Test-Command: xvfb-run /usr/bin/authenticator --help
 Restrictions: superficial
 Depends: gir1.2-secret-1,
          python3-bs4,

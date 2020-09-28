@@ -1,0 +1,2 @@
+# no manpage for authenticator binary - it is a GUI
+gnome-authenticator: no-manual-page usr/bin/authenticator
