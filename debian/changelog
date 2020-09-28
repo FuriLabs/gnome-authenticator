@@ -10,8 +10,11 @@ gnome-authenticator (3.32.2+dfsg1-2) unstable; urgency=medium
   * Upload to unstable
   * d/control: add missing dependencies on libhandy
   * d/tests: mark autopkgtest as superficial
+  * d/patches/000_handle_svg_removal.patch: apply DEP-3
+  * d/patches/001_python38-cleanup.patch: 
+    prevent a startup crash with Python 3.8
 
- -- Henry-Nicolas Tourneur <debian@nilux.be>  Mon, 28 Sep 2020 15:20:00 +0000
+ -- Henry-Nicolas Tourneur <debian@nilux.be>  Mon, 28 Sep 2020 16:40:02 +0000
 
 gnome-authenticator (3.32.2+dfsg1-1) experimental; urgency=medium
 

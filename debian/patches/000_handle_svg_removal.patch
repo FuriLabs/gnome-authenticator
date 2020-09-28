@@ -1,5 +1,8 @@
-# This patch is removing a gresource since the svg file is stripped for licensing reason.
-# This resource is not used elsewhere in the application.
+Author: Henry-Nicolas Tourneur <debian@nilux.be>
+Description: This patch is removing a gresource since the svg file is stripped
+ for licensing reason.  This resource is not used elsewhere in the application.
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
 --- a/data/com.github.bilelmoussaoui.Authenticator.gresource.xml
 +++ b/data/com.github.bilelmoussaoui.Authenticator.gresource.xml
 @@ -3,9 +3,6 @@

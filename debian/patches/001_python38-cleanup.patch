@@ -1,0 +1,81 @@
+Origin: https://gitlab.gnome.org/World/Authenticator/-/merge_requests/158
+Description: Authenticator crashes on startup with Python 3.8 because of 
+ those init_template calls which this patch is removing.
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/src/Authenticator/widgets/accounts/add.py
++++ b/src/Authenticator/widgets/accounts/add.py
+@@ -38,7 +38,6 @@ class AddAccountWindow(Gtk.Window):
+ 
+     def __init__(self):
+         super(AddAccountWindow, self).__init__()
+-        self.init_template('AddAccountWindow')
+         self.add_events(Gdk.EventMask.ENTER_NOTIFY_MASK)
+         self.__init_widgets()
+ 
+@@ -95,7 +94,6 @@ class AccountConfig(Gtk.Overlay):
+ 
+     def __init__(self, **kwargs):
+         super(AccountConfig, self).__init__()
+-        self.init_template('AccountConfig')
+ 
+         self.props.is_edit = kwargs.get("edit", False)
+         self._account = kwargs.get("account", None)
+--- a/src/Authenticator/widgets/accounts/list.py
++++ b/src/Authenticator/widgets/accounts/list.py
+@@ -40,7 +40,6 @@ class AccountsWidget(Gtk.Box):
+ 
+     def __init__(self):
+         super(AccountsWidget, self).__init__()
+-        self.init_template('AccountsWidget')
+ 
+         self._providers = []
+         self._to_delete = []
+--- a/src/Authenticator/widgets/accounts/row.py
++++ b/src/Authenticator/widgets/accounts/row.py
+@@ -61,7 +61,6 @@ class AccountRow(Gtk.ListBoxRow):
+         :param account: Account
+         """
+         super(AccountRow, self).__init__()
+-        self.init_template('AccountRow')
+         self._account = account
+ 
+         self._account.connect("otp_updated", self._on_pin_updated)
+--- a/src/Authenticator/widgets/provider_image.py
++++ b/src/Authenticator/widgets/provider_image.py
+@@ -78,7 +78,6 @@ class ProviderImage(Gtk.Stack):
+ 
+     def __init__(self, provider=None, image_size=48):
+         super(ProviderImage, self).__init__()
+-        self.init_template('ProviderImage')
+         self.provider = provider if provider else Provider()
+ 
+         self.image_size = image_size
+--- a/src/Authenticator/widgets/settings.py
++++ b/src/Authenticator/widgets/settings.py
+@@ -37,7 +37,6 @@ class SettingsWindow(Handy.PreferencesWi
+ 
+     def __init__(self):
+         super(SettingsWindow, self).__init__()
+-        self.init_template('SettingsWindow')
+ 
+         self.__init_widgets()
+         self.__bind_signals()
+@@ -150,7 +149,6 @@ class PasswordWidget(Gtk.Box):
+     def __init__(self):
+         super(PasswordWidget, self).__init__()
+         self.parent = None
+-        self.init_template('PasswordWidget')
+ 
+     def reset_widgets(self):
+         """Reset widgets state."""
+--- a/src/Authenticator/widgets/window.py
++++ b/src/Authenticator/widgets/window.py
+@@ -52,7 +52,6 @@ class Window(Gtk.ApplicationWindow):
+ 
+     def __init__(self):
+         super(Window, self).__init__()
+-        self.init_template('Window')
+ 
+         self.connect("notify::view", self.__state_changed)
+ 
