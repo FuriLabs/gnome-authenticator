@@ -1,3 +1,10 @@
+gnome-authenticator (3.32.2+dfsg1-3) UNRELEASED; urgency=medium
+
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Tue, 17 Nov 2020 20:01:06 -0000
+
 gnome-authenticator (3.32.2+dfsg1-2) unstable; urgency=medium
 
   [ Ondřej Nový ]
