@@ -1,6 +1,7 @@
 gnome-authenticator (3.32.2+dfsg1-4) unstable; urgency=medium
 
   * d/patches: add 002_fix_meson_errors.patch to solve an FTBFS with meson 0.60
+  * d/control: Set Standards-Version to 4.6.0 (no changes needed)
 
  -- Henry-Nicolas Tourneur <debian@nilux.be>  Mon, 01 Nov 2021 10:15:11 +0000
 
