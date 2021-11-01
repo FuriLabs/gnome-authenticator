@@ -1,3 +1,8 @@
+Author: Henry-Nicolas Tourneur <debian@nilux.be>
+Forwarded: not-needed
+Description: Fix an FTBFS with meson 0.60.0
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
 --- a/data/meson.build
 +++ b/data/meson.build
 @@ -63,7 +63,6 @@ configure_file(
