@@ -1,2 +1,2 @@
 # releases are not GPG signed
-gnome-authenticator source: debian-watch-does-not-check-gpg-signature
+gnome-authenticator source: debian-watch-does-not-check-openpgp-signature

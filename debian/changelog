@@ -2,6 +2,7 @@ gnome-authenticator (3.32.2+dfsg1-5) UNRELEASED; urgency=medium
 
   * Update lintian override info format in
     d/gnome-authenticator.lintian-overrides on line 2.
+  * Update renamed lintian tag names in lintian overrides.
 
  -- Debian Janitor <janitor@jelmer.uk>  Mon, 21 Nov 2022 03:59:01 -0000
 
