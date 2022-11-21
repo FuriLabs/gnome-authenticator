@@ -1,4 +1,4 @@
-gnome-authenticator (3.32.2+dfsg1-5) UNRELEASED; urgency=medium
+gnome-authenticator (3.32.2+dfsg1-5) unstable; urgency=medium
 
   [ Debian Janitor ]
   * Update lintian override info format in
@@ -7,7 +7,7 @@ gnome-authenticator (3.32.2+dfsg1-5) UNRELEASED; urgency=medium
   * Set upstream metadata fields: Bug-Database, Bug-Submit.
   * Update standards version to 4.6.1, no changes needed.
 
- -- Jelmer Vernooĳ <jelmer@debian.org>  Mon, 21 Nov 2022 18:27:52 +0000
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Mon, 21 Nov 2022 18:27:53 +0000
 
 gnome-authenticator (3.32.2+dfsg1-4) unstable; urgency=medium
 
