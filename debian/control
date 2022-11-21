@@ -23,7 +23,7 @@ Build-Depends: appstream-util,
                python3-pyzbar,
                python3-setuptools,
                python3-yoyo
-Standards-Version: 4.6.0
+Standards-Version: 4.6.1
 Rules-Requires-Root: no
 Homepage: https://gitlab.gnome.org/World/Authenticator
 Vcs-Browser: https://salsa.debian.org/python-team/packages/gnome-authenticator

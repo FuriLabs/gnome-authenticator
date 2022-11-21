@@ -4,6 +4,7 @@ gnome-authenticator (3.32.2+dfsg1-5) UNRELEASED; urgency=medium
     d/gnome-authenticator.lintian-overrides on line 2.
   * Update renamed lintian tag names in lintian overrides.
   * Set upstream metadata fields: Bug-Database, Bug-Submit.
+  * Update standards version to 4.6.1, no changes needed.
 
  -- Debian Janitor <janitor@jelmer.uk>  Mon, 21 Nov 2022 03:59:01 -0000
 
