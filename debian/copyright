@@ -1,7 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Contact: Bilal Elmoussaoui <bil.elmoussaoui@gmail.com>
 Upstream-Name: Authenticator
-Files-Excluded: data/icons/hicolor/symbolic/*
 Source: https://gitlab.gnome.org/World/Authenticator
 
 Files: *
