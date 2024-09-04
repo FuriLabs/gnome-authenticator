@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Bilal Elmoussaoui 2019 <bilal.elmoussaoui@gnome.org> -->
+<component type="desktop-application">
+  <id>@app-id@</id>
+  <metadata_license>CC0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Authenticator</name>
+  <summary>Generate two-factor codes</summary>
+  <description>
+    <p>Simple application for generating Two-Factor Authentication Codes.</p>
+    <p>Features:</p>
+    <ul>
+      <li>Time-based/Counter-based/Steam methods support</li>
+      <li>SHA-1/SHA-256/SHA-512 algorithms support</li>
+      <li>QR code scanner using a camera or from a screenshot</li>
+      <li>Lock the application with a password</li>
+      <li>Beautiful UI</li>
+      <li>GNOME Shell search provider</li>
+      <li>Backup/Restore from/into known applications like FreeOTP+, Aegis (encrypted / plain-text), andOTP, Google Authenticator</li>
+    </ul>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://gitlab.gnome.org/World/Authenticator/raw/master/data/screenshots/screenshot1.png</image>
+      <caption>Main Window</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://gitlab.gnome.org/World/Authenticator/raw/master/data/screenshots/screenshot2.png</image>
+      <caption>Add a New Account</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://gitlab.gnome.org/World/Authenticator/raw/master/data/screenshots/screenshot3.png</image>
+      <caption>Add a New Provider</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://gitlab.gnome.org/World/Authenticator/raw/master/data/screenshots/screenshot4.png</image>
+      <caption>Account Details</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://gitlab.gnome.org/World/Authenticator/raw/master/data/screenshots/screenshot5.png</image>
+      <caption>Backup/Restore formats support</caption>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://gitlab.gnome.org/World/Authenticator</url>
+  <url type="bugtracker">https://gitlab.gnome.org/World/Authenticator/issues</url>
+  <url type="translate">https://l10n.gnome.org/module/authenticator/</url>
+  <url type="vcs-browser">https://gitlab.gnome.org/World/Authenticator</url>
+  <content_rating type="oars-1.1" />
+  <releases>
+    <release version="4.5.0" date="2024-07-19">
+      <description>
+        <ul>
+          <li>backup: Add import of Raivo OTP files</li>
+          <li>qr scanner: Use back camera by default</li>
+          <li>search provider: Withdraw notification once the code is no longer valid</li>
+          <li>accounts: Refresh completion model when scanning from qr code</li>
+        </ul>
+      </description>
+    </release>
+    <release version="4.4.0" date="2023-10-13">
+      <description>
+        <ul>
+          <li>Display an error dialog when the application fails to use the keyring</li>
+          <li>Use new Adwaita widgets</li>
+          <li>Camera improvements thanks to Aperture, the library used by Snapshot</li>
+        </ul>
+      </description>
+    </release>
+    <release version="4.3.1" date="2023-04-22">
+      <description>
+        <ul>
+          <li>Add support for rotated camera</li>
+          <li>Prefer front camera when possible</li>
+        </ul>
+      </description>
+    </release>
+    <release version="4.3.0" date="2023-04-20">
+      <description>
+        <ul>
+          <li>Fix compatibility with 2fas.com/check-token/</li>
+          <li>backup: Add FreeOTP+ JSON format support</li>
+          <li>Allow importing from an image file containing a QR code</li>
+          <li>Add tests for all the supported backup formats</li>
+        </ul>
+      </description>
+    </release>
+    <release version="4.2.0" date="2022-12-27">
+      <description>
+        <ul>
+          <li>Mutli Camera support when scanning a QR code</li>
+          <li>Camera: Use GL when possible</li>
+          <li>Fix an issue when restoring an AEGIS backup file</li>
+          <li>Avoid duplicated items when restoring a backup</li>
+          <li>Allow disabling favicons download in general or on a metered connection</li>
+          <li>Update providers list</li>
+          <li>Use new libadwaita widgets</li>
+        </ul>
+      </description>
+    </release>
+    <release version="4.1.6" date="2022-06-10">
+      <description>
+      <ul>
+        <li>Add Google Autenticator restore support</li>
+        <li>Disable Inspector on release builds</li>
+      </ul>
+      </description>
+    </release>
+    <release version="4.1.5" date="2022-06-06">
+      <description>Fix a crash when loading an account token</description>
+    </release>
+    <release version="4.1.4" date="2022-06-04">
+      <description>Fix fallback to host keyring and shell search provider results</description>
+    </release>
+    <release version="4.1.3" date="2022-05-31">
+      <description>Fallback to host keyring in case the portal is not available</description>
+    </release>
+    <release version="4.1.2" date="2022-05-29">
+      <description>
+        <p>Bugfixes release</p>
+        <ul>
+          <li>Fix a failure when importing from andOTP</li>
+          <li>Fix importing from Aegis if the database was encrypted with biometrics</li>
+          <li>Handle SVG favicons</li>
+          <li>Fix QR code scanning from a screenshot</li>
+          <li>Translations updates and other bugfixes</li>
+        </ul>
+      </description>
+    </release>
+    <release version="4.1.1" date="2022-04-22">
+      <description>
+        <p>Bugfixes release</p>
+        <ul>
+          <li>Restore the copy button</li>
+          <li>Add feedback when copying generated codes</li>
+          <li>Add feedback when updating/removing provider</li>
+          <li>Shell search: search on provider name as well</li>
+          <li>Fix Aegis backup restore if generated from a phone with a biometric key</li>
+          <li>Fixes a crash</li>
+        </ul>
+      </description>
+    </release>
+    <release version="4.1.0" date="2022-04-19">
+      <description>
+        <p>Encrypted backups are finally here!</p>
+        <ul>
+          <li>Port to GTK 4</li>
+          <li>Encrypted backup support</li>
+          <li>Use the camera portal for scanning QR codes</li>
+          <li>GNOME Shell search provider</li>
+          <li>Allow editing accounts provider</li>
+          <li>Better favicons detection</li>
+          <li>Refined user interface</li>
+          <li>Translations updates</li>
+          <li>Updated providers database</li>
+        </ul>
+      </description>
+    </release>
+    <release version="4.0.3" date="2021-03-26">
+      <description>
+        <ul>
+          <li>Properly unlock the keyring</li>
+          <li>Translations updates</li>
+        </ul>
+      </description>
+    </release>
+    <release version="4.0.2" date="2021-02-09">
+      <description>
+        <ul>
+          <li>Unlock the keyring as early as possible</li>
+          <li>Fix an issue with decoding longer tokens like Amazon</li>
+          <li>Translations updates</li>
+        </ul>
+      </description>
+    </release>
+    <release version="4.0.1" date="2021-02-01">
+      <description>
+        <ul>
+          <li>Fix an issue with token validation</li>
+        </ul>
+      </description>
+    </release>
+    <release version="4.0.0" date="2021-01-31">
+      <description>
+        <ul>
+          <li>Rewrite in Rust</li>
+          <li>HOTP/Steam support</li>
+          <li>Scanning from a camera stream support</li>
+          <li>Backup/Restore from FreeOTP+</li>
+          <li>Backup/Restore from andOTP</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.32.2" date="2019-07-23">
+      <description>
+        <ul>
+          <li>Use the new libhandy Settings widget</li>
+          <li>Settings: add an auto lock timeout</li>
+          <li>Various fixes</li>
+          <li>Translations updates</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.32.1" date="2019-05-25">
+      <description>
+        <p>
+               HOTFIX: if you had an issue with your accounts being lost after the latest update, please update to this one.
+        </p>
+        <ul>
+          <li>Database migrations: ensure users won't lose their data in the future</li>
+          <li>Fix edit account issue</li>
+          <li>Improve the provider image widget</li>
+          <li>Translations updates</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.32" date="2019-05-22">
+      <description>
+        <p>
+                Authenticator 3.32 is out! Here's an overview of what changed
+                Please backup your accounts before updating to the latest version and restore the data after update.
+        </p>
+        <ul>
+          <li>New settings window</li>
+          <li>Download provider images using their favicon if possible</li>
+          <li>Night Light feature: not working yet!</li>
+          <li>The possibility to enable/disable a password without having to reset everything</li>
+          <li>You can now add new providers and set images for providers that we didn't find an icon for</li>
+          <li>Mobile ready</li>
+          <li>New icon by Tobias Bernard</li>
+          <li>Click to copy the PIN on GNOME Shell Search provider results</li>
+          <li>Hide the results from Shell Search Provider if the application is locked</li>
+          <li>Bunch of fixed bugs</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.2.5" date="2018-09-11">
+      <description>
+        <p>
+          Since I have moved the application to GNOME Gitlab's World group, a Flatpak build for each new commit is available to download from the site's website.
+        </p>
+        <ul>
+          <li>Backup and restore from a basic JSON file</li>
+          <li>Backup and restore from an encrypted-GPG JSON file</li>
+          <li>Add andOTP support (free and open Android 2FA application)</li>
+          <li>New Settings window with 3 sections: appearance, behavior and backup</li>
+          <li>Fix Flatpak Build with the latest GNOME Runtime</li>
+          <li>Move the project to GNOME Gitlab's World group</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.2.4" date="2018-09-10">
+      <description>
+        <ul>
+          <li>GNOME Shell Search provider</li>
+          <li>Codes expire simultaneously #91 </li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.2.3" date="2018-09-09">
+      <description>
+        <ul>
+          <li>Revamped main window to more closely follow the GNOME HIG</li>
+          <li>Revamped add a new account window to make it easier to use</li>
+          <li>Possibility to add an account from a provider not listed in the shipped database</li>
+          <li>Possibility to edit an account</li>
+          <li>One Time Password now visible by default</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.2.2.1" date="2018-09-03">
+      <description>
+        <ul>
+          <li>Fix python-dbus by using GDbus instead</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.2.2" date="2018-09-02">
+      <description>
+        <ul>
+          <li>Fix the QRScanner on GNOME Shell</li>
+          <li>Add a new entry for the account's username</li>
+          <li>Updated database of supported accounts</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.2.1" date="2018-03-22">
+      <description>
+        <ul>
+          <li>HOTFIX: App not running in DE other than GNOME</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.2" date="2018-03-16">
+      <description>
+        <ul>
+          <li>Rename project to Authenticator</li>
+          <li>Cleaner code base</li>
+          <li>Faster startup</li>
+          <li>Remove unneeded features</li>
+          <li>Switch to pyzbar instead of zbarlight</li>
+          <li>Flatpak package</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.1.1" date="2016-06-28" />
+    <release version="0.1.0" date="2016-06-22" />
+  </releases>
+  <kudos>
+    <!--
+        GNOME Software kudos:
+        https://gitlab.gnome.org/GNOME/gnome-software/blob/main/doc/kudos.md
+      -->
+    <kudo>ModernToolkit</kudo>
+    <kudo>SearchProvider</kudo>
+    <kudo>HighContrast</kudo>
+    <kudo>HiDpiIcon</kudo>
+  </kudos>
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>touch</control>
+  </recommends>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+  <provides>
+    <id>com.github.bilelmoussaoui.Authenticator</id>
+  </provides>
+  <!-- developer_name tag deprecated with Appstream 1.0 -->
+  <developer_name translatable="no">Bilal Elmoussaoui</developer_name>
+  <developer id="com.belmoussaoui">
+    <name translatable="no">Bilal Elmoussaoui</name>
+  </developer>
+  <update_contact>bilal.elmoussaoui@gnome.org</update_contact>
+  <translation type="gettext">@gettext-package@</translation>
+  <launchable type="desktop-id">@app-id@.desktop</launchable>
+  <custom>
+    <value key="Purism::form_factor">mobile</value>
+  </custom>
+  <branding>
+    <color type="primary" scheme_preference="light">#f66151</color>
+    <color type="primary" scheme_preference="dark">#a51d2d</color>
+  </branding>
+</component>

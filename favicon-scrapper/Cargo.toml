@@ -1,0 +1,15 @@
+[package]
+autotests = false
+edition = "2021"
+name = "favicon-scrapper"
+
+[dependencies]
+data-encoding = "2.3"
+image = {version = "0.25", features = ["ico", "png"], default-features = false}
+percent-encoding = "2.1"
+quick-xml = "0.36"
+reqwest = "0.12"
+svg_metadata = "0.5"
+tokio = {version = "1.0", default-features = false, features = ["rt-multi-thread", "fs", "io-util", "macros"]}
+tracing = {version = "0.1", default-features = false}
+url = "2.2"

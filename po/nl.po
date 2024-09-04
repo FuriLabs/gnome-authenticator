@@ -1,531 +1,989 @@
-# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Heimen Stoffels <vistausss@outlook.com>, 2018.
+# Nathan Follens <nfollens@gnome.org>, 2019-2023.
+# Hannie Dumoleyn <hannie@ubuntu-nl.org>, 2021.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-20 05:14+0200\n"
-"PO-Revision-Date: 2019-02-13 11:09+0000\n"
-"Last-Translator: Nathan Follens <nthn@unseen.is>\n"
-"Language-Team: Dutch <https://hosted.weblate.org/projects/authenticator/"
-"translation/nl/>\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Authenticator/issues\n"
+"POT-Creation-Date: 2023-08-30 07:57+0000\n"
+"PO-Revision-Date: 2023-09-04 21:17+0200\n"
+"Last-Translator: Nathan Follens <nfollens@gnome.org>\n"
+"Language-Team: GNOME-NL https://matrix.to/#/#nl:gnome.org\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.5-dev\n"
+"X-Generator: Poedit 3.3.2\n"
 
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:6
-#: data/com.github.bilelmoussaoui.Authenticator.desktop.in.in:3
-#: src/Authenticator/application.py.in:37
+#: data/com.belmoussaoui.Authenticator.desktop.in.in:3
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:7
+#: data/resources/ui/window.ui:36 src/application.rs:86 src/main.rs:41
 msgid "Authenticator"
 msgstr "Authenticator"
 
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:7
-#: data/com.github.bilelmoussaoui.Authenticator.desktop.in.in:5
-msgid "Two-factor authentication code generator"
-msgstr "Code-generator voor authenticatie in twee stappen"
+#: data/com.belmoussaoui.Authenticator.desktop.in.in:4
+msgid "Two-Factor Authentication"
+msgstr "Tweestapsauthenticatie"
 
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:9
-msgid ""
-"Simple application that generates a two-factor authentication code, created "
-"for GNOME."
+#: data/com.belmoussaoui.Authenticator.desktop.in.in:5
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:8
+#: src/application.rs:89
+msgid "Generate Two-Factor Codes"
+msgstr "Tweestapscodes genereren"
+
+#: data/com.belmoussaoui.Authenticator.desktop.in.in:10
+msgid "Gnome;GTK;Verification;2FA;Authentication;OTP;TOTP;"
 msgstr ""
-"Eenvoudige toepassing voor het genereren van codes voor authenticatie in "
-"twee stappen, gemaakt voor GNOME."
+"Gnome;GTK;Verification;2FA;Authentication;OTP;TOTP;TwoFactor;Verificatie;"
+"Authenticatie;Aanmeldingscontrole;Tweefactoren;Tweestaps;"
 
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:10
-msgid "Features:"
-msgstr "Functies:"
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:6
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:7
+msgid "Default window width"
+msgstr "Standaard vensterbreedte"
 
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:12
-msgid "QR code scanner"
-msgstr "QR-codescanner"
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:11
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:12
+msgid "Default window height"
+msgstr "Standaard vensterhoogte"
 
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:13
-msgid "Beautiful UI"
-msgstr "Prachtige vormgeving"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:14
-msgid "Huge database of more than 560 supported services"
-msgstr ""
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:15
-#, fuzzy
-msgid "Keep your PIN tokens secure by locking the application with a password"
-msgstr "Vergrendel de toepassing met een wachtwoord"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:16
-msgid "Automtically fetch an image for services using their favicon"
-msgstr ""
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:17
-msgid "The possibility to add new services"
-msgstr ""
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:37
-msgid ""
-"New 3.31 beta is out! Here's an overview of what changed Please backup your "
-"accounts before updating to the latest version and restore the data after "
-"update."
-msgstr ""
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:42
-msgid "New settings window"
-msgstr ""
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:43
-msgid "Download provider images using their favicon if possible"
-msgstr ""
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:44
-msgid "Night Light feature: not working yet!"
-msgstr ""
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:45
-msgid ""
-"The possiblity to enable/disable a password without having to reset "
-"everything"
-msgstr ""
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:46
-msgid ""
-"You can now add new providers and set images for providers that we didn't "
-"find an icon for"
-msgstr ""
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:47
-msgid "Mobile ready"
-msgstr ""
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:48
-msgid "New icon by Tobias"
-msgstr ""
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:49
-msgid "Bunch of fixed bugs"
-msgstr ""
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:55
-msgid ""
-"Since I have moved the application to GOME Gitlab's World group, a Flatpak "
-"build for each new commit is available to download from the site's website."
-msgstr ""
-"Sinds de verhuizing naar GNOME Gitlab's World-groep, is er op de website een "
-"Flatpak-pakket beschikbaar voor elke nieuwe commit."
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:59
-msgid "Backup and restore from a basic JSON file"
-msgstr "Back-up en herstel uit een basis-JSON-bestand"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:60
-msgid "Backup and restore from an encrypted-GPG JSON file"
-msgstr "Back-up en herstel uit een met GPG versleuteld JSON-bestand"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:61
-msgid "Add andOTP support (free and open Android 2FA application)"
-msgstr ""
-"andOTP-ondersteuning toegevoegd (gratis en vrije Android-app voor "
-"authenticatie in twee stappen)"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:62
-msgid "New Settings Widow with 3 sections: appearance, behavior and backup"
-msgstr "Nieuw instellingenvenster met 3 secties: uiterlijk, gedrag en back-up"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:63
-msgid "Fix Flatpak Build with the latest GNOME Runtime"
-msgstr "Flatpak-pakketten compatibel gemaakt met de nieuwste GNOME Runtime"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:64
-msgid "Move the project to GOME Gitlab's World group"
-msgstr "Project verplaatst naar GNOME Gitlab World-groep"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:71
-msgid "GNOME Shell Search provider"
-msgstr "GNOME Shell-zoekdienst"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:72
-msgid "Codes expire simultaneously #91"
-msgstr "Codes vervallen tegelijkertijd #91"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:79
-msgid "Revamped main window to more closely follow the GNOME HIG"
-msgstr "Hoofdvenster opnieuw ontworpen om meer te voldoen aan de GNOME HIG"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:80
-msgid "Revamped add a new account window to make it easier to use"
-msgstr ""
-"Nieuw account-venster opnieuw ontworpen zodat het eenvoudig is geworden"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:81
-msgid ""
-"Possibility to add an account from a provider not listed in the shipped "
-"database"
-msgstr ""
-"Mogelijkheid om een account toe te voegen van een dienst die niet in de "
-"databank voorkomt"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:82
-msgid "Possibilty to edit an account"
-msgstr "Mogelijkheid om een account te bewerken"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:83
-msgid "One Time Password now visible by default"
-msgstr "Eenmalig wachtwoord is nu standaard zichtbaar"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:90
-msgid "Fix python-dbus by using GDbus instead"
-msgstr "python-dbus-probleem opgelost door GDbus te gebruiken"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:97
-msgid "Fix the QRScanner on GNOME Shell"
-msgstr "QR-codescanner gerepareerd bij gebruik in GNOME Shell"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:98
-msgid "Add a new entry for the account's username"
-msgstr "Voeg een nieuw item toe voor de gebruikersnaam"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:99
-msgid "Updated database of supported accounts"
-msgstr "Databank met ondersteunde accounts bijgewerkt"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:106
-msgid "HOTFIX: App not running in DE other than GNOME"
-msgstr "BELANGRIJK: de app draait nu ook in andere werkomgevingen dan GNOME"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:113
-msgid "Rename project to Authenticator"
-msgstr "Projectnaam gewijzigd in Authenticator"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:114
-msgid "Cleaner code base"
-msgstr "Eenvoudigere broncode"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:115
-msgid "Faster startup"
-msgstr "Snellere opstart"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:116
-msgid "Remove unneeded features"
-msgstr "Onnodige functies verwijderd"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:117
-msgid "Switch to pyzbar instead of zbarlight"
-msgstr "Overgeschakeld van zbarlight naar pyzbar"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:118
-msgid "Flatpak package"
-msgstr "Flatpak-pakket"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:134
-msgid "Bilal Elmoussaoui"
-msgstr "Bilal Elmoussaoui"
-
-#: data/com.github.bilelmoussaoui.Authenticator.desktop.in.in:4
-msgid "Two-factor authentication"
-msgstr "Authenticatie in twee stappen"
-
-#: data/com.github.bilelmoussaoui.Authenticator.desktop.in.in:10
-msgid "Gnome;GTK;Verification;"
-msgstr "Gnome;GTK;Verification;Verificatie;"
-
-#: data/com.github.bilelmoussaoui.Authenticator.desktop.in.in:11
-msgid "@appid@"
-msgstr "@appid@"
-
-#: data/com.github.bilelmoussaoui.Authenticator.gschema.xml.in:6
-#: data/com.github.bilelmoussaoui.Authenticator.gschema.xml.in:7
-msgid "Default window position"
-msgstr "Standaard vensterpositie"
-
-#: data/com.github.bilelmoussaoui.Authenticator.gschema.xml.in:11
-#: src/Authenticator/widgets/settings.py:83
-#, fuzzy
-msgid "Dark Theme"
-msgstr "Donker thema"
-
-#: data/com.github.bilelmoussaoui.Authenticator.gschema.xml.in:12
-#: src/Authenticator/widgets/settings.py:84
-#, fuzzy
-msgid "Whether the application should use a dark theme."
-msgstr "Of de toepassing vergrendeld kan worden"
-
-#: data/com.github.bilelmoussaoui.Authenticator.gschema.xml.in:16
-#: src/Authenticator/widgets/settings.py:88
-msgid "Night Light"
-msgstr ""
-
-#: data/com.github.bilelmoussaoui.Authenticator.gschema.xml.in:17
-#: src/Authenticator/widgets/settings.py:89
-msgid "Automatically enable dark mode at night."
-msgstr ""
-
-#: data/com.github.bilelmoussaoui.Authenticator.gschema.xml.in:21
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:16
 msgid "Default window maximized behaviour"
 msgstr "Standaardgedrag van gemaximaliseerd venster"
 
-#: data/ui/about_dialog.ui.in:10
-msgid "Two-factor authentication code generator."
-msgstr "Code-generator voor authenticatie in twee stappen."
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:21
+msgid "Auto lock"
+msgstr "Automatisch vergrendelen"
 
-#: data/ui/about_dialog.ui.in:13
-msgid "translator-credits"
-msgstr "Nathan Follens, Heimen Stoffels"
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:22
+msgid "Whether to auto lock the application or not"
+msgstr "Of de toepassing automatisch moet worden vergrendeld of niet"
 
-#: data/ui/account_add.ui:22
-msgid "Add a new account"
-msgstr "Nieuw account toevoegen"
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:26
+msgid "Auto lock timeout"
+msgstr "Time-out voor automatisch vergrendelen"
 
-#: data/ui/account_add.ui:25 data/ui/account_edit.ui:19
-msgid "Close"
-msgstr "Sluiten"
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:27
+msgid "Lock the application on idle after X minutes"
+msgstr "Vergrendel de toepassing indien inactief voor X minuten"
 
-#: data/ui/account_add.ui:34
-msgid "Add"
-msgstr "Toevoegen"
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:34
+msgid "Download Favicons"
+msgstr "Favicons downloaden"
 
-#: data/ui/account_add.ui:54
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:35
+msgid ""
+"Whether the application should attempt to find an icon for the providers."
+msgstr ""
+"Of de toepassing een pictogram voor de providers moet proberen te zoeken."
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:39
+msgid "Download Favicons over metered connections"
+msgstr "Favicons downloaden over verbinding met datalimiet"
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:40
+msgid ""
+"Whether the application should download favicons over a metered connection."
+msgstr ""
+"Of de toepassing favicons mag downloaden over een verbinding met datalimiet."
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:10
+msgid "Simple application for generating Two-Factor Authentication Codes."
+msgstr ""
+"Eenvoudige toepassing voor het genereren van codes voor authenticatie in "
+"twee stappen."
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:11
+msgid "Features:"
+msgstr "Functies:"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:13
+msgid "Time-based/Counter-based/Steam methods support"
+msgstr "Ondersteuning voor Time-based/Counter-based/Steam-methoden"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:14
+msgid "SHA-1/SHA-256/SHA-512 algorithms support"
+msgstr "Ondersteuning SHA-1/SHA-256/SHA-512 algoritmen"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:15
+msgid "QR code scanner using a camera or from a screenshot"
+msgstr "QR-codescanner met behulp van een camera of vanaf een schermafdruk"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:16
+msgid "Lock the application with a password"
+msgstr "Toepassing vergrendelen met een wachtwoord"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:17
+msgid "Beautiful UI"
+msgstr "Prachtige vormgeving"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:18
+msgid "GNOME Shell search provider"
+msgstr "GNOME Shell-zoekdienst"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:19
+msgid ""
+"Backup/Restore from/into known applications like FreeOTP+, Aegis "
+"(encrypted / plain-text), andOTP, Google Authenticator"
+msgstr ""
+"Back-up/herstel van/naar bekende toepassingen zoals FreeOTP+, Aegis "
+"(versleuteld / platte tekst), andOTP, Google Authenticator"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:25
+msgid "Main Window"
+msgstr "Hoofdvenster"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:29
+#: data/resources/ui/account_add.ui:32 data/resources/ui/account_add.ui:49
+msgid "Add a New Account"
+msgstr "Nieuwe account toevoegen"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:33
+msgid "Add a New Provider"
+msgstr "Nieuwe provider toevoegen"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:37
+msgid "Account Details"
+msgstr "Accountgegevens"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:41
+msgid "Backup/Restore formats support"
+msgstr "Ondersteuning voor back-up/herstelformaten"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:296
+msgid "Bilal Elmoussaoui"
+msgstr "Bilal Elmoussaoui"
+
+#: data/resources/ui/account_add.ui:6 src/widgets/preferences/window.rs:297
+msgid "_Camera"
+msgstr "_Camera"
+
+#: data/resources/ui/account_add.ui:10 src/widgets/preferences/window.rs:301
+msgid "_Screenshot"
+msgstr "_Schermafdruk"
+
+#: data/resources/ui/account_add.ui:14 src/widgets/preferences/window.rs:306
+msgid "_QR Code Image"
+msgstr "_QR-codeafbeelding"
+
+#: data/resources/ui/account_add.ui:58
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: data/resources/ui/account_add.ui:64
+msgid "_Add"
+msgstr "_Toevoegen"
+
+#: data/resources/ui/account_add.ui:76 src/widgets/preferences/window.rs:292
 msgid "Scan QR Code"
 msgstr "QR-code scannen"
 
-#: data/ui/account_config.ui:85
-msgid "Enable 2FA for this account"
-msgstr ""
-
-#: data/ui/account_config.ui:86
-msgid "2FA Token"
-msgstr ""
-
-#: data/ui/account_config.ui:100
-#, fuzzy
-msgid "Account Name"
-msgstr "Accountnaam"
-
-#: data/ui/account_config.ui:123
+#: data/resources/ui/account_add.ui:114
+#: data/resources/ui/account_details_page.ui:95
+#: data/resources/ui/providers_dialog.ui:105
 msgid "Provider"
 msgstr "Dienst"
 
-#: data/ui/account_edit.ui:28 data/ui/settings.ui.in:50
-msgid "Save"
-msgstr "Opslaan"
+#: data/resources/ui/account_add.ui:115
+msgid "Token issuer"
+msgstr "Tokenuitgever"
 
-#: data/ui/account_row.ui:23
-msgid "Edit"
-msgstr "Bewerken"
+#: data/resources/ui/account_add.ui:129
+#: data/resources/ui/account_details_page.ui:90
+msgid "Account"
+msgstr "Account"
 
-#: data/ui/account_row.ui:41
-msgid "Delete"
-msgstr "Verwijderen"
+#: data/resources/ui/account_add.ui:135
+msgid "Token"
+msgstr "Token"
 
-#: data/ui/account_row.ui:97
+#: data/resources/ui/account_add.ui:141
+#: data/resources/ui/account_details_page.ui:138
+#: data/resources/ui/provider_page.ui:157
+msgid "Counter"
+msgstr "Teller"
+
+#: data/resources/ui/account_add.ui:159
+#: data/resources/ui/account_details_page.ui:118
+#: data/resources/ui/provider_page.ui:132
+msgid "Algorithm"
+msgstr "Algoritme"
+
+#: data/resources/ui/account_add.ui:171
+#: data/resources/ui/account_details_page.ui:128
+#: data/resources/ui/provider_page.ui:117
+msgid "Computing Method"
+msgstr "Berekeningsmethode"
+
+#: data/resources/ui/account_add.ui:183
+#: data/resources/ui/account_details_page.ui:147
+#: data/resources/ui/provider_page.ui:148
+msgid "Period"
+msgstr "Periode"
+
+#: data/resources/ui/account_add.ui:184 data/resources/ui/provider_page.ui:149
+msgid "Duration in seconds until the next password update"
+msgstr "Duur in seconden tot de volgende wachtwoordupdate"
+
+#: data/resources/ui/account_add.ui:196
+#: data/resources/ui/account_details_page.ui:157
+#: data/resources/ui/provider_page.ui:166
+msgid "Digits"
+msgstr "Cijfers"
+
+#: data/resources/ui/account_add.ui:197 data/resources/ui/provider_page.ui:167
+msgid "Length of the generated code"
+msgstr "Lengte van de gegenereerde code"
+
+#: data/resources/ui/account_add.ui:209
+#: data/resources/ui/account_details_page.ui:167
+#: data/resources/ui/provider_page.ui:111
+msgid "Website"
+msgstr "Website"
+
+#: data/resources/ui/account_add.ui:214
+msgid "How to Set Up"
+msgstr "Hoe in te stellen"
+
+#: data/resources/ui/account_add.ui:234
+#: data/resources/ui/preferences_camera_page.ui:4
+msgid "Camera"
+msgstr "Camera"
+
+#: data/resources/ui/account_add.ui:247
+msgid "Create Provider"
+msgstr "Provider aanmaken"
+
+#: data/resources/ui/account_details_page.ui:55
+#: data/resources/ui/preferences_password_page.ui:17
+#: data/resources/ui/provider_page.ui:28
+msgid "_Save"
+msgstr "Op_slaan"
+
+#: data/resources/ui/account_details_page.ui:66
+#: data/resources/ui/provider_page.ui:184
+msgid "_Delete"
+msgstr "_Verwijderen"
+
+#: data/resources/ui/account_details_page.ui:172
+msgid "Help"
+msgstr "Hulp"
+
+#: data/resources/ui/account_row.ui:23
+msgid "Increment the counter"
+msgstr "Verhoog de teller"
+
+#: data/resources/ui/account_row.ui:34
 msgid "Copy PIN to clipboard"
 msgstr "Pincode kopiëren naar klembord"
 
-#: data/ui/password_widget.ui:46
-#, fuzzy
-msgid "Current Password:"
-msgstr "Herhaal wachtwoord"
+#: data/resources/ui/account_row.ui:43
+msgid "Account details"
+msgstr "Accountgegevens"
 
-#: data/ui/password_widget.ui:90
-#, fuzzy
-msgid "New Password:"
-msgstr "Nieuw wachtwoord"
+#: data/resources/ui/camera.ui:36
+msgid "No Camera Found"
+msgstr "Geen camera gevonden"
 
-#: data/ui/password_widget.ui:135
-#, fuzzy
-msgid "Confirm New Password:"
-msgstr "Nieuw wachtwoord"
+#: data/resources/ui/camera.ui:39
+msgid "_From a Screenshot"
+msgstr "_Vanaf een schermafdruk"
 
-#: data/ui/password_widget.ui:183 src/Authenticator/widgets/settings.py:208
-#, fuzzy
-msgid "Change Password"
-msgstr "Wachtwoord"
+#: data/resources/ui/preferences_password_page.ui:4
+msgid "Create Password"
+msgstr "Wachtwoord aanmaken"
 
-#: data/ui/password_widget.ui:204
-#, fuzzy
-msgid "Delete Password"
-msgstr "Herhaal wachtwoord"
+#: data/resources/ui/preferences_password_page.ui:28
+msgid "Set up a Passphrase"
+msgstr "Wachtwoord instellen"
 
-#: data/ui/provider_image.ui:41
-msgid "We couldn't find an image for this provider"
+#: data/resources/ui/preferences_password_page.ui:29
+msgid "Authenticator will start locked after a passphrase is set."
 msgstr ""
+"Authenticator zal vergrendeld starten nadat een wachtwoord is ingesteld."
 
-#. Night mode action
-#: data/ui/settings.ui.in:28 src/Authenticator/application.py.in:112
-msgid "Preferences"
-msgstr "Voorkeuren"
+#: data/resources/ui/preferences_password_page.ui:50
+msgid "Current Passphrase"
+msgstr "Huidig wachtwoord"
 
-#: data/ui/settings.ui.in:95
-msgid "Behaviour"
-msgstr "Gedrag"
+#: data/resources/ui/preferences_password_page.ui:56
+msgid "New Passphrase"
+msgstr "Nieuw wachtwoord"
 
-#: data/ui/shortcuts.ui:13
+#: data/resources/ui/preferences_password_page.ui:62
+msgid "Repeat Passphrase"
+msgstr "Wachtwoord herhalen"
+
+#: data/resources/ui/preferences_password_page.ui:76
+#: data/resources/ui/provider_page.ui:72
+msgid "_Reset"
+msgstr "_Resetten"
+
+#: data/resources/ui/preferences.ui:16
+msgid "General"
+msgstr "Algemeen"
+
+#: data/resources/ui/preferences.ui:19
+msgid "Privacy"
+msgstr "Privacy"
+
+#: data/resources/ui/preferences.ui:22
+msgid "_Passphrase"
+msgstr "_Wachtwoord"
+
+#: data/resources/ui/preferences.ui:24
+msgid "Set up a passphrase to lock the application with"
+msgstr "Stel een wachtwoord in waarmee de toepassing vergrendeld moet worden"
+
+#: data/resources/ui/preferences.ui:36
+msgid "_Auto Lock the Application"
+msgstr "Toepassing _automatisch vergrendelen"
+
+#: data/resources/ui/preferences.ui:38
+msgid "Whether to automatically lock the application"
+msgstr "Of de toepassing automatisch moet worden vergrendeld"
+
+#: data/resources/ui/preferences.ui:44
+msgid "Auto Lock _Timeout"
+msgstr "_Time-out voor automatisch vergrendelen"
+
+#: data/resources/ui/preferences.ui:45
+msgid "The time in minutes"
+msgstr "Duur in minuten"
+
+#: data/resources/ui/preferences.ui:58
+msgid "Network"
+msgstr "Netwerk"
+
+#: data/resources/ui/preferences.ui:61
+msgid "_Download Favicons"
+msgstr "Favicons _downloaden"
+
+#: data/resources/ui/preferences.ui:63
+msgid "Automatically attempt fetching a website icon"
+msgstr "Probeer automatisch een websitepictogram op te halen"
+
+#: data/resources/ui/preferences.ui:68
+msgid "_Metered Connection"
+msgstr "Verbinding _met datalimiet"
+
+#: data/resources/ui/preferences.ui:70
+msgid "Fetch a website icon on a metered connection"
+msgstr ""
+"Haal het pictogram van een website op over een verbinding met datalimiet"
+
+#: data/resources/ui/preferences.ui:80
+msgid "Backup/Restore"
+msgstr "Back-up/herstellen"
+
+#: data/resources/ui/preferences.ui:83 src/widgets/preferences/window.rs:481
+msgid "Backup"
+msgstr "Een back-up maken"
+
+#: data/resources/ui/preferences.ui:88 src/widgets/preferences/window.rs:489
+msgid "Restore"
+msgstr "Herstellen"
+
+#: data/resources/ui/provider_page.ui:82
+msgid "Select a _File"
+msgstr "_Bestand selecteren"
+
+#: data/resources/ui/provider_page.ui:105
+msgid "Name"
+msgstr "Naam"
+
+#: data/resources/ui/provider_page.ui:158
+msgid "The by default value for counter-based computing method"
+msgstr "De standaardwaarde voor teller-gebaseerde berekeningsmethode"
+
+#: data/resources/ui/provider_page.ui:176
+msgid "Help URL"
+msgstr "URL voor hulp"
+
+# Aanbieders is meer Nederlands, maar ik denk dat providers nu algemeen gebruikt wordt in onze taal. - Hannie
+#: data/resources/ui/providers_dialog.ui:20
+msgid "Providers"
+msgstr "Providers"
+
+#: data/resources/ui/providers_dialog.ui:30 src/widgets/providers/page.rs:209
+msgid "New Provider"
+msgstr "Nieuwe provider"
+
+#: data/resources/ui/providers_dialog.ui:37 data/resources/ui/window.ui:218
+msgid "Search"
+msgstr "Zoeken"
+
+#: data/resources/ui/providers_dialog.ui:90
+#: data/resources/ui/providers_list.ui:38
+msgid "No Results"
+msgstr "Geen resultaten"
+
+#: data/resources/ui/providers_dialog.ui:91
+msgid "No providers matching the query were found."
+msgstr "Er zijn geen providers gevonden die overeenkomen met de zoekopdracht."
+
+#: data/resources/ui/providers_dialog.ui:136
+msgid "No Provider Selected"
+msgstr "Geen provider geselecteerd"
+
+#: data/resources/ui/providers_dialog.ui:137
+msgid "Select a provider or create a new one"
+msgstr "Selecteer een provider of maak er een nieuwe aan"
+
+#: data/resources/ui/providers_list.ui:39
+msgid "No accounts or providers matching the query were found."
+msgstr ""
+"Er zijn geen accounts of providers gevonden die overeenkomen met de "
+"zoekopdracht."
+
+#: data/resources/ui/shortcuts.ui:11
 msgctxt "shortcut window"
 msgid "General"
 msgstr "Algemeen"
 
-#: data/ui/shortcuts.ui:17
+#: data/resources/ui/shortcuts.ui:14
 msgctxt "shortcut window"
-msgid "Show Shortcuts"
-msgstr "Sneltoetsen tonen"
+msgid "Keyboard Shortcuts"
+msgstr "Sneltoetsen"
 
-#: data/ui/shortcuts.ui:24
+#: data/resources/ui/shortcuts.ui:20
+msgctxt "shortcut window"
+msgid "Lock"
+msgstr "Vergrendelen"
+
+#: data/resources/ui/shortcuts.ui:26
 msgctxt "shortcut window"
 msgid "Preferences"
 msgstr "Voorkeuren"
 
-#: data/ui/shortcuts.ui:31
+#: data/resources/ui/shortcuts.ui:32
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Afsluiten"
 
-#: data/ui/shortcuts.ui:40
+#: data/resources/ui/shortcuts.ui:40
 msgctxt "shortcut window"
 msgid "Accounts"
 msgstr "Accounts"
 
-#: data/ui/shortcuts.ui:44
+#: data/resources/ui/shortcuts.ui:43
 msgctxt "shortcut window"
-msgid "Add"
-msgstr "Toevoegen"
+msgid "New Account"
+msgstr "Nieuwe account"
 
-#: data/ui/shortcuts.ui:51
+#: data/resources/ui/shortcuts.ui:49
 msgctxt "shortcut window"
 msgid "Search"
 msgstr "Zoeken"
 
-#: data/ui/window.ui.in:182
-msgid "There are no accounts yet…"
-msgstr "Je hebt nog geen accounts toegevoegd…"
+#: data/resources/ui/shortcuts.ui:55
+msgctxt "shortcut window"
+msgid "Show Providers List"
+msgstr "Lijst met providers tonen"
 
-#: data/ui/window.ui.in:211
-#, fuzzy
-msgid "Add a new account from the menu"
-msgstr "Nieuw account toevoegen"
+#: data/resources/ui/window.ui:6
+msgid "_Lock the Application"
+msgstr "Toepassing _vergrendelen"
 
-#: data/ui/window.ui.in:227
-#, fuzzy
-msgid "Scan a QR Code"
-msgstr "QR-code scannen"
+#: data/resources/ui/window.ui:12
+msgid "P_roviders"
+msgstr "P_roviders"
 
-#: data/ui/window.ui.in:373
-msgid "No results found"
+#: data/resources/ui/window.ui:16
+msgid "_Preferences"
+msgstr "_Voorkeuren"
+
+#: data/resources/ui/window.ui:22
+msgid "_Keyboard Shortcuts"
+msgstr "_Sneltoetsen"
+
+#: data/resources/ui/window.ui:26
+msgid "_About Authenticator"
+msgstr "_Over Authenticator"
+
+#: data/resources/ui/window.ui:66
+msgid "Authenticator is Locked"
+msgstr "Authenticator is vergrendeld"
+
+#: data/resources/ui/window.ui:89
+msgid "_Unlock"
+msgstr "_Ontgrendelen"
+
+#: data/resources/ui/window.ui:119
+msgid "Accounts"
+msgstr "Accounts"
+
+#: data/resources/ui/window.ui:134 data/resources/ui/window.ui:170
+msgid "New Account"
+msgstr "Nieuwe account"
+
+#: data/resources/ui/window.ui:142 data/resources/ui/window.ui:212
+msgid "Main Menu"
+msgstr "Hoofdmenu"
+
+#: data/resources/ui/window.ui:150
+msgid "No Accounts"
+msgstr "Geen accounts"
+
+#: data/resources/ui/window.ui:151
+msgid "Add an account or scan a QR code first."
+msgstr "Een account toevoegen of eerst een QR-code scannen."
+
+#: src/application.rs:72
+msgid "Accounts restored successfully"
+msgstr "Accounts hersteld"
+
+#: src/application.rs:98
+msgid "translator-credits"
 msgstr ""
+"Nathan Follens <nfollens@gnome.org>\n"
+"Heimen Stoffels\n"
+"Hannie Dumoleyn\n"
+"Meer info over GNOME-NL https://nl.gnome.org"
 
-#: data/ui/window.ui.in:437
-msgid "Authenticator is locked"
-msgstr "Authenticator is vergreneld"
+#: src/application.rs:362 src/widgets/accounts/row.rs:46
+msgid "One-Time password copied"
+msgstr "Eenmalig wachtwoord gekopieerd"
 
-#: data/ui/window.ui.in:476
-msgid "Unlock"
-msgstr "Ontgrendelen"
+#: src/application.rs:363
+msgid "Password was copied successfully"
+msgstr "Wachtwoord is gekopieerd"
 
-#: src/authenticator.py.in:50
-msgid "Start in debug mode"
-msgstr "Starten in foutopsporingsmodus"
+#. Translators: This is for making a backup for the aegis Android app.
+#. Translators: This is for restoring a backup from the aegis Android app.
+#: src/backup/aegis.rs:399 src/backup/aegis.rs:439
+msgid "Aegis"
+msgstr "Aegis"
 
-#: src/authenticator.py.in:52
-msgid "Authenticator version number"
-msgstr "Versienummer van Authenticator"
+#: src/backup/aegis.rs:403
+msgid "Into a JSON file containing plain-text or encrypted fields"
+msgstr "Naar een JSON-bestand met platte tekst of versleutelde velden"
 
-#: src/Authenticator/application.py.in:92
-#: src/Authenticator/widgets/settings.py:92
-msgid "Lock the application"
-msgstr "Toepassing vergrendelen"
+#: src/backup/aegis.rs:443
+msgid "From a JSON file containing plain-text or encrypted fields"
+msgstr "Uit een JSON-bestand met platte tekst of versleutelde velden"
 
-#: src/Authenticator/application.py.in:100
-msgid "from a plain-text JSON file"
-msgstr "uit een JSON-bestand met platte tekst"
+#. Translators: This is for making a backup for the andOTP Android app.
+#: src/backup/andotp.rs:79
+msgid "a_ndOTP"
+msgstr "a_ndOTP"
 
-#: src/Authenticator/application.py.in:101
-msgid "in a plain-text JSON file"
-msgstr "naar een JSON-bestand met platte tekst"
+#: src/backup/andotp.rs:83
+msgid "Into a plain-text JSON file"
+msgstr "Naar een JSON-bestand met platte tekst"
 
-#: src/Authenticator/application.py.in:103
-msgid "Restore"
-msgstr "Herstellen"
+#. Translators: This is for restoring a backup from the andOTP Android app.
+#: src/backup/andotp.rs:127
+msgid "an_dOTP"
+msgstr "an_dOTP"
 
-#: src/Authenticator/application.py.in:104
-msgid "Backup"
-msgstr "Back-uppen"
+#: src/backup/andotp.rs:131 src/backup/bitwarden.rs:124 src/backup/legacy.rs:45
+msgid "From a plain-text JSON file"
+msgstr "Uit een JSON-bestand met platte tekst"
 
-#: src/Authenticator/application.py.in:113
-msgid "Donate"
-msgstr "Doneren"
+#: src/backup/bitwarden.rs:47
+msgid "Unknown account"
+msgstr "Nieuwe account"
 
-#: src/Authenticator/application.py.in:114
-msgid "Keyboard Shortcuts"
-msgstr "Sneltoetsen"
+#: src/backup/bitwarden.rs:55
+msgid "Unknown issuer"
+msgstr "Onbekende uitgever"
 
-#: src/Authenticator/application.py.in:115
-msgid "About Authenticator"
-msgstr "Over Authenticator"
+#. Translators: This is for restoring a backup from Bitwarden.
+#: src/backup/bitwarden.rs:120
+msgid "_Bitwarden"
+msgstr "_Bitwarden"
 
-#: src/Authenticator/models/account.py:71
-msgid "Default"
-msgstr "Standaard"
+#: src/backup/freeotp.rs:18
+msgid "_Authenticator"
+msgstr "_Authenticator"
 
-#: src/Authenticator/widgets/accounts/add.py:58
-msgid "Invalid QR code"
-msgstr "Ongeldige QR-code"
+#: src/backup/freeotp.rs:22
+msgid "Into a plain-text file, compatible with FreeOTP+"
+msgstr "Naar een bestand met platte tekst, compatibel met FreeOTP+"
 
-#: src/Authenticator/widgets/accounts/list.py:143
-msgid "The One-Time Passwords expires in {} seconds"
-msgstr "Het eenmalige wachtwoord verloopt over {} seconden"
+#: src/backup/freeotp.rs:51
+msgid "A_uthenticator"
+msgstr "A_uthenticator"
 
-#: src/Authenticator/widgets/accounts/row.py:80
-msgid "Couldn't generate the secret code"
-msgstr "Kan geen geheime sleutel genereren"
+#: src/backup/freeotp.rs:55
+msgid "From a plain-text file, compatible with FreeOTP+"
+msgstr "Uit een bestand met platte tekst, compatibel met FreeOTP+"
 
-#: src/Authenticator/widgets/accounts/row.py:91
-msgid "The PIN of {} was copied to the clipboard"
-msgstr ""
+#: src/backup/freeotp_json.rs:87
+msgid "FreeOTP+"
+msgstr "FreeOTP+"
 
-#: src/Authenticator/widgets/accounts/row.py:123
-msgid "The account was updated successfully"
-msgstr ""
+#: src/backup/freeotp_json.rs:91
+msgid "From a plain-text JSON file, compatible with FreeOTP+"
+msgstr "Uit een JSON-bestand met platte tekst, compatibel met FreeOTP+"
 
-#: src/Authenticator/widgets/notification.py:43
+#: src/backup/google.rs:19
+msgid "Google Authenticator"
+msgstr "Google Authenticator"
+
+#: src/backup/google.rs:23
+msgid "From a QR code generated by Google Authenticator"
+msgstr "Uit een QR-code gegenereerd door Google Authenticator"
+
+#. Translators: this is for restoring a backup from the old Authenticator
+#. release
+#: src/backup/legacy.rs:41
+msgid "Au_thenticator (Legacy)"
+msgstr "Au_thenticator (verouderd)"
+
+#: src/models/algorithm.rs:60
+msgid "Counter-based"
+msgstr "Teller-gebaseerd"
+
+#: src/models/algorithm.rs:61
+msgid "Time-based"
+msgstr "Op tijd gebaseerd"
+
+#. Translators: Steam refers to the gaming application by Valve.
+#: src/models/algorithm.rs:63
+msgid "Steam"
+msgstr "Steam"
+
+#: src/models/algorithm.rs:126
+msgid "SHA-1"
+msgstr "SHA-1"
+
+#: src/models/algorithm.rs:127
+msgid "SHA-256"
+msgstr "SHA-256"
+
+#: src/models/algorithm.rs:128
+msgid "SHA-512"
+msgstr "SHA-512"
+
+#: src/widgets/accounts/add.rs:274 src/widgets/preferences/window.rs:419
+#: src/widgets/providers/page.rs:292
+msgid "Image"
+msgstr "Afbeelding"
+
+#: src/widgets/accounts/add.rs:282 src/widgets/preferences/window.rs:427
+msgid "Select QR Code"
+msgstr "QR-code selecteren"
+
+#: src/widgets/accounts/add.rs:300
+msgid "Invalid Token"
+msgstr "Ongeldig token"
+
+#: src/widgets/window.rs:115
+msgid "Wrong Password"
+msgstr "Onjuist wachtwoord"
+
+#: src/widgets/preferences/password_page.rs:172
+#: src/widgets/preferences/password_page.rs:214
+msgid "Wrong Passphrase"
+msgstr "Onjuist wachtwoord"
+
+#: src/widgets/preferences/window.rs:196 src/widgets/preferences/window.rs:268
+msgid "Key / Passphrase"
+msgstr "Sleutel / wachtwoord"
+
+#: src/widgets/preferences/window.rs:207 src/widgets/preferences/window.rs:280
+msgid "Select File"
+msgstr "Bestand selecteren"
+
+#: src/widgets/preferences/window.rs:231
+msgid "Failed to create a backup"
+msgstr "Aanmaken van back-up is mislukt"
+
+#: src/widgets/preferences/window.rs:343
+msgid "Failed to restore from camera"
+msgstr "Herstellen van camera is mislukt"
+
+#: src/widgets/preferences/window.rs:354
+msgid "Failed to restore from a screenshot"
+msgstr "Herstellen uit schermafdruk is mislukt"
+
+#: src/widgets/preferences/window.rs:364
+msgid "Failed to restore from an image"
+msgstr "Herstellen van afbeelding is mislukt"
+
+#: src/widgets/preferences/window.rs:377
+msgid "Failed to restore from a file"
+msgstr "Herstellen uit bestand is mislukt"
+
+#: src/widgets/providers/dialog.rs:235
+msgid "Provider created successfully"
+msgstr "Provider aangemaakt"
+
+#: src/widgets/providers/dialog.rs:245
+msgid "Provider updated successfully"
+msgstr "Provider bijgewerkt"
+
+#: src/widgets/providers/dialog.rs:261
+msgid "Provider removed successfully"
+msgstr "Provider verwijderd"
+
+#: src/widgets/providers/page.rs:186
+msgid "Editing Provider: {}"
+msgstr "Bewerken van provider: {}"
+
+#: src/widgets/providers/page.rs:325
+msgid "The provider has accounts assigned to it, please remove them first"
+msgstr "Er zijn accounts toegewezen aan de provider; verwijder deze eerst"
+
+#~ msgid "Dark Mode"
+#~ msgstr "Donkere modus"
+
+#~ msgid "Go Back"
+#~ msgstr "Terug"
+
+#~ msgid "_Edit"
+#~ msgstr "B_ewerken"
+
+#~ msgid "Appearance"
+#~ msgstr "Uiterlijk"
+
+#~ msgid "_Dark Mode"
+#~ msgstr "_Donkere modus"
+
+#~ msgid "Whether the application should use a dark mode"
+#~ msgstr "Of de toepassing een donkere modus gebruikt"
+
+#~ msgid "Used to fetch the provider icon"
+#~ msgstr "Wordt gebruikt om het pictogram van de provider op te halen"
+
+#~ msgid "Provider setup instructions"
+#~ msgstr "Installeer-instructies provider"
+
+#~ msgid "The key that will be used to decrypt the vault"
+#~ msgstr "De sleutel die gebruikt zal worden om de kluis te ontsleutelen"
+
+#~ msgid "The key used to encrypt the vault"
+#~ msgstr "De sleutel gebruikt om de kluis te versleutelen"
+
+#~ msgid "Unable to restore accounts"
+#~ msgstr "Kan accounts niet herstellen"
+
+#~ msgid "Something went wrong"
+#~ msgstr "Er is iets misgegaan"
+
+#~ msgid "Couldn't find a QR code"
+#~ msgstr "Kon geen QR-code vinden"
+
+#~ msgid "Select"
+#~ msgstr "Selecteren"
+
+#~ msgid "D_etails"
+#~ msgstr "D_etails"
+
+#~ msgid "_Rename"
+#~ msgstr "He_rnoemen"
+
+#~ msgid "More"
+#~ msgstr "Meer"
+
+#~ msgid "_Password"
+#~ msgstr "_Wachtwoord"
+
+#~| msgid "There are no accounts yet…"
+#~ msgid "There Are no Accounts Currently"
+#~ msgstr "Er zijn momenteel geen accounts"
+
+#~ msgid "A Two-Factor Authentication application"
+#~ msgstr "Generator voor tweestapauthenticatiecodes"
+
+#~ msgid "Huge database of more than 560 supported services"
+#~ msgstr "Enorme databank van meer dan 560 ondersteunde diensten"
+
+#~ msgid ""
+#~ "Keep your PIN tokens secure by locking the application with a password"
+#~ msgstr ""
+#~ "Beveilig uw pincodetokens door de toepassing te vergrendelen met een "
+#~ "wachtwoord"
+
+#~ msgid "The possibility to add new services"
+#~ msgstr "De mogelijkheid om nieuwe diensten toe te voegen"
+
+#~ msgid "Dark theme and night light"
+#~ msgstr "Donker thema en nachtlicht"
+
+#~ msgid "Main Window - empty state"
+#~ msgstr "Hoofdvenster - leeg"
+
+#~ msgid "Main Window - Accounts List"
+#~ msgstr "Hoofdvenster - accountlijst"
+
+#~ msgid "Night Light"
+#~ msgstr "Nachtlicht"
+
+#~ msgid "Automatically enable dark mode at night."
+#~ msgstr "Donkere modus ’s nachts automatisch inschakelen."
+
+#~ msgid "Confirm New Password:"
+#~ msgstr "Bevestig nieuw wachtwoord:"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show Shortcuts"
+#~ msgstr "Sneltoetsen tonen"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Add"
+#~ msgstr "Toevoegen"
+
+#~ msgid "Add a new account from the menu"
+#~ msgstr "Voeg een nieuwe account toe in het menu"
+
+#~ msgid "Scan a QR Code"
+#~ msgstr "Scan een QR-code"
+
+#~ msgid "Start in debug mode"
+#~ msgstr "Starten in foutopsporingsmodus"
+
+#~ msgid "Default"
+#~ msgstr "Standaard"
+
+#~ msgid "Add"
+#~ msgstr "Toevoegen"
+
+#~ msgid "The PIN of {} was copied to the clipboard"
+#~ msgstr "De pincode van {} is gekopieerd naar het klembord"
+
+#~ msgid "Undo"
+#~ msgstr "Ongedaan maken"
+
+#~ msgid "Close the notification"
+#~ msgstr "Melding sluiten"
+
+#~ msgid "Do you want to remove the authentication password?"
+#~ msgstr "Wilt u het authenticatiewachtwoord verwijderen?"
+
+#~ msgid "Authentication password enforces the privacy of your accounts."
+#~ msgstr "Een authenticatiewachtwoord verzekert de privacy van uw accounts."
+
+#~ msgid "JSON files"
+#~ msgstr "JSON-bestanden"
+
+#~ msgid "Two-factor authentication code generator"
+#~ msgstr "Code-generator voor authenticatie in twee stappen"
+
+#~ msgid ""
+#~ "Since I have moved the application to GOME Gitlab's World group, a "
+#~ "Flatpak build for each new commit is available to download from the "
+#~ "site's website."
+#~ msgstr ""
+#~ "Sinds de verhuizing naar GNOME Gitlab's World-groep, is er op de website "
+#~ "een Flatpak-pakket beschikbaar voor elke nieuwe commit."
+
+#~ msgid "Backup and restore from an encrypted-GPG JSON file"
+#~ msgstr "Back-up en herstel uit een met GPG versleuteld JSON-bestand"
+
+#~ msgid "Add andOTP support (free and open Android 2FA application)"
+#~ msgstr ""
+#~ "andOTP-ondersteuning toegevoegd (gratis en vrije Android-app voor "
+#~ "authenticatie in twee stappen)"
+
+#~ msgid "New Settings Widow with 3 sections: appearance, behavior and backup"
+#~ msgstr ""
+#~ "Nieuw instellingenvenster met 3 secties: uiterlijk, gedrag en back-up"
+
+#~ msgid "Fix Flatpak Build with the latest GNOME Runtime"
+#~ msgstr "Flatpak-pakketten compatibel gemaakt met de nieuwste GNOME Runtime"
+
+#~ msgid "Move the project to GOME Gitlab's World group"
+#~ msgstr "Project verplaatst naar GNOME Gitlab World-groep"
+
+#~ msgid "Codes expire simultaneously #91"
+#~ msgstr "Codes vervallen tegelijkertijd #91"
+
+#~ msgid "Revamped main window to more closely follow the GNOME HIG"
+#~ msgstr "Hoofdvenster opnieuw ontworpen om meer te voldoen aan de GNOME HIG"
+
+#~ msgid "Revamped add a new account window to make it easier to use"
+#~ msgstr ""
+#~ "Nieuw account-venster opnieuw ontworpen zodat het eenvoudig is geworden"
+
+#~ msgid ""
+#~ "Possibility to add an account from a provider not listed in the shipped "
+#~ "database"
+#~ msgstr ""
+#~ "Mogelijkheid om een account toe te voegen van een dienst die niet in de "
+#~ "databank voorkomt"
+
+#~ msgid "Possibilty to edit an account"
+#~ msgstr "Mogelijkheid om een account te bewerken"
+
+#~ msgid "One Time Password now visible by default"
+#~ msgstr "Eenmalig wachtwoord is nu standaard zichtbaar"
+
+#~ msgid "Fix python-dbus by using GDbus instead"
+#~ msgstr "python-dbus-probleem opgelost door GDbus te gebruiken"
+
+#~ msgid "Fix the QRScanner on GNOME Shell"
+#~ msgstr "QR-codescanner gerepareerd bij gebruik in GNOME Shell"
+
+#~ msgid "Add a new entry for the account's username"
+#~ msgstr "Voeg een nieuw item toe voor de gebruikersnaam"
+
+#~ msgid "Updated database of supported accounts"
+#~ msgstr "Databank met ondersteunde accounts bijgewerkt"
+
+#~ msgid "HOTFIX: App not running in DE other than GNOME"
+#~ msgstr "BELANGRIJK: de app draait nu ook in andere werkomgevingen dan GNOME"
+
+#~ msgid "Rename project to Authenticator"
+#~ msgstr "Projectnaam gewijzigd in Authenticator"
+
+#~ msgid "Cleaner code base"
+#~ msgstr "Eenvoudigere broncode"
+
+#~ msgid "Faster startup"
+#~ msgstr "Snellere opstart"
+
+#~ msgid "Remove unneeded features"
+#~ msgstr "Onnodige functies verwijderd"
+
+#~ msgid "Switch to pyzbar instead of zbarlight"
+#~ msgstr "Overgeschakeld van zbarlight naar pyzbar"
+
+#~ msgid "Flatpak package"
+#~ msgstr "Flatpak-pakket"
+
+#~ msgid "Gnome;GTK;Verification;"
+#~ msgstr "Gnome;GTK;Verification;Verificatie;"
+
+#~ msgid "@appid@"
+#~ msgstr "@appid@"
+
+#~ msgid "Two-factor authentication code generator."
+#~ msgstr "Code-generator voor authenticatie in twee stappen."
+
+#~ msgid "Close"
+#~ msgstr "Sluiten"
+
 #, fuzzy
-msgid "Close the notification"
-msgstr "Toepassing vergrendelen"
+#~ msgid "Account Name"
+#~ msgstr "Accountnaam"
 
-#: src/Authenticator/widgets/notification.py:48
-#: src/Authenticator/widgets/notification.py:63
-msgid "Undo"
-msgstr "Ongedaan maken"
+#~ msgid "Behaviour"
+#~ msgstr "Gedrag"
 
-#: src/Authenticator/widgets/settings.py:93
-msgid "Lock the application with a password"
-msgstr "Vergrendel de toepassing met een wachtwoord"
+#~ msgid "Authenticator version number"
+#~ msgstr "Versienummer van Authenticator"
 
-#: src/Authenticator/widgets/settings.py:157
+#~ msgid "Donate"
+#~ msgstr "Doneren"
+
 #, fuzzy
-msgid "Authentication password is now enabled."
-msgstr "Authenticatiewachtwoord"
+#~ msgid "Authentication password is now enabled."
+#~ msgstr "Authenticatiewachtwoord"
 
-#: src/Authenticator/widgets/settings.py:159
 #, fuzzy
-msgid "The authentication password was updated."
-msgstr "Authenticatiewachtwoord"
+#~ msgid "The authentication password was updated."
+#~ msgstr "Authenticatiewachtwoord"
 
-#: src/Authenticator/widgets/settings.py:163
 #, fuzzy
-msgid "The authentication password was deleted."
-msgstr "Authenticatiewachtwoord"
-
-#: src/Authenticator/widgets/settings.py:204
-#, fuzzy
-msgid "Save Password"
-msgstr "Wachtwoord"
-
-#: src/Authenticator/widgets/utils.py:40 src/Authenticator/widgets/utils.py:45
-msgid "JSON files"
-msgstr "JSON-bestanden"
+#~ msgid "The authentication password was deleted."
+#~ msgstr "Authenticatiewachtwoord"
 
 #~ msgid "Huge database of (290+) websites/applications"
 #~ msgstr "Enorme databank met (meer dan 290) websites/toepassingen"
@@ -542,9 +1000,6 @@ msgstr "JSON-bestanden"
 #~ msgid "Keep your accounts safer "
 #~ msgstr "Houd je accounts veilig "
 
-#~ msgid "Settings"
-#~ msgstr "Instellingen"
-
 #~ msgid "Authenticator Password"
 #~ msgstr "Authenticatiewachtwoord"
 
@@ -554,18 +1009,8 @@ msgstr "JSON-bestanden"
 #~ msgid "Authentication password was unset. Please restart the application"
 #~ msgstr "Authenticatiewachtwoord is niet ingesteld. Herstart de toepassing"
 
-#~ msgid ""
-#~ "Authentication password is now enabled. Please restart the application."
-#~ msgstr "Authenticatiewachtwoord is ingeschakeld. Herstart de toepassing."
-
 #~ msgid "Open"
 #~ msgstr "Openen"
-
-#~ msgid "Cancel"
-#~ msgstr "Annuleren"
-
-#~ msgid "Select"
-#~ msgstr "Kiezen"
 
 #~ msgid "Secret token"
 #~ msgstr "Geheime toegangssleutel"
@@ -578,29 +1023,17 @@ msgstr "JSON-bestanden"
 #~ msgid "Copy"
 #~ msgstr "Kopiëren"
 
-#~ msgid "Search"
-#~ msgstr "Zoeken"
-
 #~ msgid "Selection mode"
 #~ msgstr "Selectiemodus"
 
 #~ msgid "Click on items to select them"
 #~ msgstr "Klik op items om ze te selecteren"
 
-#~ msgid "Old Password"
-#~ msgstr "Oud wachtwoord"
-
-#~ msgid "Appearance"
-#~ msgstr "Uiterlijk"
-
 #~ msgid "Clear the database"
 #~ msgstr "Databank wissen"
 
 #~ msgid "Erase existing accounts"
 #~ msgstr "Bestaande accounts wissen"
-
-#~ msgid "Set up application authentication password"
-#~ msgstr "Stel het authenticatiewachtwoord in"
 
 #~ msgid "The application needs to be restarted first."
 #~ msgstr "De applicatie moet worden herstart."
@@ -610,9 +1043,6 @@ msgstr "JSON-bestanden"
 
 #~ msgid "An account or more were removed."
 #~ msgstr "Eén of meerdere accounts zijn verwijderd."
-
-#~ msgid "Whether the application is locked with a password or not"
-#~ msgstr "Of de toepassing moet worden vergrendeld met een wachtwoord"
 
 #~ msgctxt "shortcut window"
 #~ msgid "Select"
@@ -637,9 +1067,6 @@ msgstr "JSON-bestanden"
 #~ msgid "Import"
 #~ msgstr "Importeren"
 
-#~ msgid "Paraphrase"
-#~ msgstr "Wachtwoordzin"
-
 #~ msgid "There was an error during the import of the encrypted file."
 #~ msgstr ""
 #~ "Er is een fout opgetreden tijdens het importeren van het versleutelde "
@@ -650,9 +1077,6 @@ msgstr "JSON-bestanden"
 
 #~ msgid "Public keys"
 #~ msgstr "Openbare sleutels"
-
-#~ msgid "Private keys"
-#~ msgstr "Privésleutels"
 
 #~ msgid "GPG keys location"
 #~ msgstr "Locatie van GPG-sleutels"
@@ -672,20 +1096,9 @@ msgstr "JSON-bestanden"
 #~ msgid "Two Factor Authentication code generator"
 #~ msgstr "Code-generator voor authenticatie in twee stappen"
 
-#~ msgid "Two-Factor Authentication code generator"
-#~ msgstr "Generator voor tweefactorauthenticatiecodes"
-
-#~ msgctxt "shortcut window"
-#~ msgid "Add a new account"
-#~ msgstr "Nieuwe account toevoegen"
-
 #~ msgctxt "shortcut window"
 #~ msgid "Selection mode"
 #~ msgstr "Selectiemodus"
-
-#~ msgctxt "shortcut window"
-#~ msgid "Account list"
-#~ msgstr "Accountlijst"
 
 #~ msgctxt "shortcut window"
 #~ msgid "Select next/previous account"
@@ -700,15 +1113,12 @@ msgstr "JSON-bestanden"
 #~ "www.gnu.org/licenses/gpl-3.0.html\">GNU General Public License, version 3 "
 #~ "or later</a> for details."
 #~ msgstr ""
-#~ "Dit programma komt zonder enige vorm van garantie. Zie de <a href="
-#~ "\"http://www.gnu.org/licenses/gpl-3.0.html\">GNU General Public License, "
-#~ "versie 3 of later</a> voor meer informatie."
+#~ "Dit programma komt zonder enige vorm van garantie. Zie de <a "
+#~ "href=\"http://www.gnu.org/licenses/gpl-3.0.html\">GNU General Public "
+#~ "License, versie 3 of later</a> voor meer informatie."
 
 #~ msgid "Github"
 #~ msgstr "GitHub"
-
-#~ msgid "Lock the Application"
-#~ msgstr "Toepassing vergrendelen"
 
 #~ msgid "Apply"
 #~ msgstr "Toepassen"
@@ -718,12 +1128,6 @@ msgstr "JSON-bestanden"
 
 #~ msgid "Enter your password"
 #~ msgstr "Voer je wachtwoord in"
-
-#~ msgid "Remove the account"
-#~ msgstr "Account verwijderen"
-
-#~ msgid "Copy the generated code"
-#~ msgstr "Aangemaakte code kopiëren"
 
 #~ msgid "Edit the account"
 #~ msgstr "Account bewerken"
@@ -742,6 +1146,3 @@ msgstr "JSON-bestanden"
 
 #~ msgid "Password protection"
 #~ msgstr "Wachtwoordbescherming"
-
-#~ msgid "Auto-lock the application (m):"
-#~ msgstr "Vergrendel de toepassing automatisch (m):"

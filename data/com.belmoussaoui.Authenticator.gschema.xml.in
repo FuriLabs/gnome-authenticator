@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="/com/belmoussaoui/Authenticator/" id="@app-id@" gettext-domain="@gettext-package@">
+    <key name="window-width" type="i">
+      <default>-1</default>
+      <summary>Default window width</summary>
+      <description>Default window width</description>
+    </key>
+    <key name="window-height" type="i">
+      <default>-1</default>
+      <summary>Default window height</summary>
+      <description>Default window height</description>
+    </key>
+    <key name="is-maximized" type="b">
+      <default>false</default>
+      <summary>Default window maximized behaviour</summary>
+      <description></description>
+    </key>
+    <key name="auto-lock" type="b">
+      <default>false</default>
+      <summary>Auto lock</summary>
+      <description>Whether to auto lock the application or not</description>
+    </key>
+    <key name="auto-lock-timeout" type="u">
+      <default>5</default>
+      <summary>Auto lock timeout</summary>
+      <description>Lock the application on idle after X minutes</description>
+    </key>
+    <key name="keyrings-migrated" type="b">
+      <default>false</default>
+    </key>
+    <key name="download-favicons" type="b">
+      <default>true</default>
+      <summary>Download Favicons</summary>
+      <description>Whether the application should attempt to find an icon for the providers.</description>
+    </key>
+    <key name="download-favicons-metered" type="b">
+      <default>true</default>
+      <summary>Download Favicons over metered connections</summary>
+      <description>Whether the application should download favicons over a metered connection.</description>
+    </key>
+  </schema>
+</schemalist>

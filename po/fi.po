@@ -7,361 +7,946 @@ msgid ""
 msgstr ""
 "Project-Id-Version: authenticator master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Authenticator/issues\n"
-"POT-Creation-Date: 2019-06-01 16:20+0000\n"
-"PO-Revision-Date: 2019-06-01 20:04+0300\n"
+"POT-Creation-Date: 2024-01-07 14:35+0000\n"
+"PO-Revision-Date: 2024-03-02 18:08+0200\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: Finnish <lokalisointi-lista@googlegroups.com>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 3.4.2\n"
 
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:7
-#: data/com.github.bilelmoussaoui.Authenticator.desktop.in.in:3
-#: src/Authenticator/application.py.in:37
+#: data/com.belmoussaoui.Authenticator.desktop.in.in:3
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:7
+#: data/resources/ui/window.ui:36 src/application.rs:91 src/main.rs:40
 msgid "Authenticator"
 msgstr "Todennin"
 
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:8
-#: data/com.github.bilelmoussaoui.Authenticator.desktop.in.in:5
-msgid "Two-factor authentication code generator"
-msgstr "Kaksivaiheisen todennuskoodien generaattori"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:10
-msgid ""
-"Simple application that generates a two-factor authentication code, created "
-"for GNOME."
-msgstr ""
-"Yksinkertainen sovellus Gnome-työpöydälle, joka luo kaksivaiheisia "
-"todennuskoodeja."
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:11
-msgid "Features:"
-msgstr "Ominaisuudet:"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:13
-msgid "QR code scanner"
-msgstr "QR-koodin skanneri"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:14
-msgid "Beautiful UI"
-msgstr "Nätti käyttöliittymä"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:15
-msgid "Huge database of more than 560 supported services"
-msgstr "Valtava tietokanta kattaen yli 560 tuettua palvelua"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:16
-msgid "Keep your PIN tokens secure by locking the application with a password"
-msgstr "Pidä PIN-koodit turvassa lukitsemalla sovellus salasanalla"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:17
-msgid "Automtically fetch an image for services using their favicon"
-msgstr ""
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:18
-msgid "The possibility to add new services"
-msgstr "Mahdollisuus lisätä uusia palveluja"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:19
-msgid "Dark theme and night light"
-msgstr "Tumma teema ja yövalo"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:25
-msgid "Main Window - empty state"
-msgstr "Pääikkuna - tyhjä tilanne"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:29
-#: data/resources/gtk/ui/account_add.ui:14
-msgid "Add a new account"
-msgstr "Lisää uusi tili"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:33
-msgid "Main Window - Accounts List"
-msgstr "Pääikkuna - Tililuettelo"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:37
-msgid "Settings Window"
-msgstr "Asetukset-ikkuna"
-
-#: data/com.github.bilelmoussaoui.Authenticator.appdata.xml.in.in:160
-msgid "Bilal Elmoussaoui"
-msgstr "Bilal Elmoussaoui"
-
-#: data/com.github.bilelmoussaoui.Authenticator.desktop.in.in:4
-msgid "Two-factor authentication"
+#: data/com.belmoussaoui.Authenticator.desktop.in.in:4
+msgid "Two-Factor Authentication"
 msgstr "Kaksivaiheinen todennus"
 
-#: data/com.github.bilelmoussaoui.Authenticator.desktop.in.in:10
-msgid "Gnome;GTK;Verification;2FA;Authentication;TwoFactor;"
+#: data/com.belmoussaoui.Authenticator.desktop.in.in:5
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:8
+#: src/application.rs:94
+msgid "Generate two-factor codes"
+msgstr "Luo kaksivaiheisen todennuksen koodeja"
+
+#: data/com.belmoussaoui.Authenticator.desktop.in.in:10
+msgid "Gnome;GTK;Verification;2FA;Authentication;OTP;TOTP;"
 msgstr ""
-"Gnome;GTK;Verification;2FA;Authentication;TwoFactor;tunnistaminen;vahvistus;"
+"Gnome;GTK;Verification;2FA;Authentication;OTP;TOTP;tunnistaminen;vahvistus;"
 "kaksivaiheinen;todentaminen;"
 
-#: data/com.github.bilelmoussaoui.Authenticator.gschema.xml.in:6
-#: data/com.github.bilelmoussaoui.Authenticator.gschema.xml.in:7
-msgid "Default window position"
-msgstr "Ikkunan oletussijainti"
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:6
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:7
+msgid "Default window width"
+msgstr "Ikkunan oletusleveys"
 
-#: data/com.github.bilelmoussaoui.Authenticator.gschema.xml.in:11
-#: src/Authenticator/widgets/settings.py:84
-msgid "Dark Theme"
-msgstr "Tumma teema"
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:11
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:12
+msgid "Default window height"
+msgstr "Ikkunan oletuskorkeus"
 
-#: data/com.github.bilelmoussaoui.Authenticator.gschema.xml.in:12
-#: src/Authenticator/widgets/settings.py:85
-msgid "Whether the application should use a dark theme."
-msgstr "Tuleeko sovelluksen käyttää tummaa teemaa."
-
-#: data/com.github.bilelmoussaoui.Authenticator.gschema.xml.in:16
-#: src/Authenticator/widgets/settings.py:89
-msgid "Night Light"
-msgstr "Yövalo"
-
-#: data/com.github.bilelmoussaoui.Authenticator.gschema.xml.in:17
-#: src/Authenticator/widgets/settings.py:90
-msgid "Automatically enable dark mode at night."
-msgstr "Ota tumma tila käyttöön automaattisesti yöaikaan."
-
-#: data/com.github.bilelmoussaoui.Authenticator.gschema.xml.in:21
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:16
 msgid "Default window maximized behaviour"
 msgstr "Suurennetun ikkunan oletusarvoinen toiminta"
 
-#: data/resources/gtk/ui/about_dialog.ui.in:10
-msgid "Two-factor authentication code generator."
-msgstr "Kaksivaiheisen todennuskoodin generaattori"
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:21
+msgid "Auto lock"
+msgstr "Automaattinen lukitus"
 
-#: data/resources/gtk/ui/about_dialog.ui.in:13
-msgid "translator-credits"
-msgstr "Jiri Grönroos"
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:22
+msgid "Whether to auto lock the application or not"
+msgstr "Lukitaanko sovellus automaattisesti vai ei"
 
-#: data/resources/gtk/ui/account_add.ui:32
-msgid "Add"
-msgstr "Lisää"
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:26
+msgid "Auto lock timeout"
+msgstr "Automaattinen lukituksen viive"
 
-#: data/resources/gtk/ui/account_add.ui:52
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:27
+msgid "Lock the application on idle after X minutes"
+msgstr "Lukitse sovellus X minuutin jälkeen"
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:34
+msgid "Download Favicons"
+msgstr "Lataa favicon-kuvakkeet"
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:35
+msgid ""
+"Whether the application should attempt to find an icon for the providers."
+msgstr "Tuleeko sovelluksen yrittää löytää palveluntarjoajien kuvakkeet."
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:39
+msgid "Download Favicons over metered connections"
+msgstr "Lataa favicon-kuvakkeet käytön mukaan laskutettavalla yhteydellä"
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:40
+msgid ""
+"Whether the application should download favicons over a metered connection."
+msgstr ""
+"Tuleeko sovelluksen ladata favicon-kuvakkeet käytön mukaan laskutettavalla "
+"yhteydellä."
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:10
+msgid "Simple application for generating Two-Factor Authentication Codes."
+msgstr "Yksinkertainen sovellus, joka luo kaksivaiheisia todennuskoodeja."
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:11
+msgid "Features:"
+msgstr "Ominaisuudet:"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:13
+msgid "Time-based/Counter-based/Steam methods support"
+msgstr ""
+"Tuki seuraaville menetelmille: aikaperusteisuus, laskuriperusteisuus ja Steam"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:14
+msgid "SHA-1/SHA-256/SHA-512 algorithms support"
+msgstr "SHA-1/SHA-256/SHA-512-algoritmien tuki"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:15
+msgid "QR code scanner using a camera or from a screenshot"
+msgstr "QR-koodin lukeminen käyttäen kameraa tai kuvakaappausta"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:16
+msgid "Lock the application with a password"
+msgstr "Lukitse sovellus salasanalla"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:17
+msgid "Beautiful UI"
+msgstr "Nätti käyttöliittymä"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:18
+msgid "GNOME Shell search provider"
+msgstr "Gnome Shellin hakupalvelun tarjoaja"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:19
+msgid ""
+"Backup/Restore from/into known applications like FreeOTP+, Aegis "
+"(encrypted / plain-text), andOTP, Google Authenticator"
+msgstr ""
+"Varmuuskopioi ja palauta tunnetuista sovelluksista kuten FreeOTP+, andOTP, "
+"Aegis (salattu / raakateksti), Google Authenticator"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:25
+msgid "Main Window"
+msgstr "Pääikkuna"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:29
+#: data/resources/ui/account_add.ui:32 data/resources/ui/account_add.ui:49
+msgid "Add a New Account"
+msgstr "Lisää uusi tili"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:33
+msgid "Add a New Provider"
+msgstr "Lisää uusi palveluntarjoaja"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:37
+msgid "Account Details"
+msgstr "Tilin tiedot"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:41
+msgid "Backup/Restore formats support"
+msgstr "Varmuuskopioinnin ja palautuksen muotojen tuki"
+
+#: data/resources/ui/account_add.ui:6 src/widgets/preferences/window.rs:292
+msgid "_Camera"
+msgstr "_Kamera"
+
+#: data/resources/ui/account_add.ui:10 src/widgets/preferences/window.rs:296
+msgid "_Screenshot"
+msgstr "K_uvakaappaus"
+
+#: data/resources/ui/account_add.ui:14 src/widgets/preferences/window.rs:301
+msgid "_QR Code Image"
+msgstr "_QR-koodin kuva"
+
+#: data/resources/ui/account_add.ui:58
+msgid "Cancel"
+msgstr "Peru"
+
+#: data/resources/ui/account_add.ui:64
+msgid "_Add"
+msgstr "_Lisää"
+
+#: data/resources/ui/account_add.ui:76 src/widgets/preferences/window.rs:287
 msgid "Scan QR Code"
 msgstr "Skannaa QR-koodi"
 
-#: data/resources/gtk/ui/account_config.ui:85
-msgid "Enable 2FA for this account"
-msgstr "Ota kaksivaiheinen todentaminen käyttöön tälle tilille"
-
-#: data/resources/gtk/ui/account_config.ui:86
-msgid "2FA Token"
-msgstr "Kaksivaiheinen koodi"
-
-#: data/resources/gtk/ui/account_config.ui:100
-msgid "Account Name"
-msgstr "Tilin nimi"
-
-#: data/resources/gtk/ui/account_config.ui:123
+#: data/resources/ui/account_add.ui:114
+#: data/resources/ui/account_details_page.ui:96
+#: data/resources/ui/provider_page.ui:22
+#: data/resources/ui/providers_dialog.ui:110
 msgid "Provider"
 msgstr "Palveluntarjoaja"
 
-#: data/resources/gtk/ui/account_edit.ui:31
-#: data/resources/gtk/ui/settings.ui.in:48
-msgid "Save"
-msgstr "Tallenna"
+#: data/resources/ui/account_add.ui:115
+msgid "Token issuer"
+msgstr "Poletin myöntäjä"
 
-#: data/resources/gtk/ui/account_row.ui:23
-msgid "Edit"
-msgstr "Muokkaa"
+#: data/resources/ui/account_add.ui:129
+#: data/resources/ui/account_details_page.ui:91
+msgid "Account"
+msgstr "Tili"
 
-#: data/resources/gtk/ui/account_row.ui:41
-msgid "Delete"
-msgstr "Poista"
+#: data/resources/ui/account_add.ui:135
+msgid "Token"
+msgstr "Poletti"
 
-#: data/resources/gtk/ui/account_row.ui:97
+#: data/resources/ui/account_add.ui:141
+#: data/resources/ui/account_details_page.ui:139
+#: data/resources/ui/provider_page.ui:158
+msgid "Counter"
+msgstr "Laskuri"
+
+#: data/resources/ui/account_add.ui:159
+#: data/resources/ui/account_details_page.ui:119
+#: data/resources/ui/provider_page.ui:133
+msgid "Algorithm"
+msgstr "Algoritmi"
+
+#: data/resources/ui/account_add.ui:171
+#: data/resources/ui/account_details_page.ui:129
+#: data/resources/ui/provider_page.ui:118
+msgid "Computing Method"
+msgstr "Laskentatapa"
+
+#: data/resources/ui/account_add.ui:183
+#: data/resources/ui/account_details_page.ui:148
+#: data/resources/ui/provider_page.ui:149
+msgid "Period"
+msgstr "Jakso"
+
+#: data/resources/ui/account_add.ui:184
+#: data/resources/ui/account_details_page.ui:149
+#: data/resources/ui/provider_page.ui:150
+msgid "Duration in seconds until the next password update"
+msgstr "Kesto sekunneissa seuraavan salasanan päivitykseen"
+
+#: data/resources/ui/account_add.ui:196
+#: data/resources/ui/account_details_page.ui:159
+#: data/resources/ui/provider_page.ui:167
+msgid "Digits"
+msgstr "Numerot"
+
+#: data/resources/ui/account_add.ui:197
+#: data/resources/ui/account_details_page.ui:160
+#: data/resources/ui/provider_page.ui:168
+msgid "Length of the generated code"
+msgstr "Luodun koodin pituus"
+
+#: data/resources/ui/account_add.ui:209
+#: data/resources/ui/account_details_page.ui:170
+#: data/resources/ui/provider_page.ui:112
+msgid "Website"
+msgstr "Verkkosivusto"
+
+#: data/resources/ui/account_add.ui:214
+msgid "How to Set Up"
+msgstr "Määritysohjeet"
+
+#: data/resources/ui/account_add.ui:234
+#: data/resources/ui/preferences_camera_page.ui:4
+msgid "Camera"
+msgstr "Kamera"
+
+#: data/resources/ui/account_add.ui:246
+msgid "Create Provider"
+msgstr "Luo palveluntarjoaja"
+
+#: data/resources/ui/account_details_page.ui:56
+#: data/resources/ui/preferences_password_page.ui:17
+#: data/resources/ui/provider_page.ui:29
+msgid "_Save"
+msgstr "_Tallenna"
+
+#: data/resources/ui/account_details_page.ui:67
+#: data/resources/ui/provider_page.ui:185
+msgid "_Delete"
+msgstr "_Poista"
+
+#: data/resources/ui/account_details_page.ui:175
+msgid "Help"
+msgstr "Ohje"
+
+#: data/resources/ui/account_row.ui:23
+msgid "Increment the counter"
+msgstr "Lisää laskuria"
+
+#: data/resources/ui/account_row.ui:34
 msgid "Copy PIN to clipboard"
 msgstr "Kopioi PIN leikepöydälle"
 
-#: data/resources/gtk/ui/password_widget.ui:46
-msgid "Current Password:"
-msgstr "Nykyinen salasana:"
+#: data/resources/ui/account_row.ui:43
+msgid "Account details"
+msgstr "Tilin tiedot"
 
-#: data/resources/gtk/ui/password_widget.ui:90
-msgid "New Password:"
-msgstr "Uusi salasana:"
+#: data/resources/ui/camera.ui:36
+msgid "No Camera Found"
+msgstr "Kameraa ei löytynyt"
 
-#: data/resources/gtk/ui/password_widget.ui:135
-msgid "Confirm New Password:"
-msgstr "Vahvista uusi salasana:"
+#: data/resources/ui/camera.ui:39
+msgid "_From a Screenshot"
+msgstr "K_uvakaappauksesta"
 
-#: data/resources/gtk/ui/password_widget.ui:183
-#: src/Authenticator/widgets/settings.py:209
-msgid "Change Password"
-msgstr "Vaihda salasana"
+#: data/resources/ui/keyring_error_dialog.ui:8
+msgid "Secret Service Error"
+msgstr "Secret Service -virhe"
 
-#: data/resources/gtk/ui/password_widget.ui:204
-msgid "Delete Password"
-msgstr "Poista salasana"
+#: data/resources/ui/keyring_error_dialog.ui:35
+msgid ""
+"Authenticator relies on a Secret Service Provider to manage your sensitive "
+"session information and an error occurred while we were trying to store or "
+"get your session."
+msgstr ""
+"Todennin vaatii, että Secret Service -palveluntarjoaja hallitsee "
+"arkaluonteisia tietoja, ja istuntoa tallentaessa tai noutaessa tapahtui "
+"virhe."
 
-#. Night mode action
-#: data/resources/gtk/ui/settings.ui.in:20
-#: src/Authenticator/application.py.in:114
-msgid "Preferences"
-msgstr "Asetukset"
+#: data/resources/ui/keyring_error_dialog.ui:47
+msgid ""
+"Here are a few things that might help you fix issues with the Secret Service:"
+msgstr ""
+"Tässä muutama asia, jotka saattavat auttaa Secret Service -palvelun "
+"korjaamisessa:"
 
-#: data/resources/gtk/ui/shortcuts.ui:13
+#: data/resources/ui/keyring_error_dialog.ui:64
+msgid ""
+"Make sure you have a Secret Service Provider installed, like gnome-keyring."
+msgstr ""
+"Varmista, että Secret Service -palveluntarjoaja, kuten gnome-keyring, on "
+"asennettu."
+
+#: data/resources/ui/keyring_error_dialog.ui:83
+msgid "Check that you have a default keyring and that it is unlocked."
+msgstr ""
+"Varmista, että sinulla on oletusarvoinen avainnippu ja että sen lukitus on "
+"avattu."
+
+#: data/resources/ui/keyring_error_dialog.ui:95
+msgid ""
+"Check the application logs and your distribution’s documentation for more "
+"details."
+msgstr ""
+"Tarkista sovelluslokit ja jakelun dokumentaatio saadaksesi lisätietoja."
+
+#: data/resources/ui/preferences.ui:16
+msgid "General"
+msgstr "Yleiset"
+
+#: data/resources/ui/preferences.ui:19
+msgid "Privacy"
+msgstr "Yksityisyys"
+
+#: data/resources/ui/preferences.ui:22
+msgid "_Passphrase"
+msgstr "Tu_nnuslause"
+
+#: data/resources/ui/preferences.ui:24
+msgid "Set up a passphrase to lock the application with"
+msgstr "Aseta tunnuslause, jolla sovellus lukitaan"
+
+#: data/resources/ui/preferences.ui:37
+msgid "_Auto Lock the Application"
+msgstr "Lukitse sovellus _automaattisesti"
+
+#: data/resources/ui/preferences.ui:39
+msgid "Whether to automatically lock the application"
+msgstr "Lukitaanko sovellus automaattisesti"
+
+#: data/resources/ui/preferences.ui:45
+msgid "Auto Lock _Timeout"
+msgstr "Automaattinen lukituksen _aikakatkaisu"
+
+#: data/resources/ui/preferences.ui:46
+msgid "The time in minutes"
+msgstr "Aika minuutteina"
+
+#: data/resources/ui/preferences.ui:59
+msgid "Network"
+msgstr "Verkko"
+
+#: data/resources/ui/preferences.ui:62
+msgid "_Download Favicons"
+msgstr "_Lataa favicon-kuvakkeet"
+
+#: data/resources/ui/preferences.ui:64
+msgid "Automatically attempt fetching a website icon"
+msgstr "Yritä noutaa verkkosivun kuvake automaattisesti"
+
+#: data/resources/ui/preferences.ui:69
+msgid "_Metered Connection"
+msgstr "_Käytön mukaan laskutettava yhteys"
+
+#: data/resources/ui/preferences.ui:71
+msgid "Fetch a website icon on a metered connection"
+msgstr "Hae verkkosivun kuvake käytön mukaan laskutettavalla yhteydellä"
+
+#: data/resources/ui/preferences.ui:81
+msgid "Backup/Restore"
+msgstr "Varmuuskopioi/palauta"
+
+#: data/resources/ui/preferences.ui:84 src/widgets/preferences/window.rs:476
+msgid "Backup"
+msgstr "Varmuuskopioi"
+
+#: data/resources/ui/preferences.ui:89 src/widgets/preferences/window.rs:484
+msgid "Restore"
+msgstr "Palauta"
+
+#: data/resources/ui/preferences_password_page.ui:4
+msgid "Create Password"
+msgstr "Luo salasana"
+
+#: data/resources/ui/preferences_password_page.ui:28
+msgid "Set up a Passphrase"
+msgstr "Aseta tunnuslause"
+
+#: data/resources/ui/preferences_password_page.ui:29
+msgid "Authenticator will start locked after a passphrase is set."
+msgstr "Todennin käynnistyy lukittuna tunnuslauseen asettamisen jälkeen."
+
+#: data/resources/ui/preferences_password_page.ui:53
+msgid "Current Passphrase"
+msgstr "Nykyinen tunnuslause"
+
+#: data/resources/ui/preferences_password_page.ui:59
+msgid "New Passphrase"
+msgstr "Uusi tunnuslause"
+
+#: data/resources/ui/preferences_password_page.ui:65
+msgid "Repeat Passphrase"
+msgstr "Toista tunnuslause"
+
+#: data/resources/ui/preferences_password_page.ui:79
+#: data/resources/ui/provider_page.ui:73
+msgid "_Reset"
+msgstr "_Nollaa"
+
+#: data/resources/ui/provider_page.ui:83
+msgid "Select a _File"
+msgstr "_Valitse tiedosto"
+
+#: data/resources/ui/provider_page.ui:106
+msgid "Name"
+msgstr "Nimi"
+
+#: data/resources/ui/provider_page.ui:159
+msgid "The by default value for counter-based computing method"
+msgstr "Oletuksena käytettävä arvo laskuriperusteille laskentatavalle"
+
+#: data/resources/ui/provider_page.ui:177
+msgid "Help URL"
+msgstr "Ohjeen URL-osoite"
+
+#: data/resources/ui/providers_dialog.ui:10
+#: data/resources/ui/providers_dialog.ui:21
+msgid "Providers"
+msgstr "Palveluntarjoajat"
+
+#: data/resources/ui/providers_dialog.ui:31 src/widgets/providers/page.rs:209
+msgid "New Provider"
+msgstr "Uusi palveluntarjoaja"
+
+#: data/resources/ui/providers_dialog.ui:38
+#: data/resources/ui/providers_dialog.ui:54 data/resources/ui/window.ui:207
+#: data/resources/ui/window.ui:228
+msgid "Search"
+msgstr "Etsi"
+
+#: data/resources/ui/providers_dialog.ui:49 data/resources/ui/window.ui:202
+msgid "Search…"
+msgstr "Etsi…"
+
+#: data/resources/ui/providers_dialog.ui:95
+#: data/resources/ui/providers_list.ui:38
+msgid "No Results"
+msgstr "Ei tuloksia"
+
+#: data/resources/ui/providers_dialog.ui:96
+msgid "No providers matching the query were found."
+msgstr "Kyselyä vastaavia palveluntarjoajia ei löytynyt."
+
+#: data/resources/ui/providers_dialog.ui:141
+msgid "No Provider Selected"
+msgstr "Palveluntarjoajaa ei ole valittu"
+
+#: data/resources/ui/providers_dialog.ui:142
+msgid "Select a provider or create a new one"
+msgstr "Valitse palveluntarjoaja tai luo uusi"
+
+#: data/resources/ui/providers_list.ui:39
+msgid "No accounts or providers matching the query were found."
+msgstr "Kyselyä vastaavia tilejä tai palveluntarjoajia ei löytynyt."
+
+#: data/resources/ui/shortcuts.ui:11
 msgctxt "shortcut window"
 msgid "General"
 msgstr "Yleiset"
 
-#: data/resources/gtk/ui/shortcuts.ui:17
+#: data/resources/ui/shortcuts.ui:14
 msgctxt "shortcut window"
-msgid "Show Shortcuts"
-msgstr "Näytä pikanäppäimet"
+msgid "Keyboard Shortcuts"
+msgstr "Pikanäppäimet"
 
-#: data/resources/gtk/ui/shortcuts.ui:24
+#: data/resources/ui/shortcuts.ui:20
+msgctxt "shortcut window"
+msgid "Lock"
+msgstr "Lukitse"
+
+#: data/resources/ui/shortcuts.ui:26
 msgctxt "shortcut window"
 msgid "Preferences"
 msgstr "Asetukset"
 
-#: data/resources/gtk/ui/shortcuts.ui:31
+#: data/resources/ui/shortcuts.ui:32
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Lopeta"
 
-#: data/resources/gtk/ui/shortcuts.ui:40
+#: data/resources/ui/shortcuts.ui:40
 msgctxt "shortcut window"
 msgid "Accounts"
 msgstr "Tilit"
 
-#: data/resources/gtk/ui/shortcuts.ui:44
+#: data/resources/ui/shortcuts.ui:43
 msgctxt "shortcut window"
-msgid "Add"
-msgstr "Lisää"
+msgid "New Account"
+msgstr "Uusi tili"
 
-#: data/resources/gtk/ui/shortcuts.ui:51
+#: data/resources/ui/shortcuts.ui:49
 msgctxt "shortcut window"
 msgid "Search"
 msgstr "Haku"
 
-#: data/resources/gtk/ui/window.ui.in:186
-msgid "There are no accounts yet…"
-msgstr "Ei vielä tilejä…"
+#: data/resources/ui/shortcuts.ui:55
+msgctxt "shortcut window"
+msgid "Show Providers List"
+msgstr "Näytä palveluntarjoajien luettelo"
 
-#: data/resources/gtk/ui/window.ui.in:215
-msgid "Add a new account from the menu"
-msgstr "Lisää uusi tili valikosta"
+#: data/resources/ui/window.ui:6
+msgid "_Lock the Application"
+msgstr "_Lukitse sovellus"
 
-#: data/resources/gtk/ui/window.ui.in:231
-msgid "Scan a QR Code"
-msgstr "Skannaa QR-koodi"
+#: data/resources/ui/window.ui:12
+msgid "P_roviders"
+msgstr "_Palveluntarjoajat"
 
-#: data/resources/gtk/ui/window.ui.in:363
-msgid "No results found"
-msgstr "Tuloksia ei löytynyt"
+#: data/resources/ui/window.ui:16
+msgid "_Preferences"
+msgstr "_Asetukset"
 
-#: data/resources/gtk/ui/window.ui.in:427
-msgid "Authenticator is locked"
+#: data/resources/ui/window.ui:22
+msgid "_Keyboard Shortcuts"
+msgstr "_Pikanäppäimet"
+
+#: data/resources/ui/window.ui:26
+msgid "_About Authenticator"
+msgstr "_Tietoja - Todennin"
+
+#: data/resources/ui/window.ui:66
+msgid "Authenticator is Locked"
 msgstr "Todennin on lukittu"
 
-#: data/resources/gtk/ui/window.ui.in:466
-msgid "Unlock"
-msgstr "Avaa lukitus"
+#: data/resources/ui/window.ui:92
+msgid "_Unlock"
+msgstr "_Avaa lukitus"
 
-#: src/authenticator.py.in:49
-msgid "Start in debug mode"
-msgstr "Käynnistä vianselvitystilassa"
+#: data/resources/ui/window.ui:122
+msgid "Accounts"
+msgstr "Tilit"
 
-#: src/Authenticator/application.py.in:94
-#: src/Authenticator/widgets/settings.py:93
-msgid "Lock the application"
-msgstr "Lukitse sovellus"
+#: data/resources/ui/window.ui:137 data/resources/ui/window.ui:176
+msgid "New Account"
+msgstr "Uusi tili"
 
-#: src/Authenticator/application.py.in:102
-msgid "from a plain-text JSON file"
-msgstr "raakatekstipohjaisesta JSON-tiedostosta"
+#: data/resources/ui/window.ui:145 data/resources/ui/window.ui:222
+msgid "Main Menu"
+msgstr "Päävalikko"
 
-#: src/Authenticator/application.py.in:103
-msgid "in a plain-text JSON file"
-msgstr "raakatekstipohjaisessa JSON-tiedostossa"
+#: data/resources/ui/window.ui:153
+msgid "No Accounts"
+msgstr "Ei tilejä"
 
-#: src/Authenticator/application.py.in:105
-msgid "Restore"
-msgstr "Palauta"
+#: data/resources/ui/window.ui:154
+msgid "Add an account or scan a QR code first."
+msgstr "Lisää ensin tili tai lue QR-koodi."
 
-#: src/Authenticator/application.py.in:106
-msgid "Backup"
-msgstr "Varmuuskopioi"
+#: src/application.rs:77
+msgid "Accounts restored successfully"
+msgstr "Tilit palautettu onnistuneesti"
 
-#: src/Authenticator/application.py.in:115
-msgid "Donate"
-msgstr "Lahjoita"
+#: src/application.rs:103
+msgid "translator-credits"
+msgstr "Jiri Grönroos"
 
-#: src/Authenticator/application.py.in:116
-msgid "Keyboard Shortcuts"
-msgstr "Pikanäppäimet"
+#: src/application.rs:392 src/widgets/accounts/row.rs:46
+msgid "One-Time password copied"
+msgstr "Kertakäyttösalasana kopioitu"
 
-#: src/Authenticator/application.py.in:117
-msgid "About Authenticator"
-msgstr "Tietoja - Todennin"
+#: src/application.rs:393
+msgid "Password was copied successfully"
+msgstr "Salasana kopioitiin onnistuneesti"
 
-#: src/Authenticator/models/account.py:71
-msgid "Default"
-msgstr "Oletus"
+#. Translators: This is for making a backup for the aegis Android app.
+#. Translators: This is for restoring a backup from the aegis Android app.
+#: src/backup/aegis.rs:399 src/backup/aegis.rs:439
+msgid "Aegis"
+msgstr "Aegis"
 
-#: src/Authenticator/widgets/accounts/add.py:57
-msgid "Invalid QR code"
-msgstr "Virheellinen QR-koodi"
+#: src/backup/aegis.rs:403
+msgid "Into a JSON file containing plain-text or encrypted fields"
+msgstr "JSON-tiedostoon sisältäen raakatekstinä tai salattuna olevia kenttiä"
 
-#: src/Authenticator/widgets/accounts/list.py:153
-msgid "The One-Time Passwords expires in {} seconds"
-msgstr "Kertakäyttösalasanat vanhenevat {} sekunnissa"
+#: src/backup/aegis.rs:443
+msgid "From a JSON file containing plain-text or encrypted fields"
+msgstr "JSON-tiedostosta sisältäen raakatekstinä tai salattuna olevia kenttiä"
 
-#: src/Authenticator/widgets/accounts/row.py:82
-msgid "Couldn't generate the secret code"
-msgstr "Salaista koodia ei voitu luoda"
+#. Translators: This is for making a backup for the andOTP Android app.
+#: src/backup/andotp.rs:79
+msgid "a_ndOTP"
+msgstr "a_ndOTP"
 
-#: src/Authenticator/widgets/accounts/row.py:93
-msgid "The PIN of {} was copied to the clipboard"
-msgstr "Palvelun {} PIN kopioitiin leikepöydälle"
+#: src/backup/andotp.rs:83
+msgid "Into a plain-text JSON file"
+msgstr "Raakatekstipohjaiseen JSON-tiedostoon"
 
-#: src/Authenticator/widgets/accounts/row.py:133
-msgid "The account was updated successfully"
-msgstr "Tili päivitettiin onnistuneesti"
+#. Translators: This is for restoring a backup from the andOTP Android app.
+#: src/backup/andotp.rs:127
+msgid "an_dOTP"
+msgstr "an_dOTP"
 
-#: src/Authenticator/widgets/notification.py:63
-msgid "Close the notification"
-msgstr "Sulje ilmoitus"
+#: src/backup/andotp.rs:131 src/backup/bitwarden.rs:124 src/backup/legacy.rs:45
+msgid "From a plain-text JSON file"
+msgstr "Raakatekstipohjaisesta JSON-tiedostosta"
 
-#: src/Authenticator/widgets/notification.py:68
-#: src/Authenticator/widgets/notification.py:83
-msgid "Undo"
-msgstr "Kumoa"
+#: src/backup/bitwarden.rs:47
+msgid "Unknown account"
+msgstr "Tuntematon tili"
 
-#: src/Authenticator/widgets/settings.py:94
-msgid "Lock the application with a password"
-msgstr "Lukitse sovellus salasanalla"
+#: src/backup/bitwarden.rs:55
+msgid "Unknown issuer"
+msgstr "Tuntematon myöntäjä"
 
-#: src/Authenticator/widgets/settings.py:157
-msgid "Authentication password is now enabled."
-msgstr "Todentimen salasana on nyt käytössä."
+#. Translators: This is for restoring a backup from Bitwarden.
+#: src/backup/bitwarden.rs:120
+msgid "_Bitwarden"
+msgstr "_Bitwarden"
 
-#: src/Authenticator/widgets/settings.py:159
-msgid "The authentication password was updated."
-msgstr "Todentimen salasana päivitettiin."
+#: src/backup/freeotp.rs:18
+msgid "_Authenticator"
+msgstr "_Todennin"
 
-#: src/Authenticator/widgets/settings.py:163
-msgid "The authentication password was deleted."
-msgstr "Todentimen salasana poistettiin."
+#: src/backup/freeotp.rs:22
+msgid "Into a plain-text file, compatible with FreeOTP+"
+msgstr "Raakatekstitiedostoon, yhteensopiva FreeOTP+:n kanssa"
 
-#: src/Authenticator/widgets/settings.py:205
-msgid "Save Password"
-msgstr "Tallenna salasana"
+#: src/backup/freeotp.rs:51
+msgid "A_uthenticator"
+msgstr "T_odennin"
 
-#: src/Authenticator/widgets/settings.py:258
-msgid "Do you want to remove the authentication password?"
-msgstr "Haluatko poistaa todentimen salasanan?"
+#: src/backup/freeotp.rs:55
+msgid "From a plain-text file, compatible with FreeOTP+"
+msgstr "Raakatekstitiedostosta, yhteensopiva FreeOTP+:n kanssa"
 
-#: src/Authenticator/widgets/settings.py:260
-msgid "Authentication password enforces the privacy of your accounts."
-msgstr "Todentimen salasana parantaa tiliesi yksityisyyttä."
+#: src/backup/freeotp_json.rs:87
+msgid "FreeOTP+"
+msgstr "FreeOTP+"
 
-#: src/Authenticator/widgets/utils.py:24 src/Authenticator/widgets/utils.py:29
-msgid "JSON files"
-msgstr "JSON-tiedostot"
+#: src/backup/freeotp_json.rs:91
+msgid "From a plain-text JSON file, compatible with FreeOTP+"
+msgstr "Raakatekstinomaisesta JSON-tiedostosta, yhteensopiva FreeOTP+:n kanssa"
+
+#: src/backup/google.rs:19
+msgid "Google Authenticator"
+msgstr "Google Authenticator"
+
+#: src/backup/google.rs:23
+msgid "From a QR code generated by Google Authenticator"
+msgstr "Google Authenticatorin luomasta QR-koodista"
+
+#. Translators: this is for restoring a backup from the old Authenticator
+#. release
+#: src/backup/legacy.rs:41
+msgid "Au_thenticator (Legacy)"
+msgstr "To_dennin (vanha)"
+
+#: src/backup/raivootp.rs:102
+msgid "Raivo OTP"
+msgstr "Raivo OTP"
+
+#: src/backup/raivootp.rs:106
+msgid "From a ZIP export generated by Raivo OTP"
+msgstr "Raivo OTP:n luomasta ZIP-viennistä"
+
+#: src/models/algorithm.rs:60
+msgid "Counter-based"
+msgstr "Laskuriperusteinen"
+
+#: src/models/algorithm.rs:61
+msgid "Time-based"
+msgstr "Aikaperusteinen"
+
+#. Translators: Steam refers to the gaming application by Valve.
+#: src/models/algorithm.rs:63
+msgid "Steam"
+msgstr "Steam"
+
+#: src/models/algorithm.rs:126
+msgid "SHA-1"
+msgstr "SHA-1"
+
+#: src/models/algorithm.rs:127
+msgid "SHA-256"
+msgstr "SHA-256"
+
+#: src/models/algorithm.rs:128
+msgid "SHA-512"
+msgstr "SHA-512"
+
+#: src/widgets/accounts/add.rs:269 src/widgets/preferences/window.rs:414
+#: src/widgets/providers/page.rs:292
+msgid "Image"
+msgstr "Kuva"
+
+#: src/widgets/accounts/add.rs:277 src/widgets/preferences/window.rs:422
+msgid "Select QR Code"
+msgstr "Valitse QR-koodi"
+
+#: src/widgets/accounts/add.rs:295
+msgid "Invalid Token"
+msgstr "Virheellinen poletti"
+
+#: src/widgets/accounts/details.rs:127
+msgid "Are you sure you want to delete the account?"
+msgstr "Haluatko varmasti poistaa tilin?"
+
+#: src/widgets/accounts/details.rs:128
+msgid "This action is irreversible"
+msgstr "Tätä toimenpidettä ei voi perua"
+
+#: src/widgets/accounts/details.rs:132
+msgid "No"
+msgstr "Ei"
+
+#: src/widgets/accounts/details.rs:132
+msgid "Yes"
+msgstr "Kyllä"
+
+#: src/widgets/preferences/password_page.rs:172
+#: src/widgets/preferences/password_page.rs:214
+msgid "Wrong Passphrase"
+msgstr "Väärä tunnuslause"
+
+#: src/widgets/preferences/window.rs:191 src/widgets/preferences/window.rs:263
+msgid "Key / Passphrase"
+msgstr "Avain / tunnuslause"
+
+#: src/widgets/preferences/window.rs:202 src/widgets/preferences/window.rs:275
+msgid "Select File"
+msgstr "Valitse tiedosto"
+
+#: src/widgets/preferences/window.rs:226
+msgid "Failed to create a backup"
+msgstr "Varmuuskopion luominen epäonnistui"
+
+#: src/widgets/preferences/window.rs:338
+msgid "Failed to restore from camera"
+msgstr "Palauttaminen kameralta epäonnistui"
+
+#: src/widgets/preferences/window.rs:349
+msgid "Failed to restore from a screenshot"
+msgstr "Palauttaminen kuvakaappauksesta epäonnistui"
+
+#: src/widgets/preferences/window.rs:359
+msgid "Failed to restore from an image"
+msgstr "Palauttaminen kuvasta epäonnistui"
+
+#: src/widgets/preferences/window.rs:372
+msgid "Failed to restore from a file"
+msgstr "Palauttaminen tiedostosta epäonnistui"
+
+#: src/widgets/providers/dialog.rs:235
+msgid "Provider created successfully"
+msgstr "Palveluntarjoaja luotu onnistuneesti"
+
+#: src/widgets/providers/dialog.rs:245
+msgid "Provider updated successfully"
+msgstr "Palveluntarjoaja päivitetty onnistuneesti"
+
+#: src/widgets/providers/dialog.rs:261
+msgid "Provider removed successfully"
+msgstr "Palveluntarjoaja poistettu onnistuneesti"
+
+#: src/widgets/providers/page.rs:186
+msgid "Editing Provider: {}"
+msgstr "Muokataan palveluntarjoajaa: {}"
+
+#: src/widgets/providers/page.rs:325
+msgid "The provider has accounts assigned to it, please remove them first"
+msgstr "Palveluntarjoajaan on määritelty tilejä, poista ne ensin"
+
+#: src/widgets/window.rs:115
+msgid "Wrong Password"
+msgstr "Väärä salasana"
+
+#~ msgid "Bilal Elmoussaoui"
+#~ msgstr "Bilal Elmoussaoui"
+
+#~ msgid "Unknown Device"
+#~ msgstr "Tuntematon laite"
+
+#~ msgid "Back"
+#~ msgstr "Edellinen"
+
+#~ msgid "Dark Mode"
+#~ msgstr "Tumma tila"
+
+#~ msgid "Whether the application should use a dark mode."
+#~ msgstr "Tuleeko sovelluksen käyttää tummaa teemaa."
+
+#~ msgid "Go Back"
+#~ msgstr "Siirry takaisin"
+
+#~ msgid "_Edit"
+#~ msgstr "_Muokkaa"
+
+#~ msgid "Appearance"
+#~ msgstr "Ulkoasu"
+
+#~ msgid "_Dark Mode"
+#~ msgstr "_Tumma tila"
+
+#~ msgid "Whether the application should use a dark mode"
+#~ msgstr "Tuleeko sovelluksen käyttää tummaa teemaa"
+
+#~ msgid "The key that will be used to decrypt the vault"
+#~ msgstr "Avain, jota käytetään holvin salauksen purkamiseen"
+
+#~ msgid "The key used to encrypt the vault"
+#~ msgstr "Holvin salauksen purkamiseen käytettävä avain"
+
+#~ msgid "Unable to restore accounts"
+#~ msgstr "Tilien palauttaminen ei onnistunut"
+
+#~ msgid "Something went wrong"
+#~ msgstr "Jokin meni pieleen"
+
+#~ msgid "Couldn't find a QR code"
+#~ msgstr "QR-koodia ei löytynyt"
+
+#~ msgid "Used to fetch the provider icon"
+#~ msgstr "Käytetään palveluntarjoajan kuvakkeen noutamiseen"
+
+#~ msgid "Provider setup instructions"
+#~ msgstr "Palveluntarjoajan määritysohjeet"
+
+#~ msgid "Select"
+#~ msgstr "Valitse"
+
+#~ msgid "D_etails"
+#~ msgstr "Tie_dot"
+
+#~ msgid "_Rename"
+#~ msgstr "_Nimeä uudelleen"
+
+#~ msgid "More"
+#~ msgstr "Lisää"
+
+#~ msgid "A Two-Factor Authentication application"
+#~ msgstr "Kaksivaiheisen todennuksen sovellus"
+
+#~ msgid "Huge database of more than 560 supported services"
+#~ msgstr "Valtava tietokanta kattaen yli 560 tuettua palvelua"
+
+#~ msgid "The possibility to add new services"
+#~ msgstr "Mahdollisuus lisätä uusia palveluja"
+
+#~ msgid "Dark theme and night light"
+#~ msgstr "Tumma teema ja yövalo"
+
+#~ msgid "Main Window - empty state"
+#~ msgstr "Pääikkuna - tyhjä tilanne"
+
+#~ msgid "Main Window - Accounts List"
+#~ msgstr "Pääikkuna - Tililuettelo"
+
+#~ msgid "Night Light"
+#~ msgstr "Yövalo"
+
+#~ msgid "Automatically enable dark mode at night."
+#~ msgstr "Ota tumma tila käyttöön automaattisesti yöaikaan."
+
+#~ msgid "Confirm New Password:"
+#~ msgstr "Vahvista uusi salasana:"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show Shortcuts"
+#~ msgstr "Näytä pikanäppäimet"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Add"
+#~ msgstr "Lisää"
+
+#~ msgid "There are no accounts yet…"
+#~ msgstr "Ei vielä tilejä…"
+
+#~ msgid "Add a new account from the menu"
+#~ msgstr "Lisää uusi tili valikosta"
+
+#~ msgid "Scan a QR Code"
+#~ msgstr "Skannaa QR-koodi"
+
+#~ msgid "Start in debug mode"
+#~ msgstr "Käynnistä vianselvitystilassa"
+
+#~ msgid "Default"
+#~ msgstr "Oletus"
+
+#~ msgid "Add"
+#~ msgstr "Lisää"
+
+#~ msgid "The PIN of {} was copied to the clipboard"
+#~ msgstr "Palvelun {} PIN kopioitiin leikepöydälle"
+
+#~ msgid "Undo"
+#~ msgstr "Kumoa"
+
+#~ msgid "Close the notification"
+#~ msgstr "Sulje ilmoitus"
+
+#~ msgid "Save Password"
+#~ msgstr "Tallenna salasana"
+
+#~ msgid "Do you want to remove the authentication password?"
+#~ msgstr "Haluatko poistaa todentimen salasanan?"
+
+#~ msgid "Authentication password enforces the privacy of your accounts."
+#~ msgstr "Todentimen salasana parantaa tiliesi yksityisyyttä."
+
+#~ msgid "JSON files"
+#~ msgstr "JSON-tiedostot"
+
+#~ msgid "Account Name"
+#~ msgstr "Tilin nimi"
+
+#~ msgid "Donate"
+#~ msgstr "Lahjoita"
+
+#~ msgid "Two-factor authentication code generator"
+#~ msgstr "Kaksivaiheisen todennuskoodien generaattori"
+
+#~ msgid "Two-factor authentication code generator."
+#~ msgstr "Kaksivaiheisen todennuskoodin generaattori"
+
+#~ msgid "Authentication password is now enabled."
+#~ msgstr "Todentimen salasana on nyt käytössä."
+
+#~ msgid "The authentication password was updated."
+#~ msgstr "Todentimen salasana päivitettiin."
+
+#~ msgid "The authentication password was deleted."
+#~ msgstr "Todentimen salasana poistettiin."
