@@ -1,0 +1,39 @@
+From: Bastian Germann <bage@debian.org>
+Date: Wed, 4 Sep 2024 20:08:18 +0200
+Subject: Revert "progress_icon: Use adw::StyleManager to retrieve accent color"
+
+This reverts commit 59f8da09574ef63b765c4ba55f59d59e42ec86c4.
+---
+ Cargo.toml                   | 2 +-
+ src/widgets/progress_icon.rs | 5 ++++-
+ 2 files changed, 5 insertions(+), 2 deletions(-)
+
+diff --git a/Cargo.toml b/Cargo.toml
+index 8ab355d..9299ed6 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -13,7 +13,7 @@ opt-level = 1
+ opt-level = 3
+ 
+ [dependencies]
+-adw = {package = "libadwaita", version = "0.7", features = ["v1_6"]}
++adw = {package = "libadwaita", version = "0.7", features = ["v1_5"]}
+ aes-gcm = "0.10"
+ anyhow = "1.0"
+ aperture = "0.7"
+diff --git a/src/widgets/progress_icon.rs b/src/widgets/progress_icon.rs
+index ecbce7f..d55cc5c 100644
+--- a/src/widgets/progress_icon.rs
++++ b/src/widgets/progress_icon.rs
+@@ -35,7 +35,10 @@ pub(crate) mod imp {
+             let size = widget.size() as f32;
+             let radius = size / 2.0;
+             let progress = 1.0 - widget.progress();
+-            let color = adw::StyleManager::default().accent_color_rgba();
++            let color = widget
++                .style_context()
++                .lookup_color("accent_color")
++                .unwrap_or_else(|| gdk::RGBA::new(0.47058824, 0.68235296, 0.92941177, 1.0));
+ 
+             let rect = graphene::Rect::new(0.0, 0.0, size, size);
+             let circle = gsk::RoundedRect::from_rect(rect, radius);

@@ -1,0 +1,14 @@
+Description: Prevent a bad cp command with non-existing path
+Author: Bastian Germann <bage@debian.org>
+---
+--- gnome-authenticator-4.5.0.orig/src/meson.build
++++ gnome-authenticator-4.5.0/src/meson.build
+@@ -48,8 +48,6 @@ cargo_build = custom_target(
+     'env',
+     cargo, 'build',
+     cargo_options,
+-    '&&',
+-    'cp', 'src' / rust_target / meson.project_name(), '@OUTPUT@',
+   ]
+ )
+ 

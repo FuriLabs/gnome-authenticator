@@ -1,0 +1,21 @@
+From: Bastian Germann <bage@debian.org>
+Date: Wed, 4 Sep 2024 20:13:53 +0200
+Subject: Make compatible with rust-zip 0.6
+
+---
+ src/backup/raivootp.rs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/backup/raivootp.rs b/src/backup/raivootp.rs
+index 794a816..08702f4 100644
+--- a/src/backup/raivootp.rs
++++ b/src/backup/raivootp.rs
+@@ -117,7 +117,7 @@ impl Restorable for RaivoOTP {
+             Some(k) => k.as_bytes(),
+         };
+         let mut archive = ZipArchive::new(Cursor::new(from))?;
+-        let file = archive.by_name_decrypt("raivo-otp-export.json", password)?;
++        let file = archive.by_name_decrypt("raivo-otp-export.json", password)??;
+         let items = serde_json::from_reader(file)?;
+         Ok(items)
+     }

@@ -1,14 +1,5 @@
 Test-Command: xvfb-run /usr/bin/authenticator --help
 Restrictions: allow-stderr superficial
-Depends: gir1.2-handy-0.0,
-         gir1.2-secret-1,
-         python3-bs4,
-         python3-gi,
-         python3-pil,
-         python3-pyfavicon,
-         python3-pyotp,
-         python3-pyzbar,
-         python3-yoyo,
-         xauth,
+Depends: xauth,
          xvfb,
          @

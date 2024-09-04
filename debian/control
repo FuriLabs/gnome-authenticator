@@ -4,25 +4,31 @@ Priority: optional
 Maintainer: Debian Python Team <team+python@tracker.debian.org>
 Uploaders: Henry-Nicolas Tourneur <debian@nilux.be>
 Build-Depends: appstream-util,
+               cargo,
                debhelper-compat (= 13),
-               dh-python,
-               libgirepository1.0-dev,
-               libglib2.0-dev,
-               libgtk-3-dev,
-               libhandy-0.0-dev,
-               libsecret-1-dev,
-               libzbar-dev,
-               help2man,
+               desktop-file-utils,
+               libgstreamer-plugins-bad1.0-dev,
+               librust-aes-gcm-dev,
+               librust-aperture-dev,
+               librust-ashpd-dev,
+               librust-data-encoding-dev,
+               librust-diesel-dev,
+               librust-diesel-migrations-dev,
+               librust-gettext-rs-dev,
+               librust-gst-plugin-gtk4-dev,
+               librust-libadwaita-dev,
+               librust-libsqlite3-sys-dev,
+               librust-oo7-dev,
+               librust-prost-dev,
+               librust-qrencode-dev,
+               librust-reqwest-dev,
+               librust-rust-argon2-dev,
+               librust-scrypt-dev,
+               librust-svg-metadata-dev,
+               librust-search-provider-dev,
+               librust-tracing-subscriber-dev,
+               librust-zbar-rust-dev,
                meson,
-               python-gi-dev,
-               python3-all,
-               python3-bs4,
-               python3-pil,
-               python3-pyfavicon,
-               python3-pyotp,
-               python3-pyzbar,
-               python3-setuptools,
-               python3-yoyo
 Standards-Version: 4.6.1
 Rules-Requires-Root: no
 Homepage: https://gitlab.gnome.org/World/Authenticator
@@ -30,18 +36,9 @@ Vcs-Browser: https://salsa.debian.org/python-team/packages/gnome-authenticator
 Vcs-Git: https://salsa.debian.org/python-team/packages/gnome-authenticator.git
 
 Package: gnome-authenticator
-Architecture: all
-Depends: gir1.2-handy-0.0,
-         gir1.2-secret-1,
-         python3-bs4,
-         python3-gi,
-         python3-pil,
-         python3-pyfavicon,
-         python3-pyotp,
-         python3-pyzbar,
-         python3-yoyo,
-         ${misc:Depends},
-         ${python3:Depends}
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
 Description: TOTP authentication app for the GNOME Desktop
  Authenticator is a GTK3 application for the GNOME desktop, featuring:
   - QR code scanner

@@ -1,2 +1,7 @@
-002_fix_meson_errors.patch
-001_python38-cleanup.patch
+0001-Revert-progress_icon-Immediately-redraw-on-accent-co.patch
+0002-Revert-progress_icon-Use-adw-StyleManager-to-retriev.patch
+0003-Relax-dependency-versions.patch
+0004-Make-compatible-with-rust-zip-0.6.patch
+0005-Prevent-setting-CARGO_HOME.patch
+prevent-bad-cp.patch
+Relax-data-encoding.patch

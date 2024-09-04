@@ -1,0 +1,25 @@
+Description: Relax data-encoding version
+Author: Bastian Germann <bage@debian.org>
+---
+--- gnome-authenticator-4.5.0.orig/Cargo.toml
++++ gnome-authenticator-4.5.0/Cargo.toml
+@@ -18,7 +18,7 @@ aes-gcm = "0.10"
+ anyhow = "1.0"
+ aperture = "0.7"
+ ashpd = {version = "0.9", default-features = false, features = ["gtk4", "tokio", "tracing"]}
+-data-encoding = "2.3"
++data-encoding = "2"
+ diesel = {version = "2.0", features = ["sqlite", "r2d2"]}
+ diesel_migrations = {version = "2.0", features = ["sqlite"]}
+ favicon-scrapper = {path = "./favicon-scrapper"}
+--- gnome-authenticator-4.5.0.orig/favicon-scrapper/Cargo.toml
++++ gnome-authenticator-4.5.0/favicon-scrapper/Cargo.toml
+@@ -4,7 +4,7 @@ edition = "2021"
+ name = "favicon-scrapper"
+ 
+ [dependencies]
+-data-encoding = "2.3"
++data-encoding = "2"
+ image = {version = "0", features = ["ico", "png"], default-features = false}
+ percent-encoding = "2.1"
+ quick-xml = "0.36"
