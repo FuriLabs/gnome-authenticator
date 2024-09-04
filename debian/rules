@@ -18,5 +18,5 @@ execute_before_dh_auto_configure:
 	$(CARGO) prepare-debian debian/cargo_registry --link-from-system
 	mv Cargo.lock debian/
 
-execute_after_dh_auto_build:
+execute_after_dh_auto_install:
 	mv debian/Cargo.lock .
