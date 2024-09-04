@@ -28,6 +28,7 @@ Build-Depends: appstream-util,
                librust-search-provider-dev,
                librust-tracing-subscriber-dev,
                librust-zbar-rust-dev,
+               librust-zip-dev,
                meson,
 Standards-Version: 4.6.1
 Rules-Requires-Root: no
