@@ -1,0 +1,11 @@
+[package]
+name = "keyring-fetch"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+oo7 = {version = "0.1.0", default-features = false, features = ["native_crypto", "tracing", "unstable", "async-std"]}
+async-std = {version = "1.11.0", features = ["attributes"]}
+hex = "0.4"

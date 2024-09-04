@@ -1,0 +1,843 @@
+# Czech translation for authenticator.
+# Copyright (C) 2019 authenticator's COPYRIGHT HOLDER
+# This file is distributed under the same license as the authenticator package.
+# Zdeněk Hataš <zdenek.hatas@gmail.com>, 2019 - 2021.
+# Marek Černocký <marek@manet.cz>, 2022.
+# Tomkoid <tomkoid.tomkoid.tk>
+# Vojtěch Perník <translations@pervoj.cz>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: authenticator master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Authenticator/issues\n"
+"POT-Creation-Date: 2024-01-07 14:35+0000\n"
+"PO-Revision-Date: 2024-01-22 22:50+0100\n"
+"Last-Translator: Daniel Rusek <mail@asciiwolf.com>\n"
+"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#: data/com.belmoussaoui.Authenticator.desktop.in.in:3
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:7
+#: data/resources/ui/window.ui:36 src/application.rs:91 src/main.rs:40
+msgid "Authenticator"
+msgstr "Autentikátor"
+
+#: data/com.belmoussaoui.Authenticator.desktop.in.in:4
+msgid "Two-Factor Authentication"
+msgstr "Dvoufaktorová autentizace"
+
+#: data/com.belmoussaoui.Authenticator.desktop.in.in:5
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:8
+#: src/application.rs:94
+msgid "Generate two-factor codes"
+msgstr "Generujte dvoufaktorové kódy"
+
+#: data/com.belmoussaoui.Authenticator.desktop.in.in:10
+msgid "Gnome;GTK;Verification;2FA;Authentication;OTP;TOTP;"
+msgstr "Gnome;GTK;ověření;verifikace;2FA;autentizace;Authenticator;OTP;TOTP;"
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:6
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:7
+msgid "Default window width"
+msgstr "Výchozí šířka okna"
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:11
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:12
+msgid "Default window height"
+msgstr "Výchozí výška okna"
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:16
+msgid "Default window maximized behaviour"
+msgstr "Výchozí chování maximalizace okna"
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:21
+msgid "Auto lock"
+msgstr "Automatický zámek"
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:22
+msgid "Whether to auto lock the application or not"
+msgstr "Zda se má aplikace automaticky uzamknout či ne."
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:26
+msgid "Auto lock timeout"
+msgstr "Časový limit do automatického uzamčení"
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:27
+msgid "Lock the application on idle after X minutes"
+msgstr "Uzamknout aplikaci po X minutách nečinnosti."
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:34
+msgid "Download Favicons"
+msgstr "Stáhnout ikony"
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:35
+msgid ""
+"Whether the application should attempt to find an icon for the providers."
+msgstr "Zda se má aplikace pokusit najít ikony poskytovatelů."
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:39
+msgid "Download Favicons over metered connections"
+msgstr "Stahovat ikony přes měřená spojení"
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:40
+msgid ""
+"Whether the application should download favicons over a metered connection."
+msgstr "Zda má aplikace stahovat ikony přes měřená spojení."
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:10
+msgid "Simple application for generating Two-Factor Authentication Codes."
+msgstr ""
+"Jednoduchá aplikace pro generování dvoufaktorových autentizačních kódů."
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:11
+msgid "Features:"
+msgstr "Funkce:"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:13
+msgid "Time-based/Counter-based/Steam methods support"
+msgstr "Podpora časových/čítačových/Steam metod"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:14
+msgid "SHA-1/SHA-256/SHA-512 algorithms support"
+msgstr "Podpora algoritmů SHA-1/SHA-256/SHA-512"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:15
+msgid "QR code scanner using a camera or from a screenshot"
+msgstr "Čtení QR kódů pomocí kamery/fotoaparátu nebo ze snímku obrazovky"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:16
+msgid "Lock the application with a password"
+msgstr "Uzamykání aplikace heslem"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:17
+msgid "Beautiful UI"
+msgstr "Hezké uživatelské rozhraní"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:18
+msgid "GNOME Shell search provider"
+msgstr "Poskytovatel vyhledávání v GNOME Shell"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:19
+msgid ""
+"Backup/Restore from/into known applications like FreeOTP+, Aegis "
+"(encrypted / plain-text), andOTP, Google Authenticator"
+msgstr ""
+"Záloha/obnova z/do známých aplikací, jako jsou FreeOTP+, Aegis (šifrovaný / "
+"prostý text), andOTP a Google Authenticator"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:25
+msgid "Main Window"
+msgstr "Hlavní okno"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:29
+#: data/resources/ui/account_add.ui:32 data/resources/ui/account_add.ui:49
+msgid "Add a New Account"
+msgstr "Přidat nový účet"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:33
+msgid "Add a New Provider"
+msgstr "Přidat nového poskytovatele"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:37
+msgid "Account Details"
+msgstr "Podrobnosti účtu"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:41
+msgid "Backup/Restore formats support"
+msgstr "Podpora formátů zálohy/obnovy"
+
+#: data/resources/ui/account_add.ui:6 src/widgets/preferences/window.rs:292
+msgid "_Camera"
+msgstr "_Kamera"
+
+#: data/resources/ui/account_add.ui:10 src/widgets/preferences/window.rs:296
+msgid "_Screenshot"
+msgstr "_Snímek obrazovky"
+
+#: data/resources/ui/account_add.ui:14 src/widgets/preferences/window.rs:301
+msgid "_QR Code Image"
+msgstr "Obrázek s _QR kódem"
+
+#: data/resources/ui/account_add.ui:58
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: data/resources/ui/account_add.ui:64
+msgid "_Add"
+msgstr "_Přidat"
+
+#: data/resources/ui/account_add.ui:76 src/widgets/preferences/window.rs:287
+msgid "Scan QR Code"
+msgstr "Skenovat QR kód"
+
+#: data/resources/ui/account_add.ui:114
+#: data/resources/ui/account_details_page.ui:96
+#: data/resources/ui/provider_page.ui:22
+#: data/resources/ui/providers_dialog.ui:110
+msgid "Provider"
+msgstr "Poskytovatel"
+
+#: data/resources/ui/account_add.ui:115
+msgid "Token issuer"
+msgstr "Vydavatel tiketu"
+
+#: data/resources/ui/account_add.ui:129
+#: data/resources/ui/account_details_page.ui:91
+msgid "Account"
+msgstr "Účet"
+
+#: data/resources/ui/account_add.ui:135
+msgid "Token"
+msgstr "Tiket"
+
+#: data/resources/ui/account_add.ui:141
+#: data/resources/ui/account_details_page.ui:139
+#: data/resources/ui/provider_page.ui:158
+msgid "Counter"
+msgstr "Čítač"
+
+#: data/resources/ui/account_add.ui:159
+#: data/resources/ui/account_details_page.ui:119
+#: data/resources/ui/provider_page.ui:133
+msgid "Algorithm"
+msgstr "Algoritmus"
+
+#: data/resources/ui/account_add.ui:171
+#: data/resources/ui/account_details_page.ui:129
+#: data/resources/ui/provider_page.ui:118
+msgid "Computing Method"
+msgstr "Metoda výpočtu"
+
+#: data/resources/ui/account_add.ui:183
+#: data/resources/ui/account_details_page.ui:148
+#: data/resources/ui/provider_page.ui:149
+msgid "Period"
+msgstr "Perioda"
+
+#: data/resources/ui/account_add.ui:184
+#: data/resources/ui/account_details_page.ui:149
+#: data/resources/ui/provider_page.ui:150
+msgid "Duration in seconds until the next password update"
+msgstr "Doba v sekundách do další aktualizace hesla"
+
+#: data/resources/ui/account_add.ui:196
+#: data/resources/ui/account_details_page.ui:159
+#: data/resources/ui/provider_page.ui:167
+msgid "Digits"
+msgstr "Číslice"
+
+#: data/resources/ui/account_add.ui:197
+#: data/resources/ui/account_details_page.ui:160
+#: data/resources/ui/provider_page.ui:168
+msgid "Length of the generated code"
+msgstr "Délka generovaného kódu"
+
+#: data/resources/ui/account_add.ui:209
+#: data/resources/ui/account_details_page.ui:170
+#: data/resources/ui/provider_page.ui:112
+msgid "Website"
+msgstr "Webové stránky"
+
+#: data/resources/ui/account_add.ui:214
+msgid "How to Set Up"
+msgstr "Jak nastavit"
+
+#: data/resources/ui/account_add.ui:234
+#: data/resources/ui/preferences_camera_page.ui:4
+msgid "Camera"
+msgstr "Kamera"
+
+#: data/resources/ui/account_add.ui:246
+msgid "Create Provider"
+msgstr "Vytvořit poskytovatele"
+
+#: data/resources/ui/account_details_page.ui:56
+#: data/resources/ui/preferences_password_page.ui:17
+#: data/resources/ui/provider_page.ui:29
+msgid "_Save"
+msgstr "_Uložit"
+
+#: data/resources/ui/account_details_page.ui:67
+#: data/resources/ui/provider_page.ui:185
+msgid "_Delete"
+msgstr "_Odstranit"
+
+#: data/resources/ui/account_details_page.ui:175
+msgid "Help"
+msgstr "Nápověda"
+
+#: data/resources/ui/account_row.ui:23
+msgid "Increment the counter"
+msgstr "Zvýšit čítač o jedno"
+
+#: data/resources/ui/account_row.ui:34
+msgid "Copy PIN to clipboard"
+msgstr "Zkopírovat PIN do schránky"
+
+#: data/resources/ui/account_row.ui:43
+msgid "Account details"
+msgstr "Podrobnosti účtu"
+
+#: data/resources/ui/camera.ui:36
+msgid "No Camera Found"
+msgstr "Nebyla nalezena žádná kamera"
+
+#: data/resources/ui/camera.ui:39
+msgid "_From a Screenshot"
+msgstr "_Ze snímku obrazovky"
+
+#: data/resources/ui/keyring_error_dialog.ui:8
+msgid "Secret Service Error"
+msgstr "Chyba služby utajení"
+
+#: data/resources/ui/keyring_error_dialog.ui:35
+msgid ""
+"Authenticator relies on a Secret Service Provider to manage your sensitive "
+"session information and an error occurred while we were trying to store or "
+"get your session."
+msgstr ""
+"Autentikátor při správě vašich citlivých informací o sezení spoléhá na "
+"poskytovatele Secret Service a při pokusu o uložení nebo získání vašeho "
+"sezení došlo k chybě."
+
+#: data/resources/ui/keyring_error_dialog.ui:47
+msgid ""
+"Here are a few things that might help you fix issues with the Secret Service:"
+msgstr ""
+"Zde je několik věcí, které vám mohou pomoci vyřešit problémy se Secret "
+"Service:"
+
+#: data/resources/ui/keyring_error_dialog.ui:64
+msgid ""
+"Make sure you have a Secret Service Provider installed, like gnome-keyring."
+msgstr ""
+"Ujistěte se, že máte nainstalovaného poskytovatele Secret Service, jako je "
+"gnome-keyring."
+
+#: data/resources/ui/keyring_error_dialog.ui:83
+msgid "Check that you have a default keyring and that it is unlocked."
+msgstr "Zkontrolujte, zda máte výchozí klíčenku a zda je odemčená."
+
+#: data/resources/ui/keyring_error_dialog.ui:95
+msgid ""
+"Check the application logs and your distribution’s documentation for more "
+"details."
+msgstr ""
+"Další podrobnosti naleznete v záznamech aplikace a dokumentaci vaší "
+"distribuce."
+
+#: data/resources/ui/preferences.ui:16
+msgid "General"
+msgstr "Obecné"
+
+#: data/resources/ui/preferences.ui:19
+msgid "Privacy"
+msgstr "Soukromí"
+
+#: data/resources/ui/preferences.ui:22
+msgid "_Passphrase"
+msgstr "_Heslo"
+
+#: data/resources/ui/preferences.ui:24
+msgid "Set up a passphrase to lock the application with"
+msgstr "Nastavte heslo pro uzamykání aplikace"
+
+#: data/resources/ui/preferences.ui:37
+msgid "_Auto Lock the Application"
+msgstr "_Automaticky uzamykat aplikaci"
+
+#: data/resources/ui/preferences.ui:39
+msgid "Whether to automatically lock the application"
+msgstr "Jestli se má aplikace automaticky uzamykat"
+
+#: data/resources/ui/preferences.ui:45
+msgid "Auto Lock _Timeout"
+msgstr "Časový _limit do automatického uzamčení"
+
+#: data/resources/ui/preferences.ui:46
+msgid "The time in minutes"
+msgstr "Čas v minutách"
+
+#: data/resources/ui/preferences.ui:59
+msgid "Network"
+msgstr "Síť"
+
+#: data/resources/ui/preferences.ui:62
+msgid "_Download Favicons"
+msgstr "_Stahovat ikony"
+
+#: data/resources/ui/preferences.ui:64
+msgid "Automatically attempt fetching a website icon"
+msgstr "Pokusit se automaticky načíst ikonu webové stránky"
+
+#: data/resources/ui/preferences.ui:69
+msgid "_Metered Connection"
+msgstr "_Měřená spojení"
+
+#: data/resources/ui/preferences.ui:71
+msgid "Fetch a website icon on a metered connection"
+msgstr "Načítat ikony přes měřená spojení"
+
+#: data/resources/ui/preferences.ui:81
+msgid "Backup/Restore"
+msgstr "Zálohovat / obnovit"
+
+#: data/resources/ui/preferences.ui:84 src/widgets/preferences/window.rs:476
+msgid "Backup"
+msgstr "Zálohovat"
+
+#: data/resources/ui/preferences.ui:89 src/widgets/preferences/window.rs:484
+msgid "Restore"
+msgstr "Obnovit"
+
+#: data/resources/ui/preferences_password_page.ui:4
+msgid "Create Password"
+msgstr "Vytvořit heslo"
+
+#: data/resources/ui/preferences_password_page.ui:28
+msgid "Set up a Passphrase"
+msgstr "Nastavit nové heslo"
+
+#: data/resources/ui/preferences_password_page.ui:29
+msgid "Authenticator will start locked after a passphrase is set."
+msgstr "Autentikátor nastartuje po nastavení hesla uzamčený."
+
+#: data/resources/ui/preferences_password_page.ui:53
+msgid "Current Passphrase"
+msgstr "Současné heslo"
+
+#: data/resources/ui/preferences_password_page.ui:59
+msgid "New Passphrase"
+msgstr "Nové heslo"
+
+#: data/resources/ui/preferences_password_page.ui:65
+msgid "Repeat Passphrase"
+msgstr "Zopakovat heslo"
+
+#: data/resources/ui/preferences_password_page.ui:79
+#: data/resources/ui/provider_page.ui:73
+msgid "_Reset"
+msgstr "_Výchozí"
+
+#: data/resources/ui/provider_page.ui:83
+msgid "Select a _File"
+msgstr "Vybrat _soubor"
+
+#: data/resources/ui/provider_page.ui:106
+msgid "Name"
+msgstr "Název"
+
+#: data/resources/ui/provider_page.ui:159
+msgid "The by default value for counter-based computing method"
+msgstr "Výchozí hodnota pro výpočetní metodu založenou na čítači"
+
+#: data/resources/ui/provider_page.ui:177
+msgid "Help URL"
+msgstr "URL nápovědy"
+
+#: data/resources/ui/providers_dialog.ui:10
+#: data/resources/ui/providers_dialog.ui:21
+msgid "Providers"
+msgstr "Poskytovatelé"
+
+#: data/resources/ui/providers_dialog.ui:31 src/widgets/providers/page.rs:209
+msgid "New Provider"
+msgstr "Nový poskytovatel"
+
+#: data/resources/ui/providers_dialog.ui:38
+#: data/resources/ui/providers_dialog.ui:54 data/resources/ui/window.ui:207
+#: data/resources/ui/window.ui:228
+msgid "Search"
+msgstr "Vyhledat"
+
+#: data/resources/ui/providers_dialog.ui:49 data/resources/ui/window.ui:202
+msgid "Search…"
+msgstr "hledat…"
+
+#: data/resources/ui/providers_dialog.ui:95
+#: data/resources/ui/providers_list.ui:38
+msgid "No Results"
+msgstr "Žádné výsledky"
+
+#: data/resources/ui/providers_dialog.ui:96
+msgid "No providers matching the query were found."
+msgstr "Nebyli nalezeni žádní poskytovatelé odpovídající dotazu."
+
+#: data/resources/ui/providers_dialog.ui:141
+msgid "No Provider Selected"
+msgstr "Není vybrán žádný poskytovatel"
+
+#: data/resources/ui/providers_dialog.ui:142
+msgid "Select a provider or create a new one"
+msgstr "Vyberte poskytovatele nebo udělejte nového"
+
+#: data/resources/ui/providers_list.ui:39
+msgid "No accounts or providers matching the query were found."
+msgstr "Nebyli nalezeny žádné účty nebo poskytovatelé odpovídající dotazu."
+
+#: data/resources/ui/shortcuts.ui:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Obecné"
+
+#: data/resources/ui/shortcuts.ui:14
+msgctxt "shortcut window"
+msgid "Keyboard Shortcuts"
+msgstr "Klávesové zkratky"
+
+#: data/resources/ui/shortcuts.ui:20
+msgctxt "shortcut window"
+msgid "Lock"
+msgstr "Uzamknout"
+
+#: data/resources/ui/shortcuts.ui:26
+msgctxt "shortcut window"
+msgid "Preferences"
+msgstr "Předvolby"
+
+#: data/resources/ui/shortcuts.ui:32
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Ukončit"
+
+#: data/resources/ui/shortcuts.ui:40
+msgctxt "shortcut window"
+msgid "Accounts"
+msgstr "Účty"
+
+#: data/resources/ui/shortcuts.ui:43
+msgctxt "shortcut window"
+msgid "New Account"
+msgstr "Nový účet"
+
+#: data/resources/ui/shortcuts.ui:49
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "Vyhledat"
+
+#: data/resources/ui/shortcuts.ui:55
+msgctxt "shortcut window"
+msgid "Show Providers List"
+msgstr "Zobrazit seznam poskytovatelů"
+
+#: data/resources/ui/window.ui:6
+msgid "_Lock the Application"
+msgstr "_Uzamknout aplikaci"
+
+#: data/resources/ui/window.ui:12
+msgid "P_roviders"
+msgstr "P_oskytovatelé"
+
+#: data/resources/ui/window.ui:16
+msgid "_Preferences"
+msgstr "_Předvolby"
+
+#: data/resources/ui/window.ui:22
+msgid "_Keyboard Shortcuts"
+msgstr "_Klávesové zkratky"
+
+#: data/resources/ui/window.ui:26
+msgid "_About Authenticator"
+msgstr "_O aplikaci Autentikátor"
+
+#: data/resources/ui/window.ui:66
+msgid "Authenticator is Locked"
+msgstr "Autentikátor je uzamčen"
+
+#: data/resources/ui/window.ui:92
+msgid "_Unlock"
+msgstr "_Odemknout"
+
+#: data/resources/ui/window.ui:122
+msgid "Accounts"
+msgstr "Účty"
+
+#: data/resources/ui/window.ui:137 data/resources/ui/window.ui:176
+msgid "New Account"
+msgstr "Nový účet"
+
+#: data/resources/ui/window.ui:145 data/resources/ui/window.ui:222
+msgid "Main Menu"
+msgstr "Hlavní nabídka"
+
+#: data/resources/ui/window.ui:153
+msgid "No Accounts"
+msgstr "Žádné účty"
+
+#: data/resources/ui/window.ui:154
+msgid "Add an account or scan a QR code first."
+msgstr "Nejprve přidejte účet nebo naskenujte QR kód."
+
+#: src/application.rs:77
+msgid "Accounts restored successfully"
+msgstr "Účty se úspěšně obnovily"
+
+#: src/application.rs:103
+msgid "translator-credits"
+msgstr ""
+"Zdeněk Hataš <zdenek.hatas@gmail.com>\n"
+"Marek Černocký <marek@manet.cz>\n"
+"Vojtěch Perník <translations@pervoj.cz>"
+
+#: src/application.rs:392 src/widgets/accounts/row.rs:46
+msgid "One-Time password copied"
+msgstr "Jednorázové heslo bylo zkopírováno"
+
+#: src/application.rs:393
+msgid "Password was copied successfully"
+msgstr "Heslo bylo úspěšně zkopírováno"
+
+#. Translators: This is for making a backup for the aegis Android app.
+#. Translators: This is for restoring a backup from the aegis Android app.
+#: src/backup/aegis.rs:399 src/backup/aegis.rs:439
+msgid "Aegis"
+msgstr "Aegis"
+
+#: src/backup/aegis.rs:403
+msgid "Into a JSON file containing plain-text or encrypted fields"
+msgstr "Do souboru JSON obsahujícího prostý text nebo šifrovaná pole"
+
+#: src/backup/aegis.rs:443
+msgid "From a JSON file containing plain-text or encrypted fields"
+msgstr "Ze souboru JSON obsahujícího prostý text nebo šifrovaná pole"
+
+#. Translators: This is for making a backup for the andOTP Android app.
+#: src/backup/andotp.rs:79
+msgid "a_ndOTP"
+msgstr "a_ndOTP"
+
+#: src/backup/andotp.rs:83
+msgid "Into a plain-text JSON file"
+msgstr "Do textového souboru JSON"
+
+#. Translators: This is for restoring a backup from the andOTP Android app.
+#: src/backup/andotp.rs:127
+msgid "an_dOTP"
+msgstr "an_dOTP"
+
+#: src/backup/andotp.rs:131 src/backup/bitwarden.rs:124 src/backup/legacy.rs:45
+msgid "From a plain-text JSON file"
+msgstr "Z textového souboru JSON"
+
+#: src/backup/bitwarden.rs:47
+msgid "Unknown account"
+msgstr "Neznámý účet"
+
+#: src/backup/bitwarden.rs:55
+msgid "Unknown issuer"
+msgstr "Neznámý poskytovatel"
+
+#. Translators: This is for restoring a backup from Bitwarden.
+#: src/backup/bitwarden.rs:120
+msgid "_Bitwarden"
+msgstr "_Bitwarden"
+
+#: src/backup/freeotp.rs:18
+msgid "_Authenticator"
+msgstr "_Autentikátor"
+
+#: src/backup/freeotp.rs:22
+msgid "Into a plain-text file, compatible with FreeOTP+"
+msgstr "Do textového souboru kompatibilního s FreeOTP+"
+
+#: src/backup/freeotp.rs:51
+msgid "A_uthenticator"
+msgstr "A_utentikátor"
+
+#: src/backup/freeotp.rs:55
+msgid "From a plain-text file, compatible with FreeOTP+"
+msgstr "Z textového souboru kompatibilního s FreeOTP+"
+
+#: src/backup/freeotp_json.rs:87
+msgid "FreeOTP+"
+msgstr "FreeOTP+"
+
+#: src/backup/freeotp_json.rs:91
+msgid "From a plain-text JSON file, compatible with FreeOTP+"
+msgstr "Z textového souboru JSON kompatibilního s FreeOTP+"
+
+#: src/backup/google.rs:19
+msgid "Google Authenticator"
+msgstr "Google Authenticator"
+
+#: src/backup/google.rs:23
+msgid "From a QR code generated by Google Authenticator"
+msgstr "Z QR kódu generovaného aplikací Google Authenticator"
+
+#. Translators: this is for restoring a backup from the old Authenticator
+#. release
+#: src/backup/legacy.rs:41
+msgid "Au_thenticator (Legacy)"
+msgstr "Au_tentikátor (zastaralý)"
+
+#: src/backup/raivootp.rs:102
+msgid "Raivo OTP"
+msgstr "Raivo OTP"
+
+#: src/backup/raivootp.rs:106
+msgid "From a ZIP export generated by Raivo OTP"
+msgstr "Z exportu ZIP generovaného Raivo OTP"
+
+#: src/models/algorithm.rs:60
+msgid "Counter-based"
+msgstr "Založené na čítači"
+
+#: src/models/algorithm.rs:61
+msgid "Time-based"
+msgstr "Založené na čase"
+
+#. Translators: Steam refers to the gaming application by Valve.
+#: src/models/algorithm.rs:63
+msgid "Steam"
+msgstr "Steam"
+
+#: src/models/algorithm.rs:126
+msgid "SHA-1"
+msgstr "SHA-1"
+
+#: src/models/algorithm.rs:127
+msgid "SHA-256"
+msgstr "SHA-256"
+
+#: src/models/algorithm.rs:128
+msgid "SHA-512"
+msgstr "SHA-512"
+
+#: src/widgets/accounts/add.rs:269 src/widgets/preferences/window.rs:414
+#: src/widgets/providers/page.rs:292
+msgid "Image"
+msgstr "Obrázek"
+
+#: src/widgets/accounts/add.rs:277 src/widgets/preferences/window.rs:422
+msgid "Select QR Code"
+msgstr "Vybrat QR kód"
+
+#: src/widgets/accounts/add.rs:295
+msgid "Invalid Token"
+msgstr "Neplatný tiket"
+
+#: src/widgets/accounts/details.rs:127
+msgid "Are you sure you want to delete the account?"
+msgstr "Jste si jisti, že chcete účet smazat?"
+
+#: src/widgets/accounts/details.rs:128
+msgid "This action is irreversible"
+msgstr "Tato akce je nevratná"
+
+#: src/widgets/accounts/details.rs:132
+msgid "No"
+msgstr "Ne"
+
+#: src/widgets/accounts/details.rs:132
+msgid "Yes"
+msgstr "Ano"
+
+#: src/widgets/preferences/password_page.rs:172
+#: src/widgets/preferences/password_page.rs:214
+msgid "Wrong Passphrase"
+msgstr "Nesprávná heslová fráze"
+
+#: src/widgets/preferences/window.rs:191 src/widgets/preferences/window.rs:263
+msgid "Key / Passphrase"
+msgstr "Klíč / heslová fráze"
+
+#: src/widgets/preferences/window.rs:202 src/widgets/preferences/window.rs:275
+msgid "Select File"
+msgstr "Výběr souboru"
+
+#: src/widgets/preferences/window.rs:226
+msgid "Failed to create a backup"
+msgstr "Nepodařilo se vytvořit zálohu"
+
+#: src/widgets/preferences/window.rs:338
+msgid "Failed to restore from camera"
+msgstr "Nepodařilo se obnovit z kamery"
+
+#: src/widgets/preferences/window.rs:349
+msgid "Failed to restore from a screenshot"
+msgstr "Nepodařilo se obnovit ze snímku obrazovky"
+
+#: src/widgets/preferences/window.rs:359
+msgid "Failed to restore from an image"
+msgstr "Nepodařilo se obnovit z obrázku"
+
+#: src/widgets/preferences/window.rs:372
+msgid "Failed to restore from a file"
+msgstr "Nepodařilo se obnovit ze souboru"
+
+#: src/widgets/providers/dialog.rs:235
+msgid "Provider created successfully"
+msgstr "Poskytovatel byl úspěšně vytvořen"
+
+#: src/widgets/providers/dialog.rs:245
+msgid "Provider updated successfully"
+msgstr "Poskytovatel byl úspěšně aktualizován"
+
+#: src/widgets/providers/dialog.rs:261
+msgid "Provider removed successfully"
+msgstr "Poskytovatel byl úspěšně odebrán"
+
+#: src/widgets/providers/page.rs:186
+msgid "Editing Provider: {}"
+msgstr "Upravuje se  poskytovatel: {}"
+
+#: src/widgets/providers/page.rs:325
+msgid "The provider has accounts assigned to it, please remove them first"
+msgstr "Poskytovatel má přiřazené účty. Nejprve je prosím odstraňte."
+
+#: src/widgets/window.rs:115
+msgid "Wrong Password"
+msgstr "Nesprávné heslo"
+
+#~ msgid "Bilal Elmoussaoui"
+#~ msgstr "Bilal Elmoussaoui"
+
+#~ msgid "Back"
+#~ msgstr "Zpět"
+
+#~ msgid "The key that will be used to decrypt the vault"
+#~ msgstr "Klíč, který bude použit k dešifrování klíčenky"
+
+#~ msgid "The key used to encrypt the vault"
+#~ msgstr "Klíč použitý k šifrování klíčenky"
+
+#~ msgid "Dark Mode"
+#~ msgstr "Tmavý režim"
+
+#~ msgid "Whether the application should use a dark mode."
+#~ msgstr "Zda má aplikace použít tmavý režim."
+
+#~ msgid "Go Back"
+#~ msgstr "Jít zpět"
+
+#~ msgid "_Edit"
+#~ msgstr "_Upravit"
+
+#~ msgid "Appearance"
+#~ msgstr "Vzhled"
+
+#~ msgid "_Dark Mode"
+#~ msgstr "_Tmavý režim"
+
+#~ msgid "Whether the application should use a dark mode"
+#~ msgstr "Jestli má aplikace používat tmavý režim"
+
+#~ msgid "Used to fetch the provider icon"
+#~ msgstr "Použije se pro získání ikony poskytovatele"
+
+#~ msgid "Provider setup instructions"
+#~ msgstr "Instrukce pro nastavení poskytovatele"
+
+#~ msgid "Select"
+#~ msgstr "Vybrat"
+
+#~ msgid "D_etails"
+#~ msgstr "P_odrobnosti"
+
+#~ msgid "_Rename"
+#~ msgstr "_Přejmenovat"

@@ -1,0 +1,794 @@
+# Bulgarian translation for authenticator.
+# Copyright (C) 2021 authenticator's COPYRIGHT HOLDER
+# This file is distributed under the same license as the authenticator package.
+# Stefan Marinov <smarnv@dnl.sk>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: authenticator master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Authenticator/issues\n"
+"POT-Creation-Date: 2024-05-05 13:43+0000\n"
+"PO-Revision-Date: 2024-05-16 20:08+0200\n"
+"Last-Translator: Stefan Marinov <smarnv@dnl.sk>\n"
+"Language-Team: Bulgarian <dict@ludost.net>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 3.38.0\n"
+
+#: data/com.belmoussaoui.Authenticator.desktop.in.in:3
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:7
+#: data/resources/ui/window.ui:36 src/application.rs:90 src/main.rs:40
+msgid "Authenticator"
+msgstr "Удостоверител"
+
+#: data/com.belmoussaoui.Authenticator.desktop.in.in:4
+msgid "Two-Factor Authentication"
+msgstr "Двуфакторно удостоверяване на самоличност"
+
+#: data/com.belmoussaoui.Authenticator.desktop.in.in:5
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:8
+#: src/application.rs:92
+msgid "Generate two-factor codes"
+msgstr "Генериране на двуфакторни кодове"
+
+#: data/com.belmoussaoui.Authenticator.desktop.in.in:10
+msgid "Gnome;GTK;Verification;2FA;Authentication;OTP;TOTP;"
+msgstr ""
+"гном;удостоверяване;потвърждаване;самоличност;верификация;автентикация;2фа;"
+"gnome;gtk;verification;2fa;authentication;otp;totp;"
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:6
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:7
+msgid "Default window width"
+msgstr "Стандартна широчина на прозореца"
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:11
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:12
+msgid "Default window height"
+msgstr "Стандартна височина на прозореца"
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:16
+msgid "Default window maximized behaviour"
+msgstr "Дали прозорецът да е максимизиран"
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:21
+msgid "Auto lock"
+msgstr "Автоматично заключване"
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:22
+msgid "Whether to auto lock the application or not"
+msgstr "Дали приложението да се заключва автоматично"
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:26
+msgid "Auto lock timeout"
+msgstr "Време преди автоматично заключване"
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:27
+msgid "Lock the application on idle after X minutes"
+msgstr "Приложението ще се заключи при бездействие от толкова минути"
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:34
+msgid "Download Favicons"
+msgstr "Изтегляне на иконите на страниците"
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:35
+msgid ""
+"Whether the application should attempt to find an icon for the providers."
+msgstr "Дали приложението да търси икони за доставчиците."
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:39
+msgid "Download Favicons over metered connections"
+msgstr "Изтегляне на иконите на страниците дори и при таксувана връзка"
+
+#: data/com.belmoussaoui.Authenticator.gschema.xml.in:40
+msgid ""
+"Whether the application should download favicons over a metered connection."
+msgstr ""
+"Дали приложението да изтегля икони за доставчиците дори и при таксувана "
+"връзка."
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:10
+msgid "Simple application for generating Two-Factor Authentication Codes."
+msgstr ""
+"Просто приложение за генериране на кодове за двуфакторно потвърждаване на "
+"самоличност."
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:11
+msgid "Features:"
+msgstr "Функции:"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:13
+msgid "Time-based/Counter-based/Steam methods support"
+msgstr "Поддръжка на различни методи: времеви/с брояч/Steam"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:14
+msgid "SHA-1/SHA-256/SHA-512 algorithms support"
+msgstr "Поддръжка на алгоритмите SHA-1/SHA-256/SHA-512"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:15
+msgid "QR code scanner using a camera or from a screenshot"
+msgstr "Сканиране на QR код посредством камера или снимка на екрана"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:16
+msgid "Lock the application with a password"
+msgstr "Заключване на приложението с парола"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:17
+msgid "Beautiful UI"
+msgstr "Красив потребителски интерфейс"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:18
+msgid "GNOME Shell search provider"
+msgstr "Доставчик на търсене за обвивката на GNOME"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:19
+msgid ""
+"Backup/Restore from/into known applications like FreeOTP+, Aegis "
+"(encrypted / plain-text), andOTP, Google Authenticator"
+msgstr ""
+"Резервно копие/Възстановяване от/към познати приложения като FreeOTP+, andOTP"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:25
+msgid "Main Window"
+msgstr "Основен прозорец"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:29
+#: data/resources/ui/account_add.ui:30 data/resources/ui/account_add.ui:47
+msgid "Add a New Account"
+msgstr "Добавяне на нова регистрация"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:33
+msgid "Add a New Provider"
+msgstr "Добавяне на нов доставчик"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:37
+msgid "Account Details"
+msgstr "Детайли на регистрацията"
+
+#: data/com.belmoussaoui.Authenticator.metainfo.xml.in.in:41
+msgid "Backup/Restore formats support"
+msgstr "Поддръжка на формати за пренос на данни"
+
+#: data/resources/ui/account_add.ui:6 src/widgets/preferences/window.rs:292
+msgid "_Camera"
+msgstr "_Камера"
+
+#: data/resources/ui/account_add.ui:10 src/widgets/preferences/window.rs:296
+msgid "_Screenshot"
+msgstr "_Снимка на екрана"
+
+#: data/resources/ui/account_add.ui:14 src/widgets/preferences/window.rs:301
+msgid "_QR Code Image"
+msgstr "_Изображение с _QR код"
+
+#: data/resources/ui/account_add.ui:56
+msgid "Cancel"
+msgstr "Отказ"
+
+#: data/resources/ui/account_add.ui:62
+msgid "_Add"
+msgstr "_Добавяне"
+
+#: data/resources/ui/account_add.ui:74 src/widgets/preferences/window.rs:287
+msgid "Scan QR Code"
+msgstr "Сканиране на QR код"
+
+#: data/resources/ui/account_add.ui:112
+#: data/resources/ui/account_details_page.ui:96
+#: data/resources/ui/provider_page.ui:22
+#: data/resources/ui/providers_dialog.ui:108
+msgid "Provider"
+msgstr "Доставчик"
+
+#: data/resources/ui/account_add.ui:113
+msgid "Token issuer"
+msgstr "Издател на жетона"
+
+#: data/resources/ui/account_add.ui:127
+#: data/resources/ui/account_details_page.ui:91
+msgid "Account"
+msgstr "Регистрация"
+
+#: data/resources/ui/account_add.ui:133
+msgid "Token"
+msgstr "Жетон"
+
+#: data/resources/ui/account_add.ui:139
+#: data/resources/ui/account_details_page.ui:139
+#: data/resources/ui/provider_page.ui:158
+msgid "Counter"
+msgstr "Брояч"
+
+#: data/resources/ui/account_add.ui:157
+#: data/resources/ui/account_details_page.ui:119
+#: data/resources/ui/provider_page.ui:133
+msgid "Algorithm"
+msgstr "Алгоритъм"
+
+#: data/resources/ui/account_add.ui:169
+#: data/resources/ui/account_details_page.ui:129
+#: data/resources/ui/provider_page.ui:118
+msgid "Computing Method"
+msgstr "Метод за изчисление"
+
+#: data/resources/ui/account_add.ui:181
+#: data/resources/ui/account_details_page.ui:148
+#: data/resources/ui/provider_page.ui:149
+msgid "Period"
+msgstr "Период"
+
+#: data/resources/ui/account_add.ui:182
+#: data/resources/ui/account_details_page.ui:149
+#: data/resources/ui/provider_page.ui:150
+msgid "Duration in seconds until the next password update"
+msgstr "Времетраене (в секунди) до следващото обновяване на паролата"
+
+#: data/resources/ui/account_add.ui:194
+#: data/resources/ui/account_details_page.ui:159
+#: data/resources/ui/provider_page.ui:167
+msgid "Digits"
+msgstr "Цифри"
+
+#: data/resources/ui/account_add.ui:195
+#: data/resources/ui/account_details_page.ui:160
+#: data/resources/ui/provider_page.ui:168
+msgid "Length of the generated code"
+msgstr "Дължина на генерирания код"
+
+#: data/resources/ui/account_add.ui:207
+#: data/resources/ui/account_details_page.ui:170
+#: data/resources/ui/provider_page.ui:112
+msgid "Website"
+msgstr "Уебсайт"
+
+#: data/resources/ui/account_add.ui:212
+msgid "How to Set Up"
+msgstr "Ръководство за настройка"
+
+#: data/resources/ui/account_add.ui:232
+#: data/resources/ui/preferences_camera_page.ui:4
+msgid "Camera"
+msgstr "Камера"
+
+#: data/resources/ui/account_add.ui:244
+msgid "Create Provider"
+msgstr "Създаване на доставчик"
+
+#: data/resources/ui/account_details_page.ui:56
+#: data/resources/ui/preferences_password_page.ui:17
+#: data/resources/ui/provider_page.ui:29
+msgid "_Save"
+msgstr "_Запазване"
+
+#: data/resources/ui/account_details_page.ui:67
+#: data/resources/ui/provider_page.ui:185
+msgid "_Delete"
+msgstr "_Изтриване"
+
+#: data/resources/ui/account_details_page.ui:175
+msgid "Help"
+msgstr "Помощ"
+
+#: data/resources/ui/account_row.ui:23
+msgid "Increment the counter"
+msgstr "Увеличаване на брояча"
+
+#: data/resources/ui/account_row.ui:34
+msgid "Copy PIN to clipboard"
+msgstr "Копиране на ПИН кода в буфера за обмяна"
+
+#: data/resources/ui/account_row.ui:43
+msgid "Account details"
+msgstr "Детайли за регистрацията"
+
+#: data/resources/ui/camera.ui:36
+msgid "No Camera Found"
+msgstr "Не е намерена камера"
+
+#: data/resources/ui/camera.ui:39
+msgid "_From a Screenshot"
+msgstr "_От снимка на екрана"
+
+#: data/resources/ui/keyring_error_dialog.ui:8
+msgid "Secret Service Error"
+msgstr "Грешка в услугата за тайни"
+
+#: data/resources/ui/keyring_error_dialog.ui:35
+msgid ""
+"Authenticator relies on a Secret Service Provider to manage your sensitive "
+"session information and an error occurred while we were trying to store or "
+"get your session."
+msgstr ""
+"„Удостоверител“ разчита на наличието на услуга за тайни, която да управлява "
+"чувствителните данни. Възникна грешка при опита за съхранение или получаване "
+"на сесията ви."
+
+#: data/resources/ui/keyring_error_dialog.ui:47
+msgid ""
+"Here are a few things that might help you fix issues with the Secret Service:"
+msgstr ""
+"Ето насоки какво да проверите, за да коригирате проблемите с услугата за "
+"тайни:"
+
+#: data/resources/ui/keyring_error_dialog.ui:64
+msgid ""
+"Make sure you have a Secret Service Provider installed, like gnome-keyring."
+msgstr ""
+"Проверете дали е инсталирана програма доставчик на тайни, напр. gnome-"
+"keyring."
+
+#: data/resources/ui/keyring_error_dialog.ui:83
+msgid "Check that you have a default keyring and that it is unlocked."
+msgstr "Проверете дали имате стандартен ключодържател и дали е отключен."
+
+#: data/resources/ui/keyring_error_dialog.ui:95
+msgid ""
+"Check the application logs and your distribution’s documentation for more "
+"details."
+msgstr ""
+"Проверете журнала на програмата и документацията на дистрибуцията ви за "
+"повече детайли."
+
+#: data/resources/ui/preferences.ui:16
+msgid "General"
+msgstr "Основни"
+
+#: data/resources/ui/preferences.ui:19
+msgid "Privacy"
+msgstr "Поверителност"
+
+#: data/resources/ui/preferences.ui:22
+msgid "_Passphrase"
+msgstr "_Парола"
+
+#: data/resources/ui/preferences.ui:24
+msgid "Set up a passphrase to lock the application with"
+msgstr "Задаване на парола за заключване на приложението"
+
+#: data/resources/ui/preferences.ui:37
+msgid "_Auto Lock the Application"
+msgstr "_Автоматично заключване на приложението"
+
+#: data/resources/ui/preferences.ui:39
+msgid "Whether to automatically lock the application"
+msgstr "Дали приложението да се заключва автоматично"
+
+#: data/resources/ui/preferences.ui:45
+msgid "Auto Lock _Timeout"
+msgstr "_Време преди автоматично заключване"
+
+#: data/resources/ui/preferences.ui:46
+msgid "The time in minutes"
+msgstr "Времето в минути"
+
+#: data/resources/ui/preferences.ui:59
+msgid "Network"
+msgstr "Мрежа"
+
+#: data/resources/ui/preferences.ui:62
+msgid "_Download Favicons"
+msgstr "_Изтегляне на иконите на сайтовете"
+
+#: data/resources/ui/preferences.ui:64
+msgid "Automatically attempt fetching a website icon"
+msgstr "Автоматично изтегланe на иконите на сайтовете"
+
+#: data/resources/ui/preferences.ui:69
+msgid "_Metered Connection"
+msgstr "_Таксувана връзка"
+
+#: data/resources/ui/preferences.ui:71
+msgid "Fetch a website icon on a metered connection"
+msgstr "Доставяне на икона на сайт при таксувана връзка"
+
+#: data/resources/ui/preferences.ui:81
+msgid "Backup/Restore"
+msgstr "Резервно копие/Възстановяване"
+
+#: data/resources/ui/preferences.ui:84 src/widgets/preferences/window.rs:479
+msgid "Backup"
+msgstr "Създаване на резервно копие"
+
+#: data/resources/ui/preferences.ui:89 src/widgets/preferences/window.rs:487
+msgid "Restore"
+msgstr "Възстановяване от резервно копие"
+
+#: data/resources/ui/preferences_password_page.ui:4
+msgid "Create Password"
+msgstr "Създаване на парола"
+
+#: data/resources/ui/preferences_password_page.ui:28
+msgid "Set up a Passphrase"
+msgstr "Задаване на парола"
+
+#: data/resources/ui/preferences_password_page.ui:29
+msgid "Authenticator will start locked after a passphrase is set."
+msgstr "След задаването на паролна фраза приложението ще се включва заключено."
+
+#: data/resources/ui/preferences_password_page.ui:53
+msgid "Current Passphrase"
+msgstr "Текуща паролна фраза"
+
+#: data/resources/ui/preferences_password_page.ui:59
+msgid "New Passphrase"
+msgstr "Нова паролна фраза"
+
+#: data/resources/ui/preferences_password_page.ui:65
+msgid "Repeat Passphrase"
+msgstr "Потвърждаване на парола"
+
+#: data/resources/ui/preferences_password_page.ui:79
+#: data/resources/ui/provider_page.ui:73
+msgid "_Reset"
+msgstr "_Зануляване"
+
+#: data/resources/ui/provider_page.ui:83
+msgid "Select a _File"
+msgstr "Избор на _файл"
+
+#: data/resources/ui/provider_page.ui:106
+msgid "Name"
+msgstr "Име"
+
+#: data/resources/ui/provider_page.ui:159
+msgid "The by default value for counter-based computing method"
+msgstr "Стандартна стойност за метода за изчисление с брояч"
+
+#: data/resources/ui/provider_page.ui:177
+msgid "Help URL"
+msgstr "Aдрес за помощ"
+
+#: data/resources/ui/providers_dialog.ui:8
+#: data/resources/ui/providers_dialog.ui:19
+msgid "Providers"
+msgstr "Доставчици"
+
+#: data/resources/ui/providers_dialog.ui:29 src/widgets/providers/page.rs:209
+msgid "New Provider"
+msgstr "Нов доставчик"
+
+#: data/resources/ui/providers_dialog.ui:36
+#: data/resources/ui/providers_dialog.ui:52 data/resources/ui/window.ui:207
+#: data/resources/ui/window.ui:228
+msgid "Search"
+msgstr "Търсене"
+
+#: data/resources/ui/providers_dialog.ui:47 data/resources/ui/window.ui:202
+msgid "Search…"
+msgstr "Търсене…"
+
+#: data/resources/ui/providers_dialog.ui:93
+#: data/resources/ui/providers_list.ui:38
+msgid "No Results"
+msgstr "Нищо не е намерено"
+
+#: data/resources/ui/providers_dialog.ui:94
+msgid "No providers matching the query were found."
+msgstr "Няма доставчици, отговарящи на зададените критерии."
+
+#: data/resources/ui/providers_dialog.ui:139
+msgid "No Provider Selected"
+msgstr "Не е избран доставчик"
+
+#: data/resources/ui/providers_dialog.ui:140
+msgid "Select a provider or create a new one"
+msgstr "Избор на доставчик или създаване на нов"
+
+#: data/resources/ui/providers_list.ui:39
+msgid "No accounts or providers matching the query were found."
+msgstr "Няма регистрации или доставчици, отговарящи на зададените критерии."
+
+#: data/resources/ui/shortcuts.ui:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Общи"
+
+#: data/resources/ui/shortcuts.ui:14
+msgctxt "shortcut window"
+msgid "Keyboard Shortcuts"
+msgstr "Клавишни комбинации"
+
+#: data/resources/ui/shortcuts.ui:20
+msgctxt "shortcut window"
+msgid "Lock"
+msgstr "Заключване"
+
+#: data/resources/ui/shortcuts.ui:26
+msgctxt "shortcut window"
+msgid "Preferences"
+msgstr "Настройки"
+
+#: data/resources/ui/shortcuts.ui:32
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Спиране на програмата"
+
+#: data/resources/ui/shortcuts.ui:40
+msgctxt "shortcut window"
+msgid "Accounts"
+msgstr "Регистрации"
+
+#: data/resources/ui/shortcuts.ui:43
+msgctxt "shortcut window"
+msgid "New Account"
+msgstr "Нова регистрация"
+
+#: data/resources/ui/shortcuts.ui:49
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "Търсене"
+
+#: data/resources/ui/shortcuts.ui:55
+msgctxt "shortcut window"
+msgid "Show Providers List"
+msgstr "Показване на списък с доставчици"
+
+#: data/resources/ui/window.ui:6
+msgid "_Lock the Application"
+msgstr "_Заключване на приложението"
+
+#: data/resources/ui/window.ui:12
+msgid "P_roviders"
+msgstr "_Доставчици"
+
+#: data/resources/ui/window.ui:16
+msgid "_Preferences"
+msgstr "_Настройки"
+
+#: data/resources/ui/window.ui:22
+msgid "_Keyboard Shortcuts"
+msgstr "_Клавишни комбинации"
+
+#: data/resources/ui/window.ui:26
+msgid "_About Authenticator"
+msgstr "_Относно „Удостоверител“"
+
+#: data/resources/ui/window.ui:66
+msgid "Authenticator is Locked"
+msgstr "„Удостоверител“ е заключен"
+
+#: data/resources/ui/window.ui:92
+msgid "_Unlock"
+msgstr "_Отключване"
+
+#: data/resources/ui/window.ui:122
+msgid "Accounts"
+msgstr "Регистрации"
+
+#: data/resources/ui/window.ui:137 data/resources/ui/window.ui:176
+msgid "New Account"
+msgstr "Нова регистрация"
+
+#: data/resources/ui/window.ui:145 data/resources/ui/window.ui:222
+msgid "Main Menu"
+msgstr "Основно меню"
+
+#: data/resources/ui/window.ui:153
+msgid "No Accounts"
+msgstr "Няма регистрации"
+
+#: data/resources/ui/window.ui:154
+msgid "Add an account or scan a QR code first."
+msgstr "Първо добавете регистрация или сканирайте QR код."
+
+#: src/application.rs:77
+msgid "Accounts restored successfully"
+msgstr "Успешно възстановена регистрация"
+
+#: src/application.rs:101
+msgid "translator-credits"
+msgstr ""
+"Стефан Маринов &lt;<a href='mailto:smarnv@dnl.sk'>smarnv@dnl.sk</a>&gt;"
+
+#: src/application.rs:388 src/widgets/accounts/row.rs:45
+msgid "One-Time password copied"
+msgstr "Еднократната парола е копирана"
+
+#: src/application.rs:389
+msgid "Password was copied successfully"
+msgstr "Успешно копирана парола"
+
+#. Translators: This is for making a backup for the aegis Android app.
+#. Translators: This is for restoring a backup from the aegis Android app.
+#: src/backup/aegis.rs:399 src/backup/aegis.rs:439
+msgid "Aegis"
+msgstr "Aegis"
+
+#: src/backup/aegis.rs:403
+msgid "Into a JSON file containing plain-text or encrypted fields"
+msgstr "Във файл с JSON с нешифриран текст или шифрирани полета"
+
+#: src/backup/aegis.rs:443
+msgid "From a JSON file containing plain-text or encrypted fields"
+msgstr "От файл с JSON с нешифриран текст или шифрирани полета"
+
+#. Translators: This is for making a backup for the andOTP Android app.
+#: src/backup/andotp.rs:79
+msgid "a_ndOTP"
+msgstr "a_ndOTP"
+
+#: src/backup/andotp.rs:83
+msgid "Into a plain-text JSON file"
+msgstr "Към обикновен JSON файл"
+
+#. Translators: This is for restoring a backup from the andOTP Android app.
+#: src/backup/andotp.rs:127
+msgid "an_dOTP"
+msgstr "an_dOTP"
+
+#: src/backup/andotp.rs:131 src/backup/bitwarden.rs:124 src/backup/legacy.rs:45
+msgid "From a plain-text JSON file"
+msgstr "От обикновен JSON файл"
+
+#: src/backup/bitwarden.rs:47
+msgid "Unknown account"
+msgstr "Непозната регистрация"
+
+#: src/backup/bitwarden.rs:55
+msgid "Unknown issuer"
+msgstr "Непознат издател"
+
+#. Translators: This is for restoring a backup from Bitwarden.
+#: src/backup/bitwarden.rs:120
+msgid "_Bitwarden"
+msgstr "_Bitwarden"
+
+#: src/backup/freeotp.rs:18
+msgid "_Authenticator"
+msgstr "_Удостоверител"
+
+#: src/backup/freeotp.rs:22
+msgid "Into a plain-text file, compatible with FreeOTP+"
+msgstr "Към обикновен текстов файл, съвместим с FreeOTP+"
+
+#: src/backup/freeotp.rs:51
+msgid "A_uthenticator"
+msgstr "У_достоверител"
+
+#: src/backup/freeotp.rs:55
+msgid "From a plain-text file, compatible with FreeOTP+"
+msgstr "От обикновен текстов файл, съвместим с FreeOTP+"
+
+#: src/backup/freeotp_json.rs:87
+msgid "FreeOTP+"
+msgstr "FreeOTP+"
+
+#: src/backup/freeotp_json.rs:91
+msgid "From a plain-text JSON file, compatible with FreeOTP+"
+msgstr "От обикновен текстов файл със JSON, съвместим с FreeOTP+"
+
+#: src/backup/google.rs:19
+msgid "Google Authenticator"
+msgstr "Удостоверител на Google"
+
+#: src/backup/google.rs:23
+msgid "From a QR code generated by Google Authenticator"
+msgstr "От QR код генериран от „Удостоверител на Google“"
+
+#. Translators: this is for restoring a backup from the old Authenticator
+#. release
+#: src/backup/legacy.rs:41
+msgid "Au_thenticator (Legacy)"
+msgstr "Уд_остоверител (стара версия)"
+
+#: src/backup/raivootp.rs:102
+msgid "Raivo OTP"
+msgstr "Raivo OTP"
+
+#: src/backup/raivootp.rs:106
+msgid "From a ZIP export generated by Raivo OTP"
+msgstr "От файл изнесен от Raivo OTP във формат ZIP"
+
+#: src/models/algorithm.rs:60
+msgid "Counter-based"
+msgstr "С брояч"
+
+#: src/models/algorithm.rs:61
+msgid "Time-based"
+msgstr "Времеви"
+
+#. Translators: Steam refers to the gaming application by Valve.
+#: src/models/algorithm.rs:63
+msgid "Steam"
+msgstr "Steam"
+
+#: src/models/algorithm.rs:126
+msgid "SHA-1"
+msgstr "SHA-1"
+
+#: src/models/algorithm.rs:127
+msgid "SHA-256"
+msgstr "SHA-256"
+
+#: src/models/algorithm.rs:128
+msgid "SHA-512"
+msgstr "SHA-512"
+
+#: src/widgets/accounts/add.rs:268 src/widgets/preferences/window.rs:416
+#: src/widgets/providers/page.rs:292
+msgid "Image"
+msgstr "Изображение"
+
+#: src/widgets/accounts/add.rs:276 src/widgets/preferences/window.rs:424
+msgid "Select QR Code"
+msgstr "Сканиране на QR код"
+
+#: src/widgets/accounts/add.rs:294
+msgid "Invalid Token"
+msgstr "Неправилен жетон"
+
+#: src/widgets/accounts/details.rs:123
+msgid "Are you sure you want to delete the account?"
+msgstr "Сигурни ли сте, че искате да изтриете регистрацията?"
+
+#: src/widgets/accounts/details.rs:124
+msgid "This action is irreversible"
+msgstr "Това действие е окончателно."
+
+#: src/widgets/accounts/details.rs:126
+msgid "No"
+msgstr "Не"
+
+#: src/widgets/accounts/details.rs:126
+msgid "Yes"
+msgstr "Да"
+
+#: src/widgets/preferences/password_page.rs:172
+#: src/widgets/preferences/password_page.rs:214
+msgid "Wrong Passphrase"
+msgstr "Грешна парола"
+
+#: src/widgets/preferences/window.rs:191 src/widgets/preferences/window.rs:263
+msgid "Key / Passphrase"
+msgstr "Ключ/Паролна фраза"
+
+#: src/widgets/preferences/window.rs:202 src/widgets/preferences/window.rs:275
+msgid "Select File"
+msgstr "Избор на файл"
+
+#: src/widgets/preferences/window.rs:226
+msgid "Failed to create a backup"
+msgstr "Неуспешно създаване на резервно копие"
+
+#: src/widgets/preferences/window.rs:338
+msgid "Failed to restore from camera"
+msgstr "Неуспешно възстановяване от камера"
+
+#: src/widgets/preferences/window.rs:349
+msgid "Failed to restore from a screenshot"
+msgstr "Неуспешно възстановяване от снимка на екрана"
+
+#: src/widgets/preferences/window.rs:359
+msgid "Failed to restore from an image"
+msgstr "Неуспешно възстановяване от изображение"
+
+#: src/widgets/preferences/window.rs:372
+msgid "Failed to restore from a file"
+msgstr "Неуспешно възстановяване от файл"
+
+#: src/widgets/providers/dialog.rs:251
+msgid "Provider created successfully"
+msgstr "Успешно създаден доставчик"
+
+#: src/widgets/providers/dialog.rs:261
+msgid "Provider updated successfully"
+msgstr "Успешно обновен доставчик"
+
+#: src/widgets/providers/dialog.rs:277
+msgid "Provider removed successfully"
+msgstr "Успешно изтрит доставчик<"
+
+#: src/widgets/providers/page.rs:186
+msgid "Editing Provider: {}"
+msgstr "Промяна на доставчик: {}"
+
+#: src/widgets/providers/page.rs:325
+msgid "The provider has accounts assigned to it, please remove them first"
+msgstr "Има регистрации към този доставчик — първо ги изтрийте"
+
+#: src/widgets/window.rs:115
+msgid "Wrong Password"
+msgstr "Грешна парола"

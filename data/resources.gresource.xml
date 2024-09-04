@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/com/belmoussaoui/Authenticator">
+    <file alias="style.css">resources/style.css</file>
+
+    <!-- Accounts -->
+    <file compressed="true" preprocess="xml-stripblanks" alias="account_add.ui">resources/ui/account_add.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks" alias="account_details_page.ui">resources/ui/account_details_page.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks" alias="account_row.ui">resources/ui/account_row.ui</file>
+
+    <!-- Providers -->
+    <file compressed="true" preprocess="xml-stripblanks" alias="provider_image.ui">resources/ui/provider_image.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks" alias="provider_page.ui">resources/ui/provider_page.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks" alias="provider_row.ui">resources/ui/provider_row.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks" alias="providers_dialog.ui">resources/ui/providers_dialog.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks" alias="providers_list.ui">resources/ui/providers_list.ui</file>
+
+    <!-- UI Files -->
+    <file compressed="true" preprocess="xml-stripblanks" alias="preferences.ui">resources/ui/preferences.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks" alias="preferences_camera_page.ui">resources/ui/preferences_camera_page.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks" alias="preferences_password_page.ui">resources/ui/preferences_password_page.ui</file>
+
+    <file compressed="true" preprocess="xml-stripblanks" alias="camera.ui">resources/ui/camera.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks" alias="error_revealer.ui">resources/ui/error_revealer.ui</file>
+
+    <file compressed="true" preprocess="xml-stripblanks" alias="gtk/help-overlay.ui">resources/ui/shortcuts.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks" alias="window.ui">resources/ui/window.ui</file>
+
+    <file compressed="true" preprocess="xml-stripblanks" alias="keyring_error_dialog.ui">resources/ui/keyring_error_dialog.ui</file>
+  </gresource>
+
+  <gresource prefix="/com/belmoussaoui/Authenticator/icons/16x16/actions/">
+    <file preprocess="xml-stripblanks" alias="provider-fallback.svg">resources/icons/provider-fallback.svg</file>
+    <file preprocess="xml-stripblanks" alias="qrscanner-symbolic.svg">resources/icons/qrscanner-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="refresh-symbolic.svg">resources/icons/refresh-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="copy-symbolic.svg">resources/icons/copy-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="link-symbolic.svg">resources/icons/link-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="video-camera-symbolic.svg">resources/icons/video-camera-symbolic.svg</file>
+  </gresource>
+  <gresource prefix="/com/belmoussaoui/Authenticator/icons/48x48/status/">
+    <file preprocess="xml-stripblanks" alias="provider-fallback.svg">resources/icons/provider-fallback.svg</file>
+  </gresource>
+</gresources>

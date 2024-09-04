@@ -1,71 +1,39 @@
-ui_config = configuration_data()
-ui_config.set('APP_ID', application_id)
-ui_config.set('VERSION', meson.project_version() + version_suffix)
-
-ui_preconfigured_files = files(
-  'resources/gtk/ui/about_dialog.ui.in',
-  'resources/gtk/ui/settings.ui.in',
-  'resources/gtk/ui/window.ui.in',
-)
-ui_dependencies = []
-foreach ui_file: ui_preconfigured_files
-  ui_dependencies += configure_file(
-    input:  ui_file,
-    output: '@BASENAME@',
-    configuration: ui_config
-  )
-endforeach
-
-gnome.compile_resources(
-  application_id,
-  meson.project_name() + '.gresource.xml',
+resources = gnome.compile_resources(
+  meson.project_name(),
+  'resources.gresource.xml',
   gresource_bundle: true,
-  install_dir: pkgdatadir,
   install: true,
-  dependencies: ui_dependencies
+  install_dir: pkgdatadir,
 )
 
-# Install gschema
+# GSchema
 gschema_conf = configuration_data()
-gschema_conf.set('APP_ID', application_id)
-gschema_conf.set('GETTEXT_PACKAGE', gettext_package)
-gschema_conf.set('SCHEMA_PATH', '/com/github/bilelmoussaoui/Authenticator' + profile_suffix + '/')
-
+gschema_conf.set('app-id', application_id)
+gschema_conf.set('gettext-package', gettext_package)
 configure_file(
-  configuration: gschema_conf,
-  input: meson.project_name() + '.gschema.xml.in',
-  install_dir: get_option('datadir') / 'glib-2.0' / 'schemas',
-  output: '@0@.gschema.xml'.format(application_id)
+    input: 'com.belmoussaoui.Authenticator.gschema.xml.in',
+    output: '@0@.gschema.xml'.format(application_id),
+    configuration: gschema_conf,
+    install: true,
+    install_dir: datadir / 'glib-2.0' / 'schemas'
 )
 
-# GNOME Shell Search Provider Service
-search_service_provider_conf = configuration_data()
-search_service_provider_conf.set('APP_ID', application_id)
-search_service_provider_conf.set('LIBEXECDIR', libexecdir)
-configure_file(
-  configuration: search_service_provider_conf,
-  input: meson.project_name() + '.SearchProvider.service.in',
-  install_dir: get_option('datadir') / 'gnome-shell' / 'search-providers',
-  output: '@0@.SearchProvider.service'.format(application_id)
-)
-# GNOME Shell Search Provider
-search_provider_conf = configuration_data()
-search_provider_conf.set('APP_ID', application_id)
-search_provider_conf.set('PROFILE_SUFFIX', profile_suffix)
-configure_file(
-  configuration: search_provider_conf,
-  input: meson.project_name() + '.SearchProvider.ini.in',
-  install_dir: join_paths(get_option('datadir'), 'gnome-shell', 'search-providers'),
-  output: '@0@.SearchProvider.ini'.format(application_id)
-)
+# Validata GSchema
+if glib_compile_schemas.found()
+  test(
+    'validate-gschema', glib_compile_schemas,
+    args: [
+      '--strict', '--dry-run', meson.current_source_dir()
+    ]
+  )
+endif
 
 # FreeDesktop Desktop File
 desktop_conf = configuration_data()
-desktop_conf.set('APP_ID', application_id)
+desktop_conf.set('icon', application_id)
 desktop_file = i18n.merge_file(
-  'desktop',
   input: configure_file(
-    input: meson.project_name() + '.desktop.in.in',
+    input: 'com.belmoussaoui.Authenticator.desktop.in.in',
     output: '@BASENAME@',
     configuration: desktop_conf
   ),
@@ -86,29 +54,51 @@ if desktop_file_validate.found()
 endif
 
 # Freedesktop AppData File
-appdata_conf = configuration_data()
-appdata_conf.set('APP_ID', application_id)
-appdata_conf.set('GETTEXT_PACKAGE', gettext_package)
-appdata_file = i18n.merge_file(
-  'appdata',
+metainfo_conf = configuration_data()
+metainfo_conf.set('app-id', application_id)
+metainfo_conf.set('gettext-package', gettext_package)
+metainfo_file = i18n.merge_file(
   input: configure_file(
-    input: meson.project_name() + '.appdata.xml.in.in',
+    input: 'com.belmoussaoui.Authenticator.metainfo.xml.in.in',
     output: '@BASENAME@',
-    configuration: appdata_conf
+    configuration: metainfo_conf
   ),
-  output: '@0@.appdata.xml'.format(application_id),
+  output: '@0@.metainfo.xml'.format(application_id),
   po_dir: podir,
   install: true,
   install_dir: get_option('datadir') / 'metainfo'
 )
-# Validate AppData File
-appstream_util = find_program('appstream-util', required: false)
-if appstream_util.found()
+# Validate metainfo File
+appstreamcli = find_program('appstreamcli', required: false)
+if appstreamcli.found()
   test (
-    'Validate appdata file',
-    appstream_util,
-    args: ['validate-relax', '--nonet', appdata_file.full_path()]
+    'Validate metainfo file',
+    appstreamcli,
+    args: ['validate', '--no-net', '--explain', metainfo_file],
+    workdir: meson.current_build_dir()
   )
 endif
+
+
+# Search Provider
+service_conf = configuration_data()
+service_conf.set('appid', application_id)
+service_conf.set('name', meson.project_name())
+service_conf.set('bindir', bindir)
+configure_file(
+  input: 'com.belmoussaoui.Authenticator.SearchProvider.service.in',
+  output: '@0@.SearchProvider.service'.format(application_id),
+  configuration: service_conf,
+  install_dir: datadir / 'dbus-1' / 'services'
+)
+search_conf = configuration_data()
+search_conf.set('appid', application_id)
+search_conf.set('object_path', object_path)
+configure_file(
+  input: 'com.belmoussaoui.Authenticator.search-provider.ini',
+  output: '@0@.search-provider.ini'.format(application_id),
+  configuration: search_conf,
+  install_dir: datadir / 'gnome-shell' / 'search-providers',
+)
 
 subdir('icons')

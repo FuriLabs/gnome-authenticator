@@ -1,54 +1,83 @@
-bin_conf = configuration_data()
-bin_conf.set('APP_ID', application_id)
-bin_conf.set('GETTEXT_PACKAGE', gettext_package)
-bin_conf.set('LOCALE_DIR', localedir)
-bin_conf.set('PKGDATA_DIR', pkgdatadir)
-bin_conf.set('PROFILE', profile)
-bin_conf.set('PYTHON_DIR', pythondir)
-bin_conf.set('PYTHON', python3.path())
-configure_file(
-  input: 'authenticator.py.in',
-  output: 'authenticator',
-  configuration: bin_conf,
-  install_dir: get_option('bindir')
+pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
+
+global_conf = configuration_data()
+global_conf.set_quoted('APP_ID', application_id)
+global_conf.set_quoted('PKGDATADIR', pkgdatadir)
+global_conf.set_quoted('PROFILE', profile)
+global_conf.set_quoted('VERSION', version + version_suffix)
+global_conf.set_quoted('GETTEXT_PACKAGE', gettext_package)
+global_conf.set_quoted('LOCALEDIR', localedir)
+global_conf.set_quoted('OBJECT_PATH', object_path)
+config_output_file = configure_file(
+    input: 'config.rs.in',
+    output: 'config.rs',
+    configuration: global_conf
 )
 
-search_provider_bin_conf = configuration_data()
-search_provider_bin_conf.set('APP_ID', application_id)
-search_provider_bin_conf.set('PRFOILE_SUFFIX', profile_suffix)
-search_provider_bin_conf.set('PYTHON_DIR', pythondir)
-search_provider_bin_conf.set('PYTHON', python3.path())
-configure_file(
-  input: 'authenticator-search-provider.py.in',
-  output: 'authenticator-search-provider',
-  configuration: search_provider_bin_conf,
-  install_dir: libexecdir
+# Copy the config.rs output to the source directory.
+run_command(
+  'cp',
+  join_paths(meson.project_build_root(), 'src', 'config.rs'),
+  join_paths(meson.project_source_root(), 'src', 'config.rs'),
+  check: true
 )
 
-settings_model_conf = configuration_data()
-settings_model_conf.set('APP_ID', application_id)
-configure_file(
-  input: 'Authenticator/models/settings.py.in',
-  output: 'settings.py',
-  configuration: settings_model_conf,
-  install_dir: pythondir / 'Authenticator' / 'models'
-)
+cargo_options = [ '--manifest-path', meson.project_source_root() / 'Cargo.toml' ]
+cargo_options += [ '--target-dir', meson.project_build_root() / 'src' ]
 
-application_conf = configuration_data()
-application_conf.set('APP_ID', application_id)
-application_conf.set('NAME_SUFFIX', name_suffix)
-configure_file(
-  input: 'Authenticator/application.py.in',
-  output: 'application.py',
-  configuration: application_conf,
-  install_dir: pythondir / 'Authenticator'
-)
+if get_option('profile') == 'default'
+  cargo_options += [ '--release' ]
+  rust_target = 'release'
+  message('Building in release mode')
+else
+  rust_target = 'debug'
+  message('Building in debug mode')
+endif
 
-install_subdir(
-  'Authenticator',
-  install_dir: pythondir,
-  exclude_files: [
-    'models/settings.py.in',
-    'application.py.in'
+cargo_env = [ 'CARGO_HOME=' + meson.project_build_root() / 'cargo-home' ]
+
+cargo_build = custom_target(
+  'cargo-build',
+  build_by_default: true,
+  build_always_stale: true,
+  output: meson.project_name(),
+  console: true,
+  install: true,
+  install_dir: bindir,
+  depends: resources,
+  command: [
+    'env',
+    cargo_env,
+    cargo, 'build',
+    cargo_options,
+    '&&',
+    'cp', 'src' / rust_target / meson.project_name(), '@OUTPUT@',
   ]
+)
+
+cargo_target_dir = meson.project_build_root() / 'target'
+cargo_home = cargo_target_dir / 'cargo-home'
+test (
+  'Cargo tests',
+  cargo,
+  args: ['test', '--bin', meson.project_name()],
+  timeout: 600, # cargo might take a bit of time sometimes
+  env: ['CARGO_TARGET_DIR=@0@'.format(cargo_target_dir), 'CARGO_HOME=@0@'.format(cargo_home)]
+)
+
+doc_deps = [
+  '--package=favicon-scrapper',
+  '--package=authenticator'
+]
+custom_target(
+  'cargo-doc',
+  build_by_default: false,
+  build_always_stale: true,
+  output: 'doc',
+  console: true,
+  command: [
+    'env', cargo_env,
+    cargo, 'doc',
+    cargo_options + doc_deps + ['--no-deps', '--document-private-items'] ,
+  ],
 )
