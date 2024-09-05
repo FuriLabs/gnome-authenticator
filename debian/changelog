@@ -4,7 +4,7 @@ gnome-authenticator (4.5.0-1) unstable; urgency=medium
   * New upstream version 4.5.0
   * Prevent further repacks with qrscanner-symbolic license change
   * Drop custom CI config
-  * Build with meson/cargo
+  * Build with meson/cargo (Closes: #993849)
 
  -- Bastian Germann <bage@debian.org>  Tue, 03 Sep 2024 21:03:18 +0200
 
