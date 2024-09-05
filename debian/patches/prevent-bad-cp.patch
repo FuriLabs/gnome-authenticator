@@ -1,14 +1,14 @@
-Description: Prevent a bad cp command with non-existing path
+Description: Prevent a bad cp command by replacing it with find
 Author: Bastian Germann <bage@debian.org>
 ---
 --- gnome-authenticator-4.5.0.orig/src/meson.build
 +++ gnome-authenticator-4.5.0/src/meson.build
-@@ -48,8 +48,6 @@ cargo_build = custom_target(
-     'env',
+@@ -48,7 +48,7 @@ cargo_build = custom_target(
      cargo, 'build',
      cargo_options,
--    '&&',
+     '&&',
 -    'cp', 'src' / rust_target / meson.project_name(), '@OUTPUT@',
++    'find', meson.project_build_root() / 'src', '-name', meson.project_name(), '-exec', 'cp', '-p', '{}', '@OUTPUT@', ';',
    ]
  )
  
