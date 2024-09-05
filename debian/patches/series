@@ -4,5 +4,6 @@
 0004-Make-compatible-with-rust-zip-0.6.patch
 0005-Prevent-setting-CARGO_HOME.patch
 0006-Extend-test-timeout.patch
+0007-test-Prevent-setting-CARGO_HOME.patch
 prevent-bad-cp.patch
 Relax-data-encoding.patch

@@ -1,0 +1,14 @@
+Description: Prevent setting CARGO_HOME in the test run
+Author: Bastian Germann <bage@debian.org>
+---
+--- gnome-authenticator-4.5.0.orig/src/meson.build
++++ gnome-authenticator-4.5.0/src/meson.build
+@@ -60,7 +60,7 @@ test (
+   cargo,
+   args: ['test', '--bin', meson.project_name()],
+   timeout: 1600, # cargo might take a bit of time sometimes
+-  env: ['CARGO_TARGET_DIR=@0@'.format(cargo_target_dir), 'CARGO_HOME=@0@'.format(cargo_home)]
++  env: ['CARGO_TARGET_DIR=@0@'.format(cargo_target_dir)]
+ )
+ 
+ doc_deps = [
