@@ -40,6 +40,7 @@ Package: gnome-authenticator
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
+         gnome-keyring,
 Description: TOTP authentication app for the GNOME Desktop
  Authenticator is a GTK3 application for the GNOME desktop, featuring:
   - QR code scanner
