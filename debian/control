@@ -40,6 +40,7 @@ Depends: gir1.2-handy-0.0,
          python3-pyotp,
          python3-pyzbar,
          python3-yoyo,
+         python3-gst-1.0,
          ${misc:Depends},
          ${python3:Depends}
 Description: TOTP authentication app for the GNOME Desktop
