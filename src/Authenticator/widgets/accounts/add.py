@@ -17,12 +17,12 @@
  along with Authenticator. If not, see <http://www.gnu.org/licenses/>.
 """
 from gettext import gettext as _
-from gi.repository import Gdk, Gtk, GObject, Gio, Handy
+from gi.repository import Gdk, Gtk, GObject, Gio, Handy, Gst
 
 from .list import AccountsWidget
 from Authenticator.widgets.notification import Notification
 from Authenticator.widgets.provider_image import ProviderImage, ProviderImageState
-from Authenticator.models import AccountsManager, Account, OTP, Provider, QRReader, GNOMEScreenshot
+from Authenticator.models import AccountsManager, Account, OTP, Provider, QRReader, GNOMEScreenshot, GstCamera
 
 
 @Gtk.Template(resource_path='/com/github/bilelmoussaoui/Authenticator/account_add.ui')
@@ -230,17 +230,18 @@ class AccountConfig(Gtk.Overlay):
 
     def scan_qr(self, *args):
         '''Scans a QRCode and fills the entries with the correct data.'''
-        try:
-            filename = GNOMEScreenshot.area()
-            assert filename
-            account = QRReader.from_file(filename)
-            assert account is dict
-            self.token_entry.set_text(account.get('token',
-                                                  self.token_entry.get_text()))
-            self.provider_entry.set_text(account.get('provider',
-                                                     self.provider_entry.get_text()))
-            self.account_name_entry.set_text(account.get('username',
-                                                         self.account_name_entry.get_text()))
-        except AssertionError:
-            self._notification.send(_("Invalid QR code"),
-                                    timeout=3)
+        def on_picture_taken(camera, filename):
+            try:
+                assert filename
+                account = QRReader.from_file(filename)
+                assert isinstance(account, dict)
+                self.token_entry.set_text(account.get('token', self.token_entry.get_text()))
+                self.provider_entry.set_text(account.get('provider', self.provider_entry.get_text()))
+                self.account_name_entry.set_text(account.get('username', self.account_name_entry.get_text()))
+            except AssertionError:
+                self._notification.send(_("Invalid QR code"), timeout=3)
+
+        camera = GstCamera(self)
+        camera.connect('picture-taken', on_picture_taken)
+        camera.show_all()
+        camera.present()

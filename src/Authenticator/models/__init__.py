@@ -22,6 +22,7 @@ from .otp import OTP
 
 from .qr_reader import QRReader
 from .screenshot import GNOMEScreenshot
+from .camera import GstCamera
 from .settings import Settings
 
 from .database import Database
