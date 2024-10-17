@@ -56,7 +56,7 @@
               <object class="GtkImage" id="scan_img">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="icon_name">qrscanner-symbolic</property>
+                <property name="icon_name">edit-select-all-symbolic</property>
               </object>
             </child>
           </object>

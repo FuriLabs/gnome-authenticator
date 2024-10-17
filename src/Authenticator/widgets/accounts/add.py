@@ -38,7 +38,6 @@ class AddAccountWindow(Gtk.Window):
 
     def __init__(self):
         super(AddAccountWindow, self).__init__()
-        self.init_template('AddAccountWindow')
         self.add_events(Gdk.EventMask.ENTER_NOTIFY_MASK)
         self.__init_widgets()
 
@@ -95,7 +94,6 @@ class AccountConfig(Gtk.Overlay):
 
     def __init__(self, **kwargs):
         super(AccountConfig, self).__init__()
-        self.init_template('AccountConfig')
 
         self.props.is_edit = kwargs.get("edit", False)
         self._account = kwargs.get("account", None)

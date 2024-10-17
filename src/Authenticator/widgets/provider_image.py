@@ -78,7 +78,6 @@ class ProviderImage(Gtk.Stack):
 
     def __init__(self, provider=None, image_size=48):
         super(ProviderImage, self).__init__()
-        self.init_template('ProviderImage')
         self.provider = provider if provider else Provider()
 
         self.image_size = image_size

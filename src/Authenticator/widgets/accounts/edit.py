@@ -36,7 +36,6 @@ class EditAccountWindow(Gtk.Window):
 
     def __init__(self, account):
         super(EditAccountWindow, self).__init__()
-        self.init_template('EditAccountWindow')
 
         self._account = account
         self.__init_widgets()
