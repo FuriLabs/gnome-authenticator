@@ -51,13 +51,12 @@ class SettingsWindow(Handy.PreferencesWindow):
         keyring = Keyring.get_default()
         if keyring.has_password():
             keyring.set_password_state(self.lock_row.props.expanded)
-            self.lock_row_toggle_btn.props.active = False
 
-    def __on_lock_switch_toggled(self, toggle_btn: Gtk.ToggleButton, *_):
-        toggled = toggle_btn.props.active
-        expansion_enabled = self.lock_row.props.enable_expansion
+    def __on_lock_switch_toggled(self, row: Handy.ExpanderRow, *_):
+        toggled = row.props.enable_switch_active
+        expansion_enabled = row.props.enable_expansion
         if not Keyring.get_default().has_password() and not toggled and expansion_enabled:
-            self.lock_row.props.enable_expansion = False
+            row.props.enable_expansion = False
 
     def __bind_signals(self):
         settings = Settings.get_default()
@@ -68,13 +67,13 @@ class SettingsWindow(Handy.PreferencesWindow):
                       "active", Gio.SettingsBindFlags.DEFAULT)
 
         keyring = Keyring.get_default()
-        # Hackish solution to get the expander from HdyExpanderRow
         self.lock_row.props.enable_expansion = keyring.has_password()
-        self.lock_row_toggle_btn = self.lock_row.get_children()[0].get_children()[3]
+
+        self.lock_row.props.show_enable_switch = True
 
         self.lock_row.props.enable_expansion = Keyring.get_default().is_password_enabled()
         self.lock_row.connect("notify::enable-expansion", self.__on_enable_password)
-        self.lock_row_toggle_btn.connect("notify::active", self.__on_lock_switch_toggled)
+        self.lock_row.connect("notify::enable-switch-active", self.__on_lock_switch_toggled)
         self.lock_row.connect("notify::expanded", self._on_lock_row_expanded)
 
         keyring.bind_property("can-be-locked", self.lock_timeout_row, "sensitive",
@@ -113,13 +112,12 @@ class SettingsWindow(Handy.PreferencesWindow):
             self._password_widget.set_current_password_visibility(True)
 
     def __on_password_updated(self, *_):
-        self.lock_row_toggle_btn.props.active = False
+        self.lock_row.set_expanded(False)
 
     def __on_password_deleted(self, *__):
         # self.notification.send(_("The authentication password was deleted."))
+        self.lock_row.set_expanded(False)
         self.lock_row.set_enable_expansion(False)
-        self.lock_row_toggle_btn.props.active = False
-
 
 @Gtk.Template(resource_path='/com/github/bilelmoussaoui/Authenticator/password_widget.ui')
 class PasswordWidget(Gtk.Box):

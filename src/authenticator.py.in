@@ -28,7 +28,7 @@ from gettext import gettext as _
 from gi import require_version
 require_version('Gtk', '3.0')
 require_version('Gdk', '3.0')
-require_version("Handy", "0.0")
+require_version("Handy", "1")
 require_version('Secret', '1')
 from gi.repository import Gio, Handy
 
@@ -61,7 +61,7 @@ if __name__ == "__main__":
 
     Logger.set_level(level)
     try:
-        Handy.init(None)
+        Handy.init()
         from Authenticator.application import Application
         app = Application.get_default()
         app.props.profile = '@PROFILE@'

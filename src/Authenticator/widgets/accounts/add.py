@@ -34,7 +34,7 @@ class AddAccountWindow(Gtk.Window):
     scan_btn: Gtk.Button = Gtk.Template.Child()
     back_btn: Gtk.Button = Gtk.Template.Child()
 
-    column: Handy.Column = Gtk.Template.Child()
+    column: Handy.Clamp = Gtk.Template.Child()
 
     def __init__(self):
         super(AddAccountWindow, self).__init__()
@@ -54,8 +54,8 @@ class AddAccountWindow(Gtk.Window):
         """Set the sensitivity of the AddButton depends on the AccountConfig."""
         self.add_btn.set_sensitive(state)
 
-    @Gtk.Template.Callback('add_btn_clicked')
-    def _on_add(self, *_):
+    @Gtk.Template.Callback()
+    def add_btn_clicked(self, *_):
         account_obj = self.account_config.account
         # Create a new account
         account = Account.create(account_obj["username"],

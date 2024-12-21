@@ -8,7 +8,7 @@
     <property name="step_increment">1</property>
     <property name="page_increment">10</property>
   </object>
-  <requires lib="libhandy" version="0.0"/>
+  <requires lib="libhandy" version="1.0"/>
   <template class="SettingsWindow" parent="HdyPreferencesWindow">
     <property name="default_height">400</property>
     <property name="default_width">600</property>
@@ -28,7 +28,8 @@
                     <property name="title" translatable="yes">Dark Theme</property>
                     <property name="subtitle" translatable="yes">Whether the application should use a dark theme.</property>
                     <property name="visible">true</property>
-                    <child type="action">
+                    <property name="activatable-widget">dark_theme_switch</property>
+                    <child>
                         <object class="GtkSwitch" id="dark_theme_switch">
                             <property name="can_focus">True</property>
                             <property name="visible">True</property>
@@ -43,7 +44,8 @@
                     <property name="title" translatable="yes">Night Light</property>
                     <property name="subtitle" translatable="yes">Automatically enable dark mode at night.</property>
                     <property name="visible">true</property>
-                    <child type="action">
+                    <property name="activatable-widget">night_light_switch</property>
+                    <child>
                         <object class="GtkSwitch" id="night_light_switch">
                             <property name="can_focus">True</property>
                             <property name="visible">True</property>
@@ -75,6 +77,8 @@
                     <property name="title" translatable="yes">Lock the application</property>
                     <property name="subtitle" translatable="yes">Whether the application should use a dark theme.</property>
                     <property name="visible">true</property>
+                    <property name="show-enable-switch">true</property>
+                    <property name="enable-expansion">true</property>
                 </object>
               </child>
 
@@ -83,7 +87,8 @@
                     <property name="title" translatable="yes">Auto lock timeout</property>
                     <property name="subtitle" translatable="yes">Automatically enable dark mode at night.</property>
                     <property name="visible">true</property>
-                    <child type="action">
+                    <property name="activatable-widget">lock_timeout_spinbtn</property>
+                    <child>
                          <object class="GtkSpinButton" id="lock_timeout_spinbtn">
                               <property name="visible">True</property>
                               <property name="can_focus">True</property>
